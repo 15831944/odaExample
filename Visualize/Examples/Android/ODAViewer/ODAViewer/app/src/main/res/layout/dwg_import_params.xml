@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Switch
+            android:id="@+id/dwg_StoreSourceSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettingsDialogSwitchStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dwg_store_source"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Switch
+            android:id="@+id/dwg_ClearEmptyObjectsSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettingsDialogSwitchStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dwg_clear_empty_objects"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Switch
+            android:id="@+id/dwg_EnableMTSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettingsDialogSwitchStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dwg_enable_mt"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/dwg_MaxThreadsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dwg_max_threads"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+
+        <EditText
+            android:id="@+id/dwg_threadsCnt"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textAlignment="center"
+            style="@style/SettingsDialogTextStyle"
+            android:background="@drawable/corner_background"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Switch
+            android:id="@+id/dwg_BrepAsBrepSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettingsDialogSwitchStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dwg_import_brep_as_brep"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Switch
+            android:id="@+id/dwg_lowMemorySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettingsDialogSwitchStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dwg_low_memory"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Background:"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            style="@style/SettingsDialogTextStyle" />
+
+        <Button
+            android:id="@+id/dwg_colorBtn"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            android:onClick="onChooseDwgColorClick" />
+    </LinearLayout>
+
+</LinearLayout>

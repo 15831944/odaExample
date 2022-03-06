@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\ThreejsJSONExport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\ThreejsJSONModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\ExGsGLES2JsonRendition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\ExGsGLES2JsonSharingProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\GlesJsonServerBaseImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\GlesJsonServerImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\JsonMetafileConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\JsonObjectFormat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\TrXmlIdRegistratorImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\ThreejsJSONExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\ThreejsJSONExportDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\ThreejsJSONModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\ExGsGLES2JsonRendition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\JsonServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\JsonObjectFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\ExGsGLES2JsonSharingProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\JsonMetafileConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\GlesJsonServerBaseImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\GlesJsonServerImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\JsonServerBaseImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\ThreejsJSONExport.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B8EA7833-365D-3527-ABAD-9451AB2FB9E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B103FE9F-C067-3996-8BC4-7383282A6B57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

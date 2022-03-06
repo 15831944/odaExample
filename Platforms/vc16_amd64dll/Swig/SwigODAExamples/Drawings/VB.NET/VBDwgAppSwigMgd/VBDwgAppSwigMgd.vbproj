@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{073EAE7F-CEEE-3483-8297-D22A8C13D841}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VBDwgAppSwigMgd</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>VBDwgAppSwigMgd</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <StartupObject>VBDwgAppSwigMgd.Form1</StartupObject>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>VBDwgAppSwigMgd</AssemblyName>
+    <StartAction>Project</StartAction>
+    <StartProgram>..\..\..\..\..\..\..\exe\vc16_amd64dll\VBDwgAppSwigMgd.exe</StartProgram>
+    <AdditionalOptions>-langversion:9 /MP4</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.VisualBasic.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.VisualBasic.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\ThirdParty\activation\trial\OdActivationInfo.vb" />
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\VB.NET\VBDwgAppSwigMgd\Form1.vb">
+      <Link>Form1.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\VB.NET\VBDwgAppSwigMgd\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <Link>Form1.Designer.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\VB.NET\VBDwgAppSwigMgd\CustomPDFProperties.vb">
+      <Link>CustomPDFProperties.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\VB.NET\VBDwgAppSwigMgd\CustomPDFProperties.Designer.vb">
+      <DependentUpon>CustomPDFProperties.vb</DependentUpon>
+      <Link>CustomPDFProperties.Designer.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\VB.NET\VBDwgAppSwigMgd\DisplayControl.vb">
+      <Link>DisplayControl.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\VB.NET\VBDwgAppSwigMgd\DisplayControl.Designer.vb">
+      <DependentUpon>DisplayControl.vb</DependentUpon>
+      <Link>DisplayControl.Designer.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\VB.NET\VBDwgAppSwigMgd\PDFParams.vb">
+      <Link>PDFParams.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\VB.NET\VBDwgAppSwigMgd\PDFParams.Designer.vb">
+      <DependentUpon>PDFParams.vb</DependentUpon>
+      <Link>PDFParams.Designer.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\Common\GeneralAssemblyInfo.vb" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <DependentUpon>Resources.vb</DependentUpon>
+    </Compile>
+    <None Include="My Project\Application.myapp">
+    </None>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Collections.Generic">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="TD_SwigCoreMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigDbMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigDbMgd.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\VB.NET\VBDwgAppSwigMgd\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <Link>Form1.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\VB.NET\VBDwgAppSwigMgd\CustomPDFProperties.resx">
+      <DependentUpon>CustomPDFProperties.vb</DependentUpon>
+      <Link>CustomPDFProperties.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CustomPDFProperties.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\VB.NET\VBDwgAppSwigMgd\DisplayControl.resx">
+      <DependentUpon>DisplayControl.vb</DependentUpon>
+      <Link>DisplayControl.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DisplayControl.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\VB.NET\VBDwgAppSwigMgd\PDFParams.resx">
+      <DependentUpon>PDFParams.vb</DependentUpon>
+      <Link>PDFParams.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PDFParams.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Link>Resources.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

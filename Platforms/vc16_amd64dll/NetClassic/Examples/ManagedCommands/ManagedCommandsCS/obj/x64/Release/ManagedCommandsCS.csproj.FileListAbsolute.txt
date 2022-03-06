@@ -1,0 +1,5 @@
+C:\B\2\_\_\exe\vc16_amd64dll\ManagedCommandsCS.dll
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\ManagedCommands\ManagedCommandsCS\obj\x64\Release\ManagedCommandsCS.csproj.AssemblyReference.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\ManagedCommands\ManagedCommandsCS\obj\x64\Release\ManagedCommandsCS.csproj.CoreCompileInputs.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\ManagedCommands\ManagedCommandsCS\obj\x64\Release\ManagedCommandsCS.csproj.CopyComplete
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\ManagedCommands\ManagedCommandsCS\obj\x64\Release\ManagedCommandsCS.dll

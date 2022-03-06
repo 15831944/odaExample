@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9C1AE651-37F9-34BE-8D83-FBB406A1818C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OdPrcCreateSwigMgd</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>OdPrcCreateSwigMgd</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>OdPrcCreateSwigMgd</AssemblyName>
+    <StartAction>Project</StartAction>
+    <StartProgram>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdPrcCreateSwigMgd.exe</StartProgram>
+    <AdditionalOptions>/langversion:latest /MP4</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>TEIGHA_TRIAL;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;NET48</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\SystemServices.cs">
+      <Link>Sources\SystemServices.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Program.cs">
+      <Link>Sources\Program.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\OdPrcCreateSwigMgd_ApplicationInterface.cs">
+      <Link>Sources\OdPrcCreateSwigMgd_ApplicationInterface.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdPrcCreateExample.cs">
+      <Link>Sources\Samples\OdPrcCreateExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdPrcCreateTopologyHelper.cs">
+      <Link>Sources\Samples\OdPrcCreateTopologyHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdMultipleEntitiesExportExample.cs">
+      <Link>Sources\Samples\OdMultipleEntitiesExportExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdCrossSectionSamples\OdSimpleCrossSectioExample.cs">
+      <Link>Sources\Samples\OdCrossSectionSamples\OdSimpleCrossSectioExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdCrossSectionSamples\OdViewWithBackgroundExample.cs">
+      <Link>Sources\Samples\OdCrossSectionSamples\OdViewWithBackgroundExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdAttributeSamples\OdAttributeExample.cs">
+      <Link>Sources\Samples\OdAttributeSamples\OdAttributeExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdTessSamples\OdTessExample.cs">
+      <Link>Sources\Samples\OdTessSamples\OdTessExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdTessSamples\OdTessObjectTextureExample.cs">
+      <Link>Sources\Samples\OdTessSamples\OdTessObjectTextureExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdTessSamples\OdTessExampleTextured.cs">
+      <Link>Sources\Samples\OdTessSamples\OdTessExampleTextured.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdRepresentationItemSamples\OdRepresentationItemExample.cs">
+      <Link>Sources\Samples\OdRepresentationItemSamples\OdRepresentationItemExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBrepByVerticesSamples\OdBrepByVerticesExample.cs">
+      <Link>Sources\Samples\OdBrepByVerticesSamples\OdBrepByVerticesExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdComplexSamples\OdComplexExample.cs">
+      <Link>Sources\Samples\OdComplexSamples\OdComplexExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdComplexSamples\OdCloneConnexesFromComplexExample.cs">
+      <Link>Sources\Samples\OdComplexSamples\OdCloneConnexesFromComplexExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdMarkupSamples\OdMarkupExample.cs">
+      <Link>Sources\Samples\OdMarkupSamples\OdMarkupExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdMarkupSamples\OdMarkupExample_CreateAllMarkupExamples.cs">
+      <Link>Sources\Samples\OdMarkupSamples\OdMarkupExample_CreateAllMarkupExamples.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdMarkupSamples\OdMarkupAnnotationExample.cs">
+      <Link>Sources\Samples\OdMarkupSamples\OdMarkupAnnotationExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdMarkupSamples\OdMarkupViewExample.cs">
+      <Link>Sources\Samples\OdMarkupSamples\OdMarkupViewExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdMarkupSamples\OdMarkupViewWithFilteringExample.cs">
+      <Link>Sources\Samples\OdMarkupSamples\OdMarkupViewWithFilteringExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBrepSamples\OdBrepExample.cs">
+      <Link>Sources\Samples\OdBrepSamples\OdBrepExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBrepSamples\OdBrepExample_BrepBox.cs">
+      <Link>Sources\Samples\OdBrepSamples\OdBrepExample_BrepBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBrepSamples\OdBrepExample_BrepSphere.cs">
+      <Link>Sources\Samples\OdBrepSamples\OdBrepExample_BrepSphere.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdMeshSamples\OdMeshExample.cs">
+      <Link>Sources\Samples\OdMeshSamples\OdMeshExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBrepModelSamples\OdBrepModelExample.cs">
+      <Link>Sources\Samples\OdBrepModelSamples\OdBrepModelExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBrepModelSamples\OdBrepModelExample_CreateAllBrepModelExamples.cs">
+      <Link>Sources\Samples\OdBrepModelSamples\OdBrepModelExample_CreateAllBrepModelExamples.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_OdCreateAllSingleWireBodies.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_OdCreateAllSingleWireBodies.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvBlend02Boundary.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvBlend02Boundary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvCircle.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvCircle.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvCircle2d.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvCircle2d.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvComposite.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvComposite.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvComposite2d.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvComposite2d.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvEllipse.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvEllipse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvEllipse2d.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvEllipse2d.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvEquation.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvEquation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvEquation2d.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvEquation2d.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvHelixT0.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvHelixT0.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvHelixT1.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvHelixT1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvHyperbola.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvHyperbola.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvHyperbola2d.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvHyperbola2d.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvIntersection.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvIntersection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvLine.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvLine.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvLine2d.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvLine2d.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvNURBS.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvNURBS.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvNURBS2d.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvNURBS2d.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvOffset.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvOffset.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvOnSurf.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvOnSurf.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvParabola.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvParabola.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvParabola2d.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvParabola2d.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvPolyLine.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvPolyLine.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvPolyLine2d.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvPolyLine2d.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvTransform.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvTransform2d.cs">
+      <Link>Sources\Samples\OdBobySamples\OdBodyExample_SingleWireBodyCrvTransform2d.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\ThirdParty\activation\trial\OdActivationInfo.cs" />
+    <Compile Include="..\..\..\..\..\..\..\Swig\Common\GeneralAssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Core">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="TD_SwigCoreMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="TD_SwigDbMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="OdCreationNetSwigExampleLibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="PRC_SwigDbMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\PRC_SwigDbMgd.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,86 @@
+/////////////////////////////////////////////////////////////////////////////// 
+// Copyright (C) 2002-2022, Open Design Alliance (the "Alliance"). 
+// All rights reserved. 
+// 
+// This software and its documentation and related materials are owned by 
+// the Alliance. The software may only be incorporated into application 
+// programs owned by members of the Alliance, subject to a signed 
+// Membership Agreement and Supplemental Software License Agreement with the
+// Alliance. The structure and organization of this software are the valuable  
+// trade secrets of the Alliance and its suppliers. The software is also 
+// protected by copyright law and international treaty provisions. Application  
+// programs incorporating this software must include the following statement 
+// with their copyright notices:
+//   
+//   This application incorporates Open Design Alliance software pursuant to a license 
+//   agreement with Open Design Alliance.
+//   Open Design Alliance Copyright (C) 2002-2022 by Open Design Alliance. 
+//   All rights reserved.
+//
+// By use of this software, its documentation or related materials, you 
+// acknowledge and accept the above terms.
+///////////////////////////////////////////////////////////////////////////////
+
+#ifndef _DwgStdAfx_h_Defined_
+#define _DwgStdAfx_h_Defined_
+
+#include "OdaCommon.h"
+#include "OdPlatform.h"
+#include "OdaDefs.h"
+#include <math.h>
+#include <stdlib.h>
+#if defined(_WIN32) || defined(WIN64)
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+#endif
+#include "TDVersion.h"
+#define STL_USING_ALL
+#include "OdaSTL.h"
+
+// Turn on below warnings at level 3
+#ifdef _MSC_VER
+  #pragma warning(3 : 4018) // '>' : signed/unsigned mismatch
+  #pragma warning(3 : 4127) // conditional expression is constant
+  #pragma warning(3 : 4131) // function declaration is not in prototype form
+  #pragma warning(3 : 4245) // 'argument' : conversion from 'int' to 'OdUInt32', signed/unsigned mismatch
+  #pragma warning(3 : 4701) // potentially uninitialized local variable used
+  #pragma warning(3 : 4702) // unreachable code
+  #pragma warning(3 : 4706) // assignment within conditional expression
+  #pragma warning(3 : 4389) // '==' : signed/unsigned mismatch
+#endif
+
+#include "RxObject.h"
+#include "RxObjectImpl.h"
+#include "OdString.h"
+#include "OdErrorContext.h"
+#include "DbSystemServices.h"
+#include "DbHostAppServices.h"
+#include "RxInit.h"
+#include "RxSystemServices.h"
+#include "RxDictionary.h"
+#include "StaticRxObject.h"
+#include "RxModule.h"
+#include "OdArray.h"
+#include "OdRound.h"
+#include "OdStreamBuf.h"
+
+#include "CmColor.h"
+#include "DbAudit.h"
+#include "DbDatabase.h"
+#include "DbDictionary.h"
+
+#include "DbExport.h" ///////////////////////
+#include "DbFiler.h"
+#include "DbObject.h"
+#include "DbObjectId.h"
+#include "MemoryStream.h"
+#include "OdBinaryData.h"
+
+#if defined(__GNUC__) && (GCC_VERSION >= 40201)
+#pragma GCC diagnostic ignored "-Wunknown-pragmas"
+#endif
+
+#endif //_DwgStdAfx_h_Defined_

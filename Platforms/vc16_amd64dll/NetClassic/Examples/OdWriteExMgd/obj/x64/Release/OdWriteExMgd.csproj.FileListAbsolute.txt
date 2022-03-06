@@ -1,0 +1,5 @@
+C:\B\2\_\_\exe\vc16_amd64dll\OdWriteExMgd.exe
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdWriteExMgd\obj\x64\Release\OdWriteExMgd.csproj.AssemblyReference.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdWriteExMgd\obj\x64\Release\OdWriteExMgd.csproj.CoreCompileInputs.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdWriteExMgd\obj\x64\Release\OdWriteExMgd.csproj.CopyComplete
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdWriteExMgd\obj\x64\Release\OdWriteExMgd.exe

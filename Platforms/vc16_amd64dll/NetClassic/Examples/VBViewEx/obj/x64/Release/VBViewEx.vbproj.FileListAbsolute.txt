@@ -1,0 +1,8 @@
+C:\B\2\_\_\exe\vc16_amd64dll\VBViewEx.exe
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\VBViewEx\obj\x64\Release\VBViewEx.vbproj.AssemblyReference.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\VBViewEx\obj\x64\Release\VBViewEx.Form1.resources
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\VBViewEx\obj\x64\Release\VBViewEx.Resources.resources
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\VBViewEx\obj\x64\Release\VBViewEx.vbproj.GenerateResource.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\VBViewEx\obj\x64\Release\VBViewEx.vbproj.CoreCompileInputs.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\VBViewEx\obj\x64\Release\VBViewEx.vbproj.CopyComplete
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\VBViewEx\obj\x64\Release\VBViewEx.exe

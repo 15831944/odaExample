@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Visualize\Examples\win\OdVisualizeFirstMFCApp\OdVisualizeFirstMFCApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Visualize\Examples\win\OdVisualizeFirstMFCApp\ChildView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Visualize\Examples\win\OdVisualizeFirstMFCApp\MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Visualize\Examples\win\OdVisualizeFirstMFCApp\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Visualize\Examples\win\OdVisualizeFirstMFCApp\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Visualize\Examples\win\OdVisualizeFirstMFCApp\OdVisualizeFirstMFCApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Visualize\Examples\win\OdVisualizeFirstMFCApp\ChildView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Visualize\Examples\win\OdVisualizeFirstMFCApp\MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Visualize\Examples\win\OdVisualizeFirstMFCApp\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Visualize\Examples\win\OdVisualizeFirstMFCApp\res\OdVisualizeFirstMFCApp.ico" />
+    <None Include="..\..\..\..\..\..\Visualize\Examples\win\OdVisualizeFirstMFCApp\res\toolbar1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\..\Visualize\Examples\win\OdVisualizeFirstMFCApp\OdVisualizeFirstMFCApp.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{89EE32B3-E94B-3F97-9961-10C983A2EC2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C1FB19BB-0839-31DF-B810-30731B07FB67}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

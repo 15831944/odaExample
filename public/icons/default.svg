@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Gouraud shaded 128</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Gouraud-shaded" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(10.000000, 0.000000)" fill-rule="nonzero" id="Shape">
+            <polygon fill="#ABC2DB" points="79.7866667 110.933333 53.3333333 126.293333 26.4533333 110.933333 0 95.1466667 26.4533333 79.7866667 53.3333333 64.4266667 79.7866667 79.7866667 106.666667 95.1466667"></polygon>
+            <polygon fill="#66809D" points="26.4533333 79.7866667 0 95.1466667 0 63.1466667 0 30.72 26.4533333 15.36 53.3333333 0 53.3333333 32.4266667 53.3333333 64.4266667"></polygon>
+            <polygon fill="#265180" points="79.7866667 79.7866667 53.3333333 64.4266667 53.3333333 32.4266667 53.3333333 0 79.7866667 15.36 106.666667 30.72 106.666667 63.1466667 106.666667 95.1466667"></polygon>
+            <polygon fill="#ABC2DB" points="26.4533333 47.7866667 53.3333333 63.1466667 79.7866667 47.7866667 53.3333333 32.4266667"></polygon>
+            <polygon fill="#265180" points="26.4533333 79.7866667 53.3333333 95.1466667 53.3333333 63.1466667 26.4533333 47.7866667"></polygon>
+            <polygon fill="#66809D" points="79.7866667 79.7866667 53.3333333 95.1466667 53.3333333 63.1466667 79.7866667 47.7866667"></polygon>
+        </g>
+    </g>
+</svg>

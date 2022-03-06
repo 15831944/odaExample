@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/style_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/MenuLayoutStyle">
+
+    <ImageView
+        android:id="@+id/wire2d"
+        android:tag="0"
+        android:onClick="onRenderModeChange"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:src="@drawable/wireframe2d" />
+
+    <ImageView
+        android:id="@+id/wire3d"
+        android:tag="1"
+        android:onClick="onRenderModeChange"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:src="@drawable/wireframe3d" />
+
+    <ImageView
+        android:id="@+id/hiddenLine"
+        android:tag="2"
+        android:onClick="onRenderModeChange"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:src="@drawable/hiddenline" />
+
+    <ImageView
+        android:id="@+id/shaded"
+        android:tag="3"
+        android:onClick="onRenderModeChange"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:src="@drawable/shaded" />
+
+    <ImageView
+        android:id="@+id/gouShaded"
+        android:tag="4"
+        android:onClick="onRenderModeChange"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:src="@drawable/gouraudshaded" />
+
+    <ImageView
+        android:id="@+id/shadeWithEdges"
+        android:tag="5"
+        android:onClick="onRenderModeChange"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:src="@drawable/shaded_edges" />
+
+    <ImageView
+        android:id="@+id/gouShadedWithEdges"
+        android:tag="6"
+        android:onClick="onRenderModeChange"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:src="@drawable/gouraudshaded_edges" />
+
+
+</LinearLayout>

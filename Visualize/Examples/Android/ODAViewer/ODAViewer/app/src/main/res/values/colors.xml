@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ED001B35</color>
+    <color name="colorPrimaryDark">#001B35</color>
+    <color name="colorAccent">#DB001B35</color>
+
+    <color name="panelColor">#5d53c9</color>
+
+    <color name="searchBackgroundColor">#EE001B35</color>
+
+    <color name="itemListSelected">#D8DDDAF7</color>
+    <color name="itemListDefault">#ffffff</color>
+
+    <color name="activeMenuButton">#F86806</color>
+
+    <color name="loadingIndicatorColor">#7369E0</color>
+
+    <color name="activeButtonColor">#A9B1BEE7</color>
+    <color name="simpleButtonColor">#00000000</color>
+
+    <color name="enabledTextColor">#000000</color>
+    <color name="disabledTextColor">#858585</color>
+
+    <color name="filenamePanelColor">#90001B35</color>
+
+    <color name="white">#ffffff</color>
+
+</resources>

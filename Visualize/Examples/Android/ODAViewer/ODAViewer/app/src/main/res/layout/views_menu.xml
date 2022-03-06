@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/views_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/MenuLayoutStyle"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:tag="0"
+            android:layout_width="@dimen/topItemWidth"
+            android:layout_height="@dimen/topItemWidth"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/menuMargin"
+            android:onClick="onViewsClick"
+            android:src="@drawable/top_view" />
+
+        <ImageView
+            android:tag="1"
+            android:layout_width="@dimen/topItemWidth"
+            android:layout_height="@dimen/topItemWidth"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/menuMargin"
+            android:onClick="onViewsClick"
+            android:src="@drawable/bottom_view" />
+
+        <ImageView
+            android:tag="2"
+            android:layout_width="@dimen/topItemWidth"
+            android:layout_height="@dimen/topItemWidth"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/menuMargin"
+            android:onClick="onViewsClick"
+            android:src="@drawable/left_view" />
+
+        <ImageView
+            android:tag="3"
+            android:layout_width="@dimen/topItemWidth"
+            android:layout_height="@dimen/topItemWidth"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/menuMargin"
+            android:onClick="onViewsClick"
+            android:src="@drawable/right_view" />
+
+        <ImageView
+            android:tag="4"
+            android:layout_width="@dimen/topItemWidth"
+            android:layout_height="@dimen/topItemWidth"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/menuMargin"
+            android:onClick="onViewsClick"
+            android:src="@drawable/front_view" />
+
+        <ImageView
+            android:tag="5"
+            android:layout_width="@dimen/topItemWidth"
+            android:layout_height="@dimen/topItemWidth"
+            android:layout_weight="1"
+            android:onClick="onViewsClick"
+            android:src="@drawable/back_view" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:tag="6"
+            android:layout_width="@dimen/topItemWidth"
+            android:layout_height="@dimen/topItemWidth"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/menuMargin"
+            android:onClick="onViewsClick"
+            android:src="@drawable/sw_view" />
+
+        <ImageView
+            android:tag="7"
+            android:layout_width="@dimen/topItemWidth"
+            android:layout_height="@dimen/topItemWidth"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/menuMargin"
+            android:onClick="onViewsClick"
+            android:src="@drawable/se_view" />
+
+
+        <ImageView
+            android:tag="8"
+            android:layout_width="@dimen/topItemWidth"
+            android:layout_height="@dimen/topItemWidth"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/menuMargin"
+            android:onClick="onViewsClick"
+            android:src="@drawable/nw_view" />
+
+
+        <ImageView
+            android:tag="9"
+            android:layout_width="@dimen/topItemWidth"
+            android:layout_height="@dimen/topItemWidth"
+            android:layout_weight="1"
+            android:onClick="onViewsClick"
+            android:src="@drawable/ne_view" />
+
+    </LinearLayout>
+
+</LinearLayout>

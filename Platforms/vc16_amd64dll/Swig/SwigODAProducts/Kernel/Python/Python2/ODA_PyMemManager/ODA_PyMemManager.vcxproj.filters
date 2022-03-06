@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ODA_PyMemManager_wrap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Kernel\Python\ODA_PyMemManager\NativeSources\ODA_PyMemoryManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Kernel\Python\ODA_PyMemManager\NativeSources\ODA_PyMemoryTransaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Kernel\Python\ODA_PyMemManager\NativeSources\ODA_PyMemoryTransactionCollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ODA_PyMemManager_wrap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Kernel\Python\ODA_PyMemManager\NativeSources\ODA_PyMemManagerExportDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Kernel\Python\ODA_PyMemManager\NativeSources\ODA_PyMemoryManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Kernel\Python\ODA_PyMemManager\NativeSources\ODA_PyMemoryTransaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Kernel\Python\ODA_PyMemManager\NativeSources\ODA_PyMemoryTransactionCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Kernel\Python\Python2\ODA_PyMemManager\ODA_PyMemManager.i" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{54A02626-5B00-3364-BBD6-FAD9E873E4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C1BD386B-4FE4-357C-B701-2B85721849B9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

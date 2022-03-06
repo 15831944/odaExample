@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/regen_menu"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@drawable/layout_bg"
+    android:gravity="center_horizontal"
+    android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:id="@+id/regen_all"
+        android:tag="@string/regen_all"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/regen_all" />
+
+    <ImageView
+        android:id="@+id/regen_active_view"
+        android:tag="@string/regen_active_view"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/regen_active_view" />
+
+    <ImageView
+        android:id="@+id/regen_visible"
+        android:tag="@string/regen_visible"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/regen_visible" />
+
+</LinearLayout>

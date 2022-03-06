@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="settings">Settings</string>
+    <string name="app_name">OdaAndroidApp</string>
+
+    <string name="folderDepthTitle">Read folders recursefly</string>
+    <string name="folderDepthSummary">If enabled, all files found in subfolders will be shown</string>
+    
+    <string name="category">File Extensions</string>
+    <string name="categoryTitle">Files with selected extensions will be available for opening</string>
+
+   <string name="file_extension_title">File Extensions</string>
+   <string name="file_extension_summary">Files with selected extensions will be available for opening</string>
+
+    <string name="object_explorer_btn">Explorer</string>
+    <string name="object_explorer_back_btn">Back</string>
+
+    <string name="menu_file">Files</string>
+    <string name="menu_view">View</string>
+    <string name="menu_navigation">Navi</string>
+    <string name="menu_regen">Regen</string>
+    <string name="menu_visual_style">Style</string>
+
+    <string name="files_title">File</string>
+    <string name="view_title">View</string>
+    <string name="navigation_title">Navigation</string>
+    <string name="regen_title">Regen</string>
+    <string name="visual_style_title">Style</string>
+
+    <string name="style_2d_wireframe">2D Wireframe</string>
+    <string name="style_3d_wireframe">3D Wireframe</string>
+    <string name="style_hidden_line">HiddenLine</string>
+    <string name="style_shaded">Shaded</string>
+    <string name="style_shaded_with_edges">Shaded with edges</string>
+    <string name="style_gouraund_shaded_with_edges">Gouraud shaded with edges</string>
+    <string name="style_shades_of_gray">Gouraud shaded</string>
+
+    <string name="navigation_pan">pan</string>
+    <string name="navigation_orbit">orbit</string>
+    <string name="navigation_free_orbit">free_orbit</string>
+    <string name="navigation_zoom_window">zoom_window</string>
+    <string name="navigation_zoom_extents">zoom_extents</string>
+    <string name="regen_all">regen_all</string>
+    <string name="regen_active_view">regen_active_view</string>
+    <string name="regen_visible">regen_visible</string>
+
+    <string-array name="file_extension_entries">
+        <item>.vsf</item>
+        <item>.dwg</item>
+        <item>.dwf</item>
+        <item>.dae</item>
+        <item>.bmp</item>
+        <item>.jpg</item>
+        <item>.png</item>
+        <item>.tiff</item>
+    </string-array>
+
+    <string-array name="file_extension_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="file_extension_default">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="file_extension_entriesA">
+        <item>.vsf</item>
+        <item>.dwg</item>
+        <item>.bmp</item>
+        <item>.jpg</item>
+        <item>.png</item>
+        <item>.tiff</item>
+    </string-array>
+
+    <string-array name="file_extension_valuesA">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="file_extension_defaultA">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

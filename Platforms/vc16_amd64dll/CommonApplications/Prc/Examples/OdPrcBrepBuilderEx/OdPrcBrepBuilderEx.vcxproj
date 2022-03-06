@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{33248C7B-6B3C-30D6-A3EC-E2AF5C06E058}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>OdPrcBrepBuilderEx</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OdPrcBrepBuilderEx.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OdPrcBrepBuilderEx</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Prc\Include;..\..\..\..\..\..\Prc\Extensions\ExServices;..\..\..\..\..\..\Prc\Examples\Common;..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcCreate;..\..\..\..\..\..\Prc\Export\PrcBaseExport\Include;..\..\..\..\..\..\Prc\Export\Dwg2PrcExport\Include;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\Kernel\Exports\PdfExport\Include;..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\ThirdParty\ZLib;..\..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include;..\..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /MP4</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;TEIGHA_TRIAL;TB_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;Z_PREFIX;FREETYPE_VER_2_10_4;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;TEIGHA_TRIAL;TB_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;Z_PREFIX;FREETYPE_VER_2_10_4;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Prc\Include;..\..\..\..\..\..\Prc\Extensions\ExServices;..\..\..\..\..\..\Prc\Examples\Common;..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcCreate;..\..\..\..\..\..\Prc\Export\PrcBaseExport\Include;..\..\..\..\..\..\Prc\Export\Dwg2PrcExport\Include;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\Kernel\Exports\PdfExport\Include;..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\ThirdParty\ZLib;..\..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include;..\..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Prc\Include;..\..\..\..\..\..\Prc\Extensions\ExServices;..\..\..\..\..\..\Prc\Examples\Common;..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcCreate;..\..\..\..\..\..\Prc\Export\PrcBaseExport\Include;..\..\..\..\..\..\Prc\Export\Dwg2PrcExport\Include;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\Kernel\Exports\PdfExport\Include;..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\ThirdParty\ZLib;..\..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include;..\..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\..\..\lib\vc16_amd64dll\OdPrcDumpModule.lib;OdPrcModule.lib;..\..\..\..\..\..\lib\vc16_amd64dll\OdDwg2PrcExport.lib;TD_ExamplesCommon.lib;TD_DbRoot.lib;TD_BrepBuilder.lib;TD_Ge.lib;TD_Root.lib;TD_Zlib.lib;FreeType.lib;TD_Alloc.lib;Secur32.lib;..\..\..\..\..\..\lib\vc16_amd64dll\OdPrcBaseExport.lib;TD_PdfExport.lib;OdPrcModule.lib;TD_Gs.lib;TD_Db.lib;TD_SpatialIndex.lib;TD_Gi.lib;TD_Br.lib;TD_BrepBuilderFiller.lib;TD_BrepRenderer.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;TD_DbRoot.lib;TD_BrepBuilder.lib;TD_Ge.lib;TD_Root.lib;TD_Alloc.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>OdPrcBrepBuilderEx.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\..\exe\vc16_amd64dll\OdPrcBrepBuilderEx.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcBrepBuilderEx\OdPrcBrepBuilderEx.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcBrepBuilderEx\ExCases.h" />
+    <ClInclude Include="..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcBrepBuilderEx\BBExStart.h" />
+    <ClCompile Include="..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcBrepBuilderEx\BBExStart.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Extensions\ExServices\ExPrcHostAppServices.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Extensions\ExServices\ExPrcHostAppServices.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\Common\PrcCreateTopologyHelper.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\Common\PrcCreateTopologyHelper.h" />
+    <ClCompile Include="..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcBrepBuilderEx\Box.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcBrepBuilderEx\ComplexPlane.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcBrepBuilderEx\Cylinder.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcBrepBuilderEx\Cone.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcBrepBuilderEx\Sphere.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcBrepBuilderEx\Torus.cpp" />
+    <ResourceCompile Include="..\..\..\..\..\..\CommonApplications\Prc\Examples\OdPrcBrepBuilderEx\OdPrcBrepBuilderEx.rc" />
+    <ClCompile Include="..\..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Exchange\Exports\Dwg2PrcExport\OdDwg2PrcExport.vcxproj">
+      <Project>{9A538C7A-3D7E-3AD5-8477-99E37599E058}</Project>
+      <Name>OdDwg2PrcExport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Prc\Export\PrcBaseExport\OdPrcBaseExport.vcxproj">
+      <Project>{38DCEAC1-2A54-375F-8E27-3CE2D3D484BB}</Project>
+      <Name>OdPrcBaseExport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Prc\Extensions\PrcDump\OdPrcDumpModule.vcxproj">
+      <Project>{3F1AC004-2BC3-36BE-8B5D-5EC4B9D6F939}</Project>
+      <Name>OdPrcDumpModule</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

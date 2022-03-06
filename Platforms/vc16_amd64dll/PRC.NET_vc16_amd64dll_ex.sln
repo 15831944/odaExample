@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Products", "Products", "{A732810F-DDEC-3662-B5F1-3467A9279F37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prc", "Products\Prc", "{875DD39C-BE6F-367A-89F5-D39247002D88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net Framework Examples", "Products\Prc\Net Framework Examples", "{5DCBAF6D-A506-3CE8-B80B-FDB33A4A1855}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdPdfExportWithPrcSwigMgd", "Swig\SwigODAExamples\Prc\CSharp\OdPdfExportWithPrcSwig\OdPdfExportWithPrcSwigMgd.csproj", "{5E7192E6-F209-3A98-A9F9-936EE52557EA}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdPrcAnimationCreateExSwigMgd", "Swig\SwigODAExamples\Prc\CSharp\OdPrcAnimationCreateExSwig\OdPrcAnimationCreateExSwigMgd.csproj", "{6AF8DB2D-D74E-3242-B69B-14D07C0232F8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdPrcCreateSwigMgd", "Swig\SwigODAExamples\Prc\CSharp\OdPrcCreateSwig\OdPrcCreateSwigMgd.csproj", "{9C1AE651-37F9-34BE-8D83-FBB406A1818C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E7192E6-F209-3A98-A9F9-936EE52557EA}.Release|x64.ActiveCfg = Release|x64
+		{5E7192E6-F209-3A98-A9F9-936EE52557EA}.Release|x64.Build.0 = Release|x64
+		{6AF8DB2D-D74E-3242-B69B-14D07C0232F8}.Release|x64.ActiveCfg = Release|x64
+		{6AF8DB2D-D74E-3242-B69B-14D07C0232F8}.Release|x64.Build.0 = Release|x64
+		{9C1AE651-37F9-34BE-8D83-FBB406A1818C}.Release|x64.ActiveCfg = Release|x64
+		{9C1AE651-37F9-34BE-8D83-FBB406A1818C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{875DD39C-BE6F-367A-89F5-D39247002D88} = {A732810F-DDEC-3662-B5F1-3467A9279F37}
+		{5DCBAF6D-A506-3CE8-B80B-FDB33A4A1855} = {875DD39C-BE6F-367A-89F5-D39247002D88}
+		{5E7192E6-F209-3A98-A9F9-936EE52557EA} = {5DCBAF6D-A506-3CE8-B80B-FDB33A4A1855}
+		{6AF8DB2D-D74E-3242-B69B-14D07C0232F8} = {5DCBAF6D-A506-3CE8-B80B-FDB33A4A1855}
+		{9C1AE651-37F9-34BE-8D83-FBB406A1818C} = {5DCBAF6D-A506-3CE8-B80B-FDB33A4A1855}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E280948-55D2-30AB-B4FE-CC76F36E338A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

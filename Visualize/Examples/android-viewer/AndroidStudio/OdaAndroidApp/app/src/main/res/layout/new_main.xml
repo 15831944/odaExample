@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDFDFD">
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#f7f7f7"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/top_left_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_arrow"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/object_explorer_btn"
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/object_explorer_btn" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_view"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/menu_file" />
+
+        <LinearLayout
+            android:id="@+id/top_right_menu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp">
+
+            <ImageView
+                android:id="@+id/projection_perspective"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topPanel"
+        android:background="#1d3b8e"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:id="@+id/ic_search_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search_red" />
+
+            <EditText
+                android:id="@+id/search_src_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/ic_record_filename"
+                android:layout_toRightOf="@+id/ic_search_red"
+                android:background="@null"
+                android:hint="Search"
+                android:inputType="textFilter"
+                android:padding="0px"
+                android:singleLine="true"
+                android:imeOptions="actionDone" />
+
+            <ImageView
+                android:id="@+id/ic_record_filename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_mic_red" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/bottomPanel"
+        android:layout_below="@id/search_bar">
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/submenu_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomPanel"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="0dp"
+        android:background="#FF1D3B8E"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/file"
+            style="@style/Label"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableTop="@drawable/bot_menu_files"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_file" />
+
+        <TextView
+            android:id="@+id/view"
+            style="@style/Label"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableTop="@drawable/bot_menu_view"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_view" />
+
+        <TextView
+            android:id="@+id/navigation"
+            style="@style/Label"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableTop="@drawable/bot_menu_navigation"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_navigation" />
+
+        <TextView
+            android:id="@+id/regen"
+            style="@style/Label"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableTop="@drawable/bot_menu_regen"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_regen" />
+
+        <TextView
+            android:id="@+id/visual_style"
+            style="@style/Label"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableTop="@drawable/bot_menu_visual_style"
+            android:gravity="center_horizontal"
+            android:text="@string/menu_visual_style" />
+    </RadioGroup>
+</RelativeLayout>

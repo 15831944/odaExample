@@ -1,0 +1,44 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SWIG Python 2.x", "SWIG Python 2.x", "{86D90D1C-ADF1-3AB8-89D2-CAD7ED8318FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "SWIG Python 2.x\Common", "{46922D5A-7A1F-30CC-845C-870F3FC7E6B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Products", "SWIG Python 2.x\Products", "{372E09FF-FC2D-3C62-984F-C05FC21B1602}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kernel", "SWIG Python 2.x\Products\Kernel", "{21363179-79FB-314A-93EB-AC130D197FF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "SWIG Python 2.x\Products\Kernel\Core", "{9E32AEAF-C16D-39EF-AC87-D7CEB8C50359}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ODA_Kernel", "Swig\SwigODAProducts\Kernel\Python\Python2\ODA_Kernel\ODA_Kernel.vcxproj", "{EEBA3949-E663-335D-8C58-49A83BCFC93F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ODA_PyMemManager", "Swig\SwigODAProducts\Kernel\Python\Python2\ODA_PyMemManager\ODA_PyMemManager.vcxproj", "{C7B55B88-244A-3349-8F32-64D22E29091B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEBA3949-E663-335D-8C58-49A83BCFC93F}.Release|x64.ActiveCfg = Release|x64
+		{EEBA3949-E663-335D-8C58-49A83BCFC93F}.Release|x64.Build.0 = Release|x64
+		{C7B55B88-244A-3349-8F32-64D22E29091B}.Release|x64.ActiveCfg = Release|x64
+		{C7B55B88-244A-3349-8F32-64D22E29091B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{46922D5A-7A1F-30CC-845C-870F3FC7E6B5} = {86D90D1C-ADF1-3AB8-89D2-CAD7ED8318FE}
+		{372E09FF-FC2D-3C62-984F-C05FC21B1602} = {86D90D1C-ADF1-3AB8-89D2-CAD7ED8318FE}
+		{C7B55B88-244A-3349-8F32-64D22E29091B} = {46922D5A-7A1F-30CC-845C-870F3FC7E6B5}
+		{21363179-79FB-314A-93EB-AC130D197FF1} = {372E09FF-FC2D-3C62-984F-C05FC21B1602}
+		{9E32AEAF-C16D-39EF-AC87-D7CEB8C50359} = {21363179-79FB-314A-93EB-AC130D197FF1}
+		{EEBA3949-E663-335D-8C58-49A83BCFC93F} = {9E32AEAF-C16D-39EF-AC87-D7CEB8C50359}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EF1BCFA-7FDA-3F16-AF82-732970F96659}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

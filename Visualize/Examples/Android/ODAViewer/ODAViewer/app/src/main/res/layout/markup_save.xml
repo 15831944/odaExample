@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        style="@style/SettingsDialogTextStyle"/>
+
+    <EditText
+        android:id="@+id/markup_save_edit"
+        android:inputType="textNoSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:padding="3dp"
+        style="@style/SettingsDialogTextStyle"
+        android:background="@drawable/corner_background"
+        android:hint="Name for save"
+        android:maxLines="1"/>
+
+</LinearLayout>

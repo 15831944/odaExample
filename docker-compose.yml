@@ -1,0 +1,37 @@
+version: '3'
+services:
+  open_cloud:
+    build:
+      context: OpenCloudServer_23.1
+    ports:
+      - "8080:8080"
+    environment:
+      OPEN_CLOUD_OdWebSettings__DatabaseUrl: "mongodb://mongo:27017"
+      OPEN_CLOUD_OdWebSettings__DatabaseName: od-web-service
+      OPEN_CLOUD_OdWebSettings__RegistrationToken: 2c739148f2361561d79c181ec2593ce8
+      ASPNETCORE_URLS: http://+:8080
+    volumes:
+      - opencloud_volume:/data
+    links:
+      - mongo
+  job_runner:
+    build:
+      context: WebTools_lnxX64_5.3dll_23.1
+      args:
+        BINARIES_DIR: bin/lnxX64_5.3dll
+    command: ["./JobRunner", "--token=2c739148f2361561d79c181ec2593ce8", "--host=open_cloud", "--port=8080", "--name=runner_lnx", "--waitTimeOut=5000"]
+    links:
+      - open_cloud
+  viewer:
+    build:
+      context: WebViewer_23.1
+    ports:
+      - "3000:3000"
+  mongo:
+    image: mongo:3.2.0
+    volumes:
+      - mongodb_volume:/data/db
+
+volumes:
+  mongodb_volume:
+  opencloud_volume:

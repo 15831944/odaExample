@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">ODA Viewer</string>
+    <string name="menu_files">Files</string>
+    <string name="menu_navigation">Navigation</string>
+    <string name="menu_views">Views</string>
+    <string name="menu_styles">Styles</string>
+    <string name="menu_markups">Markups</string>
+    <string name="menu_tools">Tools</string>
+    <string name="searchBar_defaultText">Search</string>
+    <string name="settings_enable_wcs">Enable WCS</string>
+    <string name="settings_enable_fps">Enable FPS</string>
+    <string name="settings_enable_animation">Enable animation</string>
+    <string name="settings_fps">FPS:</string>
+    <string name="settings_partial_open">Partial open</string>
+    <string name="settings_use_limit_manager">Use limit manager</string>
+    <string name="settings_limit_mb">Limit(MB):</string>
+    <string name="settings_use_scene_graph">Use scene graph</string>
+    <string name="settings_fixed_frame_rate">Fixed frame rate</string>
+
+    <string-array name="file_extensions">
+        <item>.vsf</item>
+        <item>.dwg</item>
+        <item>.dwf</item>
+        <item>.dgn</item>
+        <item>.prc</item>
+        <item>.obj</item>
+        <item>.stl</item>
+        <item>.rcs</item>
+        <item>.ifc</item>
+    </string-array>
+
+    <string name="dwg_store_source">Store source</string>
+    <string name="dwg_max_threads">Max. Threads:</string>
+    <string name="dwg_clear_empty_objects"> Clear empty objects </string>
+    <string name="dwg_enable_mt"> Enable multithreading </string>
+    <string name="dwg_import_brep_as_brep"> Import Brep as Brep </string>
+    <string name="dwg_low_memory"> Low memory import </string>
+
+</resources>

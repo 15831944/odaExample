@@ -1,0 +1,806 @@
+/////////////////////////////////////////////////////////////////////////////// 
+// Copyright (C) 2002-2022, Open Design Alliance (the "Alliance"). 
+// All rights reserved. 
+// 
+// This software and its documentation and related materials are owned by 
+// the Alliance. The software may only be incorporated into application 
+// programs owned by members of the Alliance, subject to a signed 
+// Membership Agreement and Supplemental Software License Agreement with the
+// Alliance. The structure and organization of this software are the valuable  
+// trade secrets of the Alliance and its suppliers. The software is also 
+// protected by copyright law and international treaty provisions. Application  
+// programs incorporating this software must include the following statement 
+// with their copyright notices:
+//   
+//   This application incorporates Open Design Alliance software pursuant to a license 
+//   agreement with Open Design Alliance.
+//   Open Design Alliance Copyright (C) 2002-2022 by Open Design Alliance. 
+//   All rights reserved.
+//
+// By use of this software, its documentation or related materials, you 
+// acknowledge and accept the above terms.
+///////////////////////////////////////////////////////////////////////////////
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+#include "OdAppNames.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res/OdaPrcApp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ODAPRCTREEVIEW DIALOGEX 0, 0, 432, 247
+STYLE DS_SETFONT | WS_CHILD | WS_THICKFRAME
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_PRCTREEVIEW,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,141,233
+    CONTROL         "",IDC_ELEMENTDUMPLIST,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,307,7,118,233
+END
+
+IDD_VIEWS DIALOGEX 0, 0, 211, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Views"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREEVIEWS,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,7,197,201
+END
+
+IDD_CONSOLE_DLG DIALOGEX 0, 0, 326, 81
+STYLE DS_SETFONT | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Console"
+FONT 10, "Courier", 400, 0, 0xCC
+BEGIN
+    EDITTEXT        IDC_INPUT,0,67,326,13
+    EDITTEXT        IDC_PROMPT,0,3,326,62,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_OEMCONVERT | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_TRIANGULATIONPARAMS DIALOGEX 0, 0, 187, 212
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Triangulation parameters"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK", IDOK, 69, 191, 50, 14
+    PUSHBUTTON      "Cancel", IDCANCEL, 131, 191, 50, 14
+    PUSHBUTTON      "Default", IDC_BUTTON_DEFAULT, 6, 191, 50, 14
+    CONTROL         "Use New Tessellation", IDC_TP_USENEWTESSELLATION, "Button", BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP, 7, 9, 119, 10
+    CONTROL         "Auto", IDC_TP_RECALCSURFTOL, "Button", BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP, 90, 145, 25, 10
+    LTEXT           "Maximum number of grid lines:", IDC_STATIC, 7, 55, 97, 11
+    EDITTEXT        IDC_TP_MAXNUMGRIDLINES, 118, 53, 62, 15, ES_AUTOHSCROLL
+    LTEXT           "Maximum facet edge length:", IDC_STATIC, 7, 123, 90, 11
+    EDITTEXT        IDC_TP_MAXFACETEDGELENGTH, 118, 121, 62, 14, ES_AUTOHSCROLL
+    LTEXT           "Normal tolerance:", IDC_STATIC, 7, 100, 67, 11
+    EDITTEXT        IDC_TP_NORMALTOL, 118, 99, 62, 14, ES_AUTOHSCROLL
+    LTEXT           "Surface tolerance:", IDC_STATIC, 7, 145, 67, 11
+    EDITTEXT        IDC_TP_SURFACETOL, 118, 143, 62, 14, ES_AUTOHSCROLL
+    LTEXT           "Points per edge :", IDC_STATIC, 7, 32, 97, 11
+    EDITTEXT        IDC_TP_POINTSPEREDGE, 118, 30, 62, 14, ES_AUTOHSCROLL
+    LTEXT           "Between knots:", IDC_STATIC, 7, 79, 63, 11
+    EDITTEXT        IDC_TP_BETWEENKNOTS, 118, 77, 62, 14, ES_AUTOHSCROLL
+    LTEXT           "FacetRes", IDC_STATIC, 7, 169, 76, 8
+    EDITTEXT        IDC_FACETRES, 118, 166, 62, 14, ES_AUTOHSCROLL
+END
+
+IDD_VIEWS_DLG DIALOGEX 0, 0, 183, 61
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Views"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_VIEW_COMBO_BOX,17,26,150,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select view:",IDC_SELECT_VIEW,19,15,99,8
+END
+
+IDD_DECOMPRESS_DLG DIALOGEX 0, 0, 178, 133
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Decompression dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,59,107,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,117,107,50,14
+    CONTROL         "Decompress brep",IDC_CHECK_BREP_DECOMPRESSION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,19,71,10
+    GROUPBOX        "Decompression options",IDC_STATIC,7,7,164,94
+    GROUPBOX        "Tessellation options",IDC_STATIC,14,43,151,52
+    CONTROL         "Decompress tessellation",IDC_CHECK_TESS_DECOMPRESSION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,30,91,10
+    EDITTEXT        IDC_CREASE_ANGLE_VALUE,97,79,63,13,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Crease angle value",IDC_STATIC,21,80,70,8,NOT WS_GROUP
+    CONTROL         "Overwrite crease angle",IDC_CHECK_TESS_OVERWRITE_CREASE_ANGLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,67,91,10
+    CONTROL         "Store normals",IDC_CHECK_TESS_STORE_NORMALS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,56,91,10
+END
+
+IDD_COMPRESS_DLG DIALOGEX 0, 0, 177, 52
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Compression dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,59,28,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,117,28,50,14
+    CONTROL         "Compress tesselation",IDC_CHECK_TESS_COMPRESSION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,11,84,10
+END
+
+IDD_BACKGROUND_COLOR DIALOGEX 0, 0, 265, 148
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Background Color"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+DEFPUSHBUTTON   "O&K", IDOK, 155, 127, 50, 14
+PUSHBUTTON      "&Cancel", IDCANCEL, 208, 127, 50, 14
+LTEXT           "Red:", IDC_STATIC, 7, 7, 16, 8
+LTEXT           "", IDC_GRADCOLOR_RED, 7, 18, 251, 21, SS_NOTIFY | SS_SUNKEN
+LTEXT           "Green:", IDC_STATIC, 7, 42, 23, 8
+LTEXT           "", IDC_GRADCOLOR_GREEN, 7, 53, 251, 21, SS_NOTIFY | SS_SUNKEN
+LTEXT           "Blue:", IDC_STATIC, 7, 76, 17, 8
+LTEXT           "", IDC_GRADCOLOR_BLUE, 7, 87, 251, 21, SS_NOTIFY | SS_SUNKEN
+LTEXT           "Selected color:", IDC_STATIC, 7, 122, 48, 8
+LTEXT           "", IDC_GRADCOLOR_SELECTED, 57, 112, 94, 29, SS_SUNKEN
+PUSHBUTTON      "Choo&se Color . . .", IDC_GRADCOLOR_CHOOSE, 155, 111, 103, 14
+END
+
+IDD_PASSWORD_DLG DIALOG 0, 0, 217, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Password"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enter password for the pdf:",IDC_STATIC,7,10,125,8
+    EDITTEXT        IDC_EDIT_PWD,7,60,203,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,77,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,160,77,50,14
+    LTEXT           "",IDC_PASS_FILE_NAME,7,19,203,38
+END
+
+IDD_Extract3D DIALOGEX 0, 0, 560, 223
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Extract 3D streams"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Extract",IDOK,503,7,50,14,WS_DISABLED
+    PUSHBUTTON      "&Cancel",IDCANCEL,503,25,50,14
+    PUSHBUTTON      "&Browse...",IDC_BUTTON_BROWSE,442,7,50,14
+    EDITTEXT        IDC_EDIT_FILENAME,7,7,420,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "&Properties",IDC_DU_PROPERTIES,7,40,485,173,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Select a page :",IDC_SDWFSHEETNAME,15,51,49,8,NOT WS_VISIBLE
+    LISTBOX         IDC_LIST_PAGE,14,62,55,148,LBS_SORT | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PREVIEW,"Static",SS_BITMAP | SS_REALSIZEIMAGE | NOT WS_VISIBLE, 222,49,15,13
+    LTEXT           "Select a 3D stream:",IDC_SDWFSHEETNAME2,82,51,64,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_LIST_STREAMS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,80,62,132,148
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ODAPRCTREEVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 425
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_VIEWS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_CONSOLE_DLG, DIALOG
+    BEGIN
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_TRIANGULATIONPARAMS, DIALOG
+    BEGIN
+      LEFTMARGIN, 7
+      RIGHTMARGIN, 180
+      VERTGUIDE, 7
+      VERTGUIDE, 118
+      VERTGUIDE, 180
+      TOPMARGIN, 7
+      BOTTOMMARGIN, 205
+      HORZGUIDE, 21
+      HORZGUIDE, 30
+      HORZGUIDE, 44
+      HORZGUIDE, 53
+      HORZGUIDE, 68
+      HORZGUIDE, 77
+      HORZGUIDE, 90
+      HORZGUIDE, 99
+      HORZGUIDE, 113
+      HORZGUIDE, 121
+      HORZGUIDE, 135
+      HORZGUIDE, 143
+      HORZGUIDE, 157
+      HORZGUIDE, 166
+      HORZGUIDE, 180
+    END
+
+    IDD_VIEWS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_DECOMPRESS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_COMPRESS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+	
+    IDD_PASSWORD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END	
+	
+    IDD_Extract3D, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 553
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END	
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 288, 99
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OdaPrcApp"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "OdaPrcApp sample application", IDC_STATIC, 47, 31, 150, 8, SS_NOPREFIX
+    ICON            IDB_TEIGHA_BASE_BMP,IDC_STATIC,47, 10, 88, 14, SS_REALSIZEIMAGE,WS_EX_TRANSPARENT
+    LTEXT           "Copyright (C):", IDC_INF_COPYRIGHT, 47, 44, 165, 8
+    LTEXT           "Based on:", IDC_STATIC, 47, 57, 104, 8
+    LTEXT           "lib", IDC_INF_LIBRARY, 81, 58, 165, 8
+    DEFPUSHBUTTON   "OK", IDOK, 106, 77, 70, 14, WS_GROUP
+END
+
+IDD_FIND_DLG DIALOG 0, 0, 186, 61
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find object"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enter handle of object to find:",IDC_STATIC,7,7,125,8
+    EDITTEXT        IDC_FIND_OBJECT,7,19,172,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,40,50,14
+END
+
+IDD_LOAD_APPS DIALOGEX 0, 0, 320, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Load/Unload Applications"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Load",IDC_LOAD_APP,7,88,50,14
+    PUSHBUTTON      "Unload",IDC_UNLOAD_APP,68,88,50,14
+    DEFPUSHBUTTON   "OK",IDOK,263,88,50,14
+    LISTBOX         IDC_APPS_LIST,7,7,306,74,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_STATIC_APPS DIALOGEX 0, 0, 239, 161
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Statically Linked Application"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Select",IDOK,119,143,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,185,143,50,14
+    CONTROL         "List1",IDC_APPLIST,"SysListView32",LVS_LIST | LVS_SORTASCENDING | WS_BORDER | WS_TABSTOP,4,4,231,133,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_FIND_DLG, DIALOG
+    BEGIN
+    END
+
+    IDD_LOAD_APPS, DIALOG
+    BEGIN
+    END
+
+    IDD_STATIC_APPS, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "../../../../Kernel/Logo/Icon-ODA.ico"
+IDR_ODAPRCAPPTYPE       ICON                    "res/OdaPrcAppDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TEIGHA_BASE_BMP     ICON                    "../../../../Kernel/Logo/Logo-ODA-01.ico"
+IDR_MAINFRAME           BITMAP                  "res/Toolbar.bmp"
+IDR_VIEWER              BITMAP                  "res/mainfram.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_VECTORIZE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_VIEWER TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_VIEW_ZOOM_WINDOW
+    BUTTON      ID_VIEW_ZOOMIN
+    BUTTON      ID_VIEW_ZOOMOUT
+    BUTTON      ID_VIEW_ZOOMEXTENTS
+    BUTTON      ID_VIEW_PAN
+    BUTTON      ID_VIEW_3DORBIT
+    SEPARATOR
+    BUTTON      ID_2DWIREFRAME
+    BUTTON      ID_3DWIREFRAME
+    BUTTON      ID_HIDDEN
+    BUTTON      ID_FLAT_SHADED
+    BUTTON      ID_GOURAUD_SHADED
+    BUTTON      ID_FLAT_SHADED_WITH_EDGES
+    BUTTON      ID_GOURAUD_SHADED_EDGES_ON
+    SEPARATOR
+    BUTTON      ID_VIEWER_REGEN
+    BUTTON      ID_VIEWER_VPREGEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Pa&rtial Open...\tCtrl+R",    ID_FILE_PARTIAL_OPEN
+        MENUITEM "Recover...",                  ID_FILE_RECOVER
+        MENUITEM SEPARATOR
+        MENUITEM "Extract 3D stream",           ID_EXTRACT_3D_STREAM
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Load Applications...",        ID_TOOLS_LOADAPPLICATIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About OdaPrcApp...",         ID_APP_ABOUT
+    END
+END
+
+IDR_ODAPRCAPPTYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Pa&rtial Open...\tCtrl+R",    ID_FILE_PARTIAL_OPEN
+        MENUITEM "R&ecover...",                 ID_FILE_RECOVER
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Extract 3D stream",           ID_EXTRACT_3D_STREAM
+        MENUITEM SEPARATOR	
+        MENUITEM "U3D &Import",                 ID_U3D_IMPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent &File",                ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent command",              ID_EDIT_RECENTCOMMAND
+        POPUP "Registred Commands"
+        BEGIN
+            MENUITEM "1",                           ID_EDIT_CONSOLE
+        END
+        MENUITEM "Console...\tShift+C",         ID_EDIT_CONSOLE
+        MENUITEM SEPARATOR
+        MENUITEM "&Find by handle\tCtrl+F",     ID_EDIT_FIND
+        MENUITEM "Zoom Extents",                ID_EDIT_ZOOMEXTENTS
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Classes Info",                ID_VIEW_CLASSESINFO
+        MENUITEM "System variables",            ID_VIEW_SYSTEMVARIABLES
+        MENUITEM "&Refresh\tF5",                ID_REFRESH
+        POPUP "&3D Views"
+        BEGIN
+            MENUITEM "&Top",                        ID_3DVIEWS_TOP, INACTIVE
+            MENUITEM "&Bottom",                     ID_3DVIEWS_BOTTOM, INACTIVE
+            MENUITEM "&Left",                       ID_3DVIEWS_LEFT, INACTIVE
+            MENUITEM "&Right",                      ID_3DVIEWS_RIGHT, INACTIVE
+            MENUITEM "&Front",                      ID_3DVIEWS_FRONT, INACTIVE
+            MENUITEM "&Back",                       ID_3DVIEWS_BACK, INACTIVE
+        END
+        MENUITEM "Named Views",                 ID_NAMED_VIEWS
+    END
+    POPUP "Vectorize"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Add Vectorizer DLL...",       ID_VECTORIZE_ADDVECTORIZERDLL
+        MENUITEM "Clear Menu",                  ID_VECTORIZE_CLEARMENU
+    END
+    POPUP "F&ormat"
+    BEGIN
+        MENUITEM "&Background color...",        ID_FORMAT_BACKGROUNDCOLOR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Decompress",                  ID_TOOLS_DECOMPRESS
+        MENUITEM "Compress",                    ID_TOOLS_COMPRESS
+        MENUITEM SEPARATOR
+        MENUITEM "Load Applications...",        ID_TOOLS_LOADAPPLICATIONS
+        POPUP "&Options"
+        BEGIN
+            MENUITEM "Discard back faces",          ID_OPTIONS_DISCARDBACKFACES
+            MENUITEM "Use GS Model (Geometry Cache)", ID_OPTIONS_USEGSMODELGEOMETRYCACHE
+            MENUITEM SEPARATOR
+            MENUITEM "Triangulation params...",     ID_OPTIONS_TRIANGULATION_PARAMS
+        END
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About OdaPrcApp...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+#ifdef _DEBUG
+#define FILE_DESCRIPTION TD_PRODUCT_NAME_S " example: OdaPrcApp Application (Debug)"
+#else
+#define FILE_DESCRIPTION TD_PRODUCT_NAME_S " example: OdaPrcApp Application"
+#endif
+
+#define INTERNAL_NAME "OdaPrcApp\0"
+#define ORIGINAL_FILE_NAME    "OdaPrcApp.EXE\0"
+#define PRODUCT_NAME_ADDITION TB_PRODUCT_NAME_ADDITION_S
+#define COPYRIGHT_START_YEAR  TB_COPYRIGHT_START_YEAR_S
+
+#include "../../../PrcVersionInfo.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           APPNAME_ODAPRC
+    IDR_ODAPRCAPPTYPE       "\nOdaPrcApp\nOdaPrcApp\n\n\nOdaPrcAppdll.Document\nOdaPrcApp.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "OdaPrcApp"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_U3D_IMPORT           "Import from U3D file\nImport"  
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VECTORIZE            "Vectorize active model (via current device)\nVectorize"
+    ID_VIEW_ZOOM_WINDOW     "Zoom window\nZoom window"
+    ID_VIEW_ZOOMIN          "Zoom in\nZoom in"
+    ID_VIEW_ZOOMOUT         "Zoom out\nZoom out"
+    ID_VIEW_ZOOMEXTENTS     "Zoom to extents\nZoom to extents"
+    ID_VIEW_PAN             "Pan view\nPan view"
+    ID_VIEW_3DORBIT         "3d Orbit\n3d Orbit"
+    ID_VIEWER_VPREGEN       "Regenerates all the geometry\nRegen all"
+    ID_2DWIREFRAME          "2D Wireframe\n2D Wireframe"
+    ID_3DWIREFRAME          "3D wireframe\n3D wireframe"
+    ID_HIDDEN               "Hidden\nHidden"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FLAT_SHADED          "Flat shaded\nFlat shaded"
+    ID_GOURAUD_SHADED       "Gouraud shaded\nGouraud shaded"
+    ID_FLAT_SHADED_WITH_EDGES "Flat shaded with edges\nFlat shaded with edges"
+    ID_GOURAUD_SHADED_EDGES_ON 
+                            "Gouraud shaded, edges on\nGouraud shaded, edges on"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\OdaPrcApp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

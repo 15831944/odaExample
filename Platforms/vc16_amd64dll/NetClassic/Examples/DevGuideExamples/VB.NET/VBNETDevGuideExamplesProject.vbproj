@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5DE40266-7471-3899-8B0F-FA0FB01FD184}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VBNETDevGuideExamplesProject</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>VBNETDevGuideExamplesProject</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>VBNETDevGuideExamplesProject</AssemblyName>
+    <AdditionalOptions>-langversion:9</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.VisualBasic.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.VisualBasic.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\ArcEx\ArcEx.vb">
+      <Link>ArcEx\ArcEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\CircleEx\CircleEx.vb">
+      <Link>CircleEx\CircleEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\DimEx\DimEx.vb">
+      <Link>DimEx\DimEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\EllipseEx\EllipseEx.vb">
+      <Link>EllipseEx\EllipseEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\FaceEx\FaceEx.vb">
+      <Link>FaceEx\FaceEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\HelixEx\HelixEx.vb">
+      <Link>HelixEx\HelixEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\MlineEx\MlineEx.vb">
+      <Link>MlineEx\MlineEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\MTextEx\MTextEx.vb">
+      <Link>MTextEx\MTextEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\DBPointEx\DBPointEx.vb">
+      <Link>DBPointEx\DBPointEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\DBTextEx\DBTextEx.vb">
+      <Link>DBTextEx\DBTextEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\LineEx\LineEx.vb">
+      <Link>LineEx\LineEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\Polyline3dEx\Polyline3dEx.vb">
+      <Link>Polyline3dEx\Polyline3dEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\DevGuideExamples\VB.NET\RayEx\RayEx.vb">
+      <Link>RayEx\RayEx.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\NetClassic\Examples\GeneralAssemblyInfo.vb" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <DependentUpon>Resources.vb</DependentUpon>
+    </Compile>
+    <None Include="My Project\Application.myapp">
+    </None>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Core">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Link>Resources.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TD_Mgd_23.1_lic16, Version=23.1.0.0, Culture=neutral, PublicKeyToken=460a0bef3ba73253">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>..\..\..\..\..\..\exe\vc16_amd64dll\TD_Mgd_23.1_lic16.dll</HintPath>
+</Reference>
+
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

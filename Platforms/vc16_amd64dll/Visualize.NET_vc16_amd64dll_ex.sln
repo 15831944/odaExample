@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Products", "Products", "{2A1BE676-0657-32F2-B6D6-9E8FEABB2C8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualize", "Products\Visualize", "{81A76B2A-C040-3827-A33F-68F77BCAE45E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net Framework Examples", "Products\Visualize\Net Framework Examples", "{6C5D2FBC-174B-3D81-8B47-60D1F9ADDD22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdExVisualizeFormatsConverterSwigMgd", "Swig\SwigODAExamples\Visualize\CSharp\OdExVisualizeFormatsConverterSwig\OdExVisualizeFormatsConverterSwigMgd.csproj", "{DB5651A2-A47D-3B98-9F69-2B77B820FC60}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfVisualizeViewerMgd", "Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\WpfVisualizeViewerMgd.csproj", "{C9C58EE9-08F3-374A-9386-23988EF7332E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB5651A2-A47D-3B98-9F69-2B77B820FC60}.Release|x64.ActiveCfg = Release|x64
+		{DB5651A2-A47D-3B98-9F69-2B77B820FC60}.Release|x64.Build.0 = Release|x64
+		{C9C58EE9-08F3-374A-9386-23988EF7332E}.Release|x64.ActiveCfg = Release|x64
+		{C9C58EE9-08F3-374A-9386-23988EF7332E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{81A76B2A-C040-3827-A33F-68F77BCAE45E} = {2A1BE676-0657-32F2-B6D6-9E8FEABB2C8D}
+		{6C5D2FBC-174B-3D81-8B47-60D1F9ADDD22} = {81A76B2A-C040-3827-A33F-68F77BCAE45E}
+		{DB5651A2-A47D-3B98-9F69-2B77B820FC60} = {6C5D2FBC-174B-3D81-8B47-60D1F9ADDD22}
+		{C9C58EE9-08F3-374A-9386-23988EF7332E} = {6C5D2FBC-174B-3D81-8B47-60D1F9ADDD22}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0905EB9-4CBD-3A1C-85A1-C230235B7A4A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

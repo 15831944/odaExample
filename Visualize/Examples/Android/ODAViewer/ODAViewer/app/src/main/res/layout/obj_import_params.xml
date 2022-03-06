@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Switch
+            android:id="@+id/obj_CalcNormals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettingsDialogSwitchStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate normals at vertices"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Switch
+            android:id="@+id/obj_FlipUVcs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettingsDialogSwitchStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flip UV coordinate system"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Switch
+            android:id="@+id/obj_ImportBrepAsBrep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettingsDialogSwitchStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Import Brep as Brep"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+    </LinearLayout>
+
+
+</LinearLayout>

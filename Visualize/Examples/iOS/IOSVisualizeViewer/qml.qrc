@@ -1,0 +1,71 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>main.qml</file>
+        <file>FooterToolBarMenu.qml</file>
+        <file>HeaderToolBarMenu.qml</file>
+        <file>FilePage.qml</file>
+        <file>RenderPage.qml</file>
+        <file>NavigationMenu.qml</file>
+        <file>ViewMenu.qml</file>
+        <file>RegenMenu.qml</file>
+        <file>StyleMenu.qml</file>
+        <file>ObjImportParamsDialog.qml</file>
+        <file>ColorChooseDialog.qml</file>
+        <file>DrwImportParamsDialog.qml</file>
+        <file>RcsImportParamsDialog.qml</file>
+        <file>DgnImportParamsDialog.qml</file>
+        <file>StlImportParamsDialog.qml</file>
+        <file>PrcImportParamsDialog.qml</file>
+        <file>AppearanceSettingsDialog.qml</file>
+        <file>ModelStatisticDialog.qml</file>
+        <file>MarkupMenu.qml</file>
+        <file>MarkupSaveDialog.qml</file>
+        <file>MarkupLoadDialog.qml</file>
+        <file>SaveDialog.qml</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file alias="icon.png">images/icon.png</file>
+        <file alias="isometric.png">images/projection_isometric.png</file>
+        <file alias="perspective.png">images/projection_perspective.png</file>
+        <file alias="orbit.png">images/navigation/navigation_orbit.png</file>
+        <file alias="pan.png">images/navigation/navigation_pan.png</file>
+        <file alias="zoomExtents.png">images/navigation/navigation_zoom_extents.png</file>
+        <file alias="zoomWindow.png">images/navigation/navigation_zoom_window.png</file>
+        <file alias="fileMenu.png">images/toolbar/fileMenu.png</file>
+        <file alias="naviMenu.png">images/toolbar/naviMenu.png</file>
+        <file alias="regenMenu.png">images/toolbar/regenMenu.png</file>
+        <file alias="styleMenu.png">images/toolbar/styleMenu.png</file>
+        <file alias="viewMenu.png">images/toolbar/viewMenu.png</file>
+        <file alias="back_view.png">images/View/back_view.png</file>
+        <file alias="bottom_view.png">images/View/bottom_view.png</file>
+        <file alias="front_view.png">images/View/front_view.png</file>
+        <file alias="left_view.png">images/View/left_view.png</file>
+        <file alias="NE_view.png">images/View/NE_view.png</file>
+        <file alias="NW_view.png">images/View/NW_view.png</file>
+        <file alias="right_view.png">images/View/right_view.png</file>
+        <file alias="SE_view.png">images/View/SE_view.png</file>
+        <file alias="SW_view.png">images/View/SW_view.png</file>
+        <file alias="top_view.png">images/View/top_view.png</file>
+        <file alias="regenAll.png">images/Regen/regenAll.png</file>
+        <file alias="regenVisible.png">images/Regen/regenVisible.png</file>
+        <file alias="regenVp.png">images/Regen/regenVp.png</file>
+        <file alias="2dwireframe.png">images/RenderMode/2dwireframe.png</file>
+        <file alias="3dwireframe.png">images/RenderMode/3dwireframe.png</file>
+        <file alias="gouraudShadedWithEdges.png">images/RenderMode/gouraudshaded_edges.png</file>
+        <file alias="gouraudShaded.png">images/RenderMode/gouraudshaded.png</file>
+        <file alias="hiddenline.png">images/RenderMode/hiddenline.png</file>
+        <file alias="shadedWithEdges.png">images/RenderMode/shaded_edges.png</file>
+        <file alias="shaded.png">images/RenderMode/shaded.png</file>
+        <file alias="find.png">images/find.png</file>
+        <file alias="settings.png">images/settings.png</file>
+        <file alias="save.png">images/save.png</file>
+        <file alias="markupCirc.png">images/Markups/circ.png</file>
+        <file alias="markupCloud.png">images/Markups/cloud.png</file>
+        <file alias="markupHandle.png">images/Markups/handle.png</file>
+        <file alias="markupLoad.png">images/Markups/loadMarkup.png</file>
+        <file alias="markupRect.png">images/Markups/rect.png</file>
+        <file alias="markupSave.png">images/Markups/saveMarkup.png</file>
+        <file alias="markupText.png">images/Markups/txt.png</file>
+        <file alias="markupMenu.png">images/toolbar/markupMenu.png</file>
+    </qresource>
+</RCC>

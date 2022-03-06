@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Shaded 2 128</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.1648%" y1="49.6751724%" x2="100.1648%" y2="49.6751724%" id="linearGradient-1">
+            <stop stop-color="#CEE3FA" offset="0%"></stop>
+            <stop stop-color="#A1BDDC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="37.116421%" y1="26.9188341%" x2="62.7553842%" y2="72.6587444%" id="linearGradient-2">
+            <stop stop-color="#728AA4" offset="0%"></stop>
+            <stop stop-color="#174B84" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="54.2550624%" y1="6.0896861%" x2="45.6167427%" y2="93.4883408%" id="linearGradient-3">
+            <stop stop-color="#73A6DD" offset="0%"></stop>
+            <stop stop-color="#265180" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.204%" y1="49.3458333%" x2="99.796%" y2="49.3458333%" id="linearGradient-4">
+            <stop stop-color="#CEE3FA" offset="0%"></stop>
+            <stop stop-color="#A1BDDC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="54.2368152%" y1="5.93693694%" x2="45.5024105%" y2="93.2153153%" id="linearGradient-5">
+            <stop stop-color="#4C7BAD" offset="0%"></stop>
+            <stop stop-color="#265180" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="37.1657333%" y1="26.8279279%" x2="62.5776317%" y2="72.3234234%" id="linearGradient-6">
+            <stop stop-color="#728AA4" offset="0%"></stop>
+            <stop stop-color="#174B84" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Shaded-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(10.000000, 0.000000)" fill-rule="nonzero">
+            <polygon id="Shape_13_" fill="url(#linearGradient-1)" points="80.64 110.933333 54.1866667 126.293333 27.3066667 110.933333 0.853333333 95.1466667 27.3066667 79.7866667 54.1866667 64.4266667 80.64 79.7866667 107.52 95.1466667"></polygon>
+            <polygon id="Shape_12_" fill="url(#linearGradient-2)" points="27.3066667 79.7866667 0.853333333 95.1466667 0.853333333 63.1466667 0.853333333 30.72 27.3066667 15.36 54.1866667 0 54.1866667 32.4266667 54.1866667 64.4266667"></polygon>
+            <polygon id="Shape_11_" fill="url(#linearGradient-3)" points="80.64 79.7866667 54.1866667 64.4266667 54.1866667 32.4266667 54.1866667 0 80.64 15.36 107.52 30.72 107.52 63.1466667 107.52 95.1466667"></polygon>
+            <polygon id="Shape_10_" fill="url(#linearGradient-4)" points="27.3066667 47.7866667 54.1866667 63.1466667 80.64 47.7866667 54.1866667 32.4266667"></polygon>
+            <polygon id="Shape_9_" fill="url(#linearGradient-5)" points="27.3066667 79.7866667 54.1866667 95.1466667 54.1866667 63.1466667 27.3066667 47.7866667"></polygon>
+            <polygon id="Shape_8_" fill="url(#linearGradient-6)" points="80.64 79.7866667 54.1866667 95.1466667 54.1866667 63.1466667 80.64 47.7866667"></polygon>
+        </g>
+    </g>
+</svg>

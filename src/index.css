@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* div {
+ box-shadow: 0px 0px 5px 3px #bd8585 inset;
+} */
+
+:root {
+  --dark-blue: #05093b;
+  --light-blue: #0000ff;
+  /* --logotype-blue: #17208A; */
+  --logotype-blue: #05093b;
+  --orange: #ff5722;
+  --purple: #b8b8d1;
+  --yellow: #ffc145;
+  --pink: #ecd8db;
+  --green: #c7dcd0;
+  --mint: #e5f4e3;
+  --ocher: #f6d8ae;
+  --crimson: #fd3950;
+  --grey-1: #333333;
+  --grey-2: #4f4f4f;
+  --grey-3: #828282;
+  --grey-4: #bdbdbd;
+  --grey-5: #e0e0e0;
+  --grey-6: #f2f2f2;
+  --white: #ffffff;
+  --carbon: #1f2029;
+}
+
+.btn-outline-info {
+  border-radius: 0;
+  color: var(--orange);
+  border-color: var(--orange);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: all 0.4s;
+}
+.btn-outline-info:hover {
+  box-shadow: 0px 0px 12px #05093b59;
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+
+.btn-outline-primary {
+  border-radius: 0;
+  transition: all 0.4s;
+  color: var(--dark-blue);
+  background-color: white;
+  border-color: var(--logotype-blue);
+}
+
+.btn-outline-primary:hover {
+  box-shadow: 0px 0px 12px #05093b59;
+  background-color: var(--dark-blue);
+  border-color: var(--logotype-blue);
+}
+
+.btn-outline-secondary {
+  padding: 0.2em 0.5em;
+  font-size: 14px;
+  border-radius: 0;
+  color: var(--logotype-blue);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  column-gap: 0.3em;
+  border: 1px solid #f6f6f6;
+  transition: unset !important;
+  background-color: var(--white);
+}
+
+.window-dialog {
+  border: 1px solid #e4e4e4;
+  background: #ffffff !important;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+  width: fit-content;
+  height: 600px;
+  font-family: "Roboto";
+  min-width: 300px;
+  color: var(--logotype-blue);
+}
+
+.window-dialog-head {
+  background: var(--white);
+  color: var(--logotype-blue);
+}
+
+.context-menu {
+  border-radius: 2px;
+  width: 200px;
+  background: #fefefe;
+  border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--logotype-blue);
+}
+
+.context-menu-item {
+  padding: 7.5px 15px;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+  color: var(--logotype-blue);
+}
+
+.context-menu-item:hover {
+  background: rgb(243, 241, 241);
+}
+
+.btn-outline-secondary:focus,
+.btn-outline-info:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-secondary:hover {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+  background-color: var(--white);
+  color: inherit;
+  border: 1px solid #f6f6f6;
+  transition: unset !important;
+}
+
+.btn-outline-secondary:active,
+.btn-outline-info:active {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  background-color: inherit !important;
+  color: inherit !important;
+  border: 1px solid #f6f6f6;
+  transition: unset !important;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-secondary.dropdown-toggle:focus {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+  border: 1px solid #f6f6f6;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: var(--logotype-blue);
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.active-dragger {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+}
+
+.btn-shadow {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.panel-shadow {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.material-icons {
+  font-size: large;
+}
+
+i {
+  font-size: 2em;
+}
+
+strong.choose-file:hover,
+strong.choose-file:active {
+  color: rgb(57, 191, 211);
+}
+
+/* 
+
+#05093B – Dark Blue
+#0000FF – Light Blue
+#17208A – Logotype Blue
+#FF5722 – Orange
+#B8B8D1 – Purple
+#FFC145 – Yellow
+#ECD8DB – Pink
+#C7DCD0 – Green
+#E5F4E3 – Mint
+#F6D8AE – Ocher
+#FD3950 – Crimson
+#333333 – Grey 1
+#4F4F4F – Grey 2
+#828282 Grey 3
+#BDBDBD Grey 4
+#E0E0E0 Grey 5
+#F2F2F2 Grey 6
+#FFFFFF – White
+#1F2029 – Carbon  */

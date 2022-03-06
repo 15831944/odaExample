@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="file_list_text_size">16sp</dimen>
+    <dimen name="search_button_size">50dp</dimen>
+    <dimen name="topMenuMargin">8dp</dimen>
+    <dimen name="menuMargin">18dp</dimen>
+    <dimen name="menuMarginSmall">10dp</dimen>
+    <dimen name="menuButtonSize">40</dimen>
+    <dimen name="panelHeight">55dp</dimen>
+    <dimen name="topItemWidth">40dp</dimen>
+</resources>

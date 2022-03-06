@@ -1,0 +1,131 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Products", "Products", "{A86A554A-6B9C-3CE7-A5FD-F68B5EB0499D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ifc", "Products\Ifc", "{3D549EEE-306A-3AB3-AE7A-9825C488FD7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net Framework Examples", "Products\Ifc\Net Framework Examples", "{FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Products\Ifc\Net Framework Examples\Libs", "{19D36179-2C21-36ED-9892-5183FFA4FCD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExBcfLoadFileSwigMgd", "Swig\SwigODAExamples\Ifc\CSharp\ExBcfLoadFileSwig\ExBcfLoadFileSwigMgd.csproj", "{87DB79BD-C1D4-3499-B71F-270B916BA80F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExIfcAccess2RepBodyGeoSwigMgd", "Swig\SwigODAExamples\Ifc\CSharp\ExIfcAccess2RepBodyGeoSwig\ExIfcAccess2RepBodyGeoSwigMgd.csproj", "{C4E9F489-C512-3960-9295-C665706D907C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExIfcCDAWalkerSwigMgd", "Swig\SwigODAExamples\Ifc\CSharp\ExIfcCDAWalkerSwig\ExIfcCDAWalkerSwigMgd.csproj", "{D69ECAAF-B6E8-3093-8AAD-F350DA4B3D53}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExIfcDumpSwigMgd", "Swig\SwigODAExamples\Ifc\CSharp\ExIfcDumpSwig\ExIfcDumpSwigMgd.csproj", "{6EFF5B05-0836-315E-9520-B8CCFB7B9F62}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExIfcExtractDataSwigMgd", "Swig\SwigODAExamples\Ifc\CSharp\ExIfcExtractDataSwig\ExIfcExtractDataSwigMgd.csproj", "{23D3E182-984D-3FB3-821C-4F3C844D02B7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExIfcModelFillerSwigMgd", "Swig\SwigODAExamples\Ifc\CSharp\ExIfcModelFillerSwig\ExIfcModelFillerSwigMgd.csproj", "{4FAE761F-CE27-3E3A-9D90-F7DB7C330CD1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExIfcReadFileSwigMgd", "Swig\SwigODAExamples\Ifc\CSharp\ExIfcReadFileSwig\ExIfcReadFileSwigMgd.csproj", "{18B2A1A7-1FA6-3E93-ACAC-F2CF4E3C31B5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExIfcSchemaDumpSwigMgd", "Swig\SwigODAExamples\Ifc\CSharp\ExIfcSchemaDumpSwig\ExIfcSchemaDumpSwigMgd.csproj", "{7B563DB4-6718-31FD-BF6C-97BDE7F0E35B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExIfcToBmpSwigMgd", "Swig\SwigODAExamples\Ifc\CSharp\ExIfcToBmpSwig\ExIfcToBmpSwigMgd.csproj", "{B7D76E5D-4AD6-30FF-BDE6-20FD575FF325}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExIfcWriteFileSwigMgd", "Swig\SwigODAExamples\Ifc\CSharp\ExIfcWriteFileSwig\ExIfcWriteFileSwigMgd.csproj", "{89261EE3-E826-3716-B827-D5394C4FCDE0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdExIfcViewerSwigMgd", "Swig\SwigODAExamples\Ifc\CSharp\OdExIfcViewerSwig\OdExIfcViewerSwigMgd.csproj", "{350CF90C-2CCD-3C67-807F-C2F40C00481A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}
+		{6C33DE9F-929F-30EC-83B8-9317BFD973AA} = {6C33DE9F-929F-30EC-83B8-9317BFD973AA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdIfcExamplesLibMgd", "Swig\SwigODAExamples\Ifc\CSharp\OdIfcExamplesLib\OdIfcExamplesLibMgd.csproj", "{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdIfcExamplesUILibMgd", "Swig\SwigODAExamples\Ifc\CSharp\OdIfcExamplesUILib\OdIfcExamplesUILibMgd.csproj", "{6C33DE9F-929F-30EC-83B8-9317BFD973AA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87DB79BD-C1D4-3499-B71F-270B916BA80F}.Release|x64.ActiveCfg = Release|x64
+		{87DB79BD-C1D4-3499-B71F-270B916BA80F}.Release|x64.Build.0 = Release|x64
+		{C4E9F489-C512-3960-9295-C665706D907C}.Release|x64.ActiveCfg = Release|x64
+		{C4E9F489-C512-3960-9295-C665706D907C}.Release|x64.Build.0 = Release|x64
+		{D69ECAAF-B6E8-3093-8AAD-F350DA4B3D53}.Release|x64.ActiveCfg = Release|x64
+		{D69ECAAF-B6E8-3093-8AAD-F350DA4B3D53}.Release|x64.Build.0 = Release|x64
+		{6EFF5B05-0836-315E-9520-B8CCFB7B9F62}.Release|x64.ActiveCfg = Release|x64
+		{6EFF5B05-0836-315E-9520-B8CCFB7B9F62}.Release|x64.Build.0 = Release|x64
+		{23D3E182-984D-3FB3-821C-4F3C844D02B7}.Release|x64.ActiveCfg = Release|x64
+		{23D3E182-984D-3FB3-821C-4F3C844D02B7}.Release|x64.Build.0 = Release|x64
+		{4FAE761F-CE27-3E3A-9D90-F7DB7C330CD1}.Release|x64.ActiveCfg = Release|x64
+		{4FAE761F-CE27-3E3A-9D90-F7DB7C330CD1}.Release|x64.Build.0 = Release|x64
+		{18B2A1A7-1FA6-3E93-ACAC-F2CF4E3C31B5}.Release|x64.ActiveCfg = Release|x64
+		{18B2A1A7-1FA6-3E93-ACAC-F2CF4E3C31B5}.Release|x64.Build.0 = Release|x64
+		{7B563DB4-6718-31FD-BF6C-97BDE7F0E35B}.Release|x64.ActiveCfg = Release|x64
+		{7B563DB4-6718-31FD-BF6C-97BDE7F0E35B}.Release|x64.Build.0 = Release|x64
+		{B7D76E5D-4AD6-30FF-BDE6-20FD575FF325}.Release|x64.ActiveCfg = Release|x64
+		{B7D76E5D-4AD6-30FF-BDE6-20FD575FF325}.Release|x64.Build.0 = Release|x64
+		{89261EE3-E826-3716-B827-D5394C4FCDE0}.Release|x64.ActiveCfg = Release|x64
+		{89261EE3-E826-3716-B827-D5394C4FCDE0}.Release|x64.Build.0 = Release|x64
+		{350CF90C-2CCD-3C67-807F-C2F40C00481A}.Release|x64.ActiveCfg = Release|x64
+		{350CF90C-2CCD-3C67-807F-C2F40C00481A}.Release|x64.Build.0 = Release|x64
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}.Release|x64.ActiveCfg = Release|x64
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28}.Release|x64.Build.0 = Release|x64
+		{6C33DE9F-929F-30EC-83B8-9317BFD973AA}.Release|x64.ActiveCfg = Release|x64
+		{6C33DE9F-929F-30EC-83B8-9317BFD973AA}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D549EEE-306A-3AB3-AE7A-9825C488FD7D} = {A86A554A-6B9C-3CE7-A5FD-F68B5EB0499D}
+		{FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD} = {3D549EEE-306A-3AB3-AE7A-9825C488FD7D}
+		{19D36179-2C21-36ED-9892-5183FFA4FCD9} = {FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}
+		{87DB79BD-C1D4-3499-B71F-270B916BA80F} = {FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}
+		{C4E9F489-C512-3960-9295-C665706D907C} = {FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}
+		{D69ECAAF-B6E8-3093-8AAD-F350DA4B3D53} = {FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}
+		{6EFF5B05-0836-315E-9520-B8CCFB7B9F62} = {FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}
+		{23D3E182-984D-3FB3-821C-4F3C844D02B7} = {FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}
+		{4FAE761F-CE27-3E3A-9D90-F7DB7C330CD1} = {FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}
+		{18B2A1A7-1FA6-3E93-ACAC-F2CF4E3C31B5} = {FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}
+		{7B563DB4-6718-31FD-BF6C-97BDE7F0E35B} = {FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}
+		{B7D76E5D-4AD6-30FF-BDE6-20FD575FF325} = {FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}
+		{89261EE3-E826-3716-B827-D5394C4FCDE0} = {FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}
+		{350CF90C-2CCD-3C67-807F-C2F40C00481A} = {FADBCB0B-ADA4-3846-9652-8C9B0C5D8DDD}
+		{C2F5CD7F-3FF9-3152-AFE7-A37CC7B81B28} = {19D36179-2C21-36ED-9892-5183FFA4FCD9}
+		{6C33DE9F-929F-30EC-83B8-9317BFD973AA} = {19D36179-2C21-36ED-9892-5183FFA4FCD9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DAAEE1B-A58F-3889-A279-334313277677}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\CommonApplications\Drawing\Examples\ExPdfPublishCmds\ExPdfPublishCmdsModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\CommonApplications\Drawing\Examples\ExPdfPublishCmds\PdfExportCmds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\CommonApplications\Drawing\Examples\ExPdfPublishCmds\CmdPrcHostAppServices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Prc\Extensions\ExServices\ExPrcHostAppServices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Prc\Extensions\ExServices\ExPrcCommandContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\CommonApplications\Drawing\Examples\ExPdfPublishCmds\PdfCmdDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\CommonApplications\Drawing\Examples\ExPdfPublishCmds\ExPdfPublishCmdsModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\CommonApplications\Drawing\Examples\ExPdfPublishCmds\CmdPrcHostAppServices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\..\CommonApplications\Drawing\Examples\ExPdfPublishCmds\ExPdfPublishCmds.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{86D0C403-55CA-38CD-AA47-0E12D6AAF35B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{57638429-53CD-3D65-9635-53CE87148867}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

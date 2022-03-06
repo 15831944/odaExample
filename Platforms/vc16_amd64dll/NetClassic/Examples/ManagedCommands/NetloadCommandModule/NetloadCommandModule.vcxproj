@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B7015C7-5463-3A6C-AC55-D88DD0D56324}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>NetloadCommandModule</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <CLRSupport>true</CLRSupport>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <OutputPath>..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>NetloadCommandModule</AssemblyName>
+    <AdditionalOptions>/MP</AdditionalOptions>
+    <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    <CompileAs>CompileAsCpp</CompileAs>
+    <CompileAsManaged>true</CompileAsManaged>
+    <DisableSpecificWarnings>4996;4131;4244;4127;4793</DisableSpecificWarnings>
+    <ExceptionHandling>Async</ExceptionHandling>
+    <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    <Optimization>MaxSpeed</Optimization>
+    <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    <UseFullPaths>false</UseFullPaths>
+    <WarningLevel>Level3</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NetloadCommandModule.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NetloadCommandModule_23.1_lic16</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.tx</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\Include;..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /MP</AdditionalOptions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CompileAsManaged>true</CompileAsManaged>
+      <DisableSpecificWarnings>4996;4131;4244;4127;4793</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";NetloadCommandModule_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";NetloadCommandModule_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\Include;..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\Include;..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TD_Db.lib;TD_DbRoot.lib;TD_Root.lib;TD_Alloc.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\..\lib\vc16_amd64dll\NetloadCommandModule.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\..\exe\vc16_amd64dll\NetloadCommandModule_23.1_lic16.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\NetloadCommandModule\NETLOADCommand.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\NetloadCommandModule\NetloadModule.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\NetloadCommandModule\AssemblyInfo.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\NetClassic\Examples\GeneralAssemblyInfo.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\NetloadCommandModule\NETLOADCommand.h" />
+    <ClInclude Include="..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\NetloadCommandModule\NetloadModule.h" />
+    <ClInclude Include="..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\NetloadCommandModule\resource.h" />
+    <ResourceCompile Include="..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\NetloadCommandModule\NetloadCommandModule.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TD_Mgd_23.1_lic16, Version=23.1.0.0, Culture=neutral, PublicKeyToken=460a0bef3ba73253">
+  <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_Mgd_23.1_lic16.dll</HintPath>
+</Reference>
+
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

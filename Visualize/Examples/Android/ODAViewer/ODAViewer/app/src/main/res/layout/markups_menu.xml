@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/markups_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/MenuLayoutStyle">
+
+    <ImageView
+        android:tag="0"
+        android:onClick="onMarkupsClick"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:src="@drawable/rect" />
+
+    <ImageView
+        android:tag="1"
+        android:onClick="onMarkupsClick"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:src="@drawable/circ" />
+
+    <ImageView
+        android:tag="2"
+        android:onClick="onMarkupsClick"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:src="@drawable/handle" />
+
+    <ImageView
+        android:tag="3"
+        android:onClick="onMarkupsClick"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:src="@drawable/cloud" />
+
+    <ImageView
+        android:tag="4"
+        android:onClick="onMarkupsClick"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:src="@drawable/txt" />
+
+    <ImageView
+        android:tag="5"
+        android:onClick="onMarkupsClick"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:src="@drawable/save_markup" />
+
+    <ImageView
+        android:tag="6"
+        android:onClick="onMarkupsClick"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:src="@drawable/load_markup" />
+</LinearLayout>

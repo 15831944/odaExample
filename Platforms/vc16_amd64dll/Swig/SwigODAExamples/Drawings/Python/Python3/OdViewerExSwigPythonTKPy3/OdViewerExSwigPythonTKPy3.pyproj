@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D7B7CB3-55A8-3C43-B65E-55DB6AFE999F}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <OutputPath>.</OutputPath>
+    <Name>OdViewerExSwigPythonTKPy3</Name>
+    <CommandLineArguments></CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <StartupFile>..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdViewerExSwigPythonTKPy3.py</StartupFile>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
+    <WorkingDirectory>..\..\..\..\..\..\..\..\exe\vc16_amd64dll</WorkingDirectory>
+    <SearchPath>..\..\..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\..\..\exe\vc16_amd64dll</SearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdViewerExSwigPythonTKPy3.py" />
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdViewerExSwigPythonTK_ExAppServicesPy3.py" />
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdViewerExSwigPythonTK_MainFormViewerPy3.py" />
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdVectorizeFrameTKinterPy3.py" />
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdTopMenuTkinterPy3.py" />
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdPyGraphicsHelpersPy3.py" />
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdPyPanTkinterPy3.py" />
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdPyZoomTkinterPy3.py" />
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdPyRotationTkinterPy3.py" />
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdToolBarTkinterPy3.py" />
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdPyTkinterGuiHelpersPy3.py" />
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdViewerExSwigPythonTKPy3\OdPyHelpersPy3.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.9" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

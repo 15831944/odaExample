@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tools_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/MenuLayoutStyle">
+
+    <ImageView
+        android:id="@+id/tools_showCuttingPlanes"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:tag="0"
+        android:onClick="onToolsClick"
+        android:src="@drawable/cutting_plane" />
+
+    <ImageView
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:tag="1"
+        android:onClick="onToolsClick"
+        android:src="@drawable/add_cutting_plane_x" />
+
+    <ImageView
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:tag="2"
+        android:onClick="onToolsClick"
+        android:src="@drawable/add_cutting_plane_y" />
+
+    <ImageView
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:tag="3"
+        android:onClick="onToolsClick"
+        android:src="@drawable/add_cutting_plane_z" />
+
+    <ImageView
+        android:id="@+id/tools_fillCuttingPlanes"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMarginSmall"
+        android:tag="4"
+        android:onClick="onToolsClick"
+        android:src="@drawable/fill_cutting_plane"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:tag="5"
+        android:onClick="onToolsClick"
+        android:src="@drawable/remove_cutting_plane" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_marginEnd="8dp"/>
+
+    <ImageView
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:tag="6"
+        android:onClick="onToolsClick"
+        android:src="@drawable/collide" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_marginEnd="8dp"/>
+
+    <ImageView
+        android:id="@+id/tools_groundShadows"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:tag="7"
+        android:onClick="onToolsClick"
+        android:src="@drawable/ground_shadow" />
+</LinearLayout>

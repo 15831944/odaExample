@@ -1,0 +1,14 @@
+C:\B\2\_\_\exe\vc16_amd64dll\WpfViewWinForms.exe
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\WpfViewWinForms.csproj.AssemblyReference.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\MainWindow.baml
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\App.baml
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\MainWindow.g.cs
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\App.g.cs
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\WpfViewWinForms_MarkupCompile.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\WpfViewWinForms.g.resources
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\WpfViewWinForms.DrawControl.resources
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\WpfViewWinForms.Resources.resources
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\WpfViewWinForms.csproj.GenerateResource.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\WpfViewWinForms.csproj.CoreCompileInputs.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\WpfViewWinForms.csproj.CopyComplete
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewWinForms\obj\x64\Release\WpfViewWinForms.exe

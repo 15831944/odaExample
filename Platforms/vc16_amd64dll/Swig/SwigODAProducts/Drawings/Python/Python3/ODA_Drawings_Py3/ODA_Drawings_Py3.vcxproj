@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3DEA3865-96ED-334C-899C-3393718DAAAF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ODA_Drawings_Py3</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ODA_Drawings_Py3.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_ODA_Drawings_Py3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\..\..\KernelBase\Include;\include;..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Python\NativeSources;..\..\..\..\..\..\..\..\Kernel;..\..\..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\..\..\Kernel\Extensions;..\..\..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\..\..\KernelBase\Extensions\ExServices;..\..\..\..\..\..\..\..\Kernel\Include\Tf;..\..\..\..\..\..\..\..\Drawing;..\..\..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\..\..\..\Drawing\Extensions;..\..\..\..\..\..\..\..\Drawing\Imports;..\..\..\..\..\..\..\..\Exchange\Imports\DgnImport;..\..\..\..\..\..\..\..\Dgn\include;$(PYTHON_DIR)\include;..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Drawings\Python\Python3\ODA_Drawings_Py3;..\..\..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\..\..\ThirdParty\activation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /MP4</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST;SWIGWIN;SWIG_MSC_VER=1929;PLATFORM_X64; NDEBUG;TEIGHA_TRIAL;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=&quot;Release&quot;;ODA_Drawings_Py3_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST;SWIGWIN;SWIG_MSC_VER=1929;PLATFORM_X64; NDEBUG;TEIGHA_TRIAL;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\&quot;Release\&quot;;ODA_Drawings_Py3_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\..\..\KernelBase\Include;\include;..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Python\NativeSources;..\..\..\..\..\..\..\..\Kernel;..\..\..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\..\..\Kernel\Extensions;..\..\..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\..\..\KernelBase\Extensions\ExServices;..\..\..\..\..\..\..\..\Kernel\Include\Tf;..\..\..\..\..\..\..\..\Drawing;..\..\..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\..\..\..\Drawing\Extensions;..\..\..\..\..\..\..\..\Drawing\Imports;..\..\..\..\..\..\..\..\Exchange\Imports\DgnImport;..\..\..\..\..\..\..\..\Dgn\include;$(PYTHON_DIR)\include;..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Drawings\Python\Python3\ODA_Drawings_Py3;..\..\..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\..\..\ThirdParty\activation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\..\..\KernelBase\Include;\include;..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Python\NativeSources;..\..\..\..\..\..\..\..\Kernel;..\..\..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\..\..\Kernel\Extensions;..\..\..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\..\..\KernelBase\Extensions\ExServices;..\..\..\..\..\..\..\..\Kernel\Include\Tf;..\..\..\..\..\..\..\..\Drawing;..\..\..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\..\..\..\Drawing\Extensions;..\..\..\..\..\..\..\..\Drawing\Imports;..\..\..\..\..\..\..\..\Exchange\Imports\DgnImport;..\..\..\..\..\..\..\..\Dgn\include;$(PYTHON_DIR)\include;..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Drawings\Python\Python3\ODA_Drawings_Py3;..\..\..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\..\..\ThirdParty\activation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message/>
+      <Command>setlocal
+copy /Y ODA_Drawings_Py3.py ..\..\..\..\..\..\..\..\exe\vc16_amd64dll\ODA_Drawings_Py3.py
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+:VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>AcModelDocObj.lib;AutoSurfServices.lib;AcDbPointCloudObj.lib;TD_DbCore.lib;TD_Ave.lib;TD_DbIO.lib;AECIIB.lib;AcDgnLS.lib;TD_Sm.lib;TD_Key.lib;TD_Gs.lib;TD_Br.lib;TD_3DSolidHistory.lib;PlotSettingsValidator.lib;TD_Tf.lib;AcIdViewObj.lib;TD_DynBlocks.lib;TD_Db.lib;RText.lib;ATEXT.lib;WipeOut.lib;ISM.lib;AcMPolygonObj15.lib;TD_DbEntities.lib;ACCAMERA.lib;SCENEOE.lib;TD_DbRoot.lib;TD_Gi.lib;TD_SpatialIndex.lib;TD_Ge.lib;TD_Root.lib;TD_Alloc.lib;UTF.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\..\..\..\lib\vc16_amd64dll;$(PYTHON_DIR)\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\..\..\..\lib\vc16_amd64dll\_ODA_Drawings_Py3.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\..\..\..\exe\vc16_amd64dll\_ODA_Drawings_Py3.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Drawings\Python\Python3\ODA_Drawings_Py3\ODA_Drawings_Py3.i">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ODA_Drawings_Py3_wrap.cxx, ODA_Drawings_Py3_wrap.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+SWIG_EXECUTABLE-NOTFOUND -c++ -python -py3 -fastdispatch -w362,503,361,473 -DSWIGWIN -DSWIG_MSC_VER=1929 -DPLATFORM_X64 -DSWIG_PYTHON_3 -I..\..\..\..\..\..\..\..\Swig\SwigODAProducts -I..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Drawings -I..\..\..\..\..\..\..\..\Swig\SwigODABaseRules -I..\..\..\..\..\..\..\..\Swig\SwigODABaseRules\Python -I..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Drawings\Python\ODA_Drawings\Rules -I..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Python\Rules -I..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Python\Python3 -I..\..\..\..\..\..\..\..\Kernel -I..\..\..\..\..\..\..\..\KernelBase -I..\..\..\..\..\..\..\..\Kernel\Include -I..\..\..\..\..\..\..\..\KernelBase\Include -I..\..\..\..\..\..\..\..\Kernel\DevInclude -I..\..\..\..\..\..\..\..\Kernel\Exports -I..\..\..\..\..\..\..\..\Kernel\Extensions -I..\..\..\..\..\..\..\..\Kernel\Exports\PdfExport\Include -I..\..\..\..\..\..\..\..\Drawing\Extensions -I..\..\..\..\..\..\..\..\Drawing\Imports -I..\..\..\..\..\..\..\..\Drawing -I..\..\..\..\..\..\..\..\Drawing\Include -I..\..\..\..\..\..\..\..\Exchange\Imports\DgnImport -I..\..\..\..\..\..\..\..\Kernel\Exports\ColladaExport\Include -I..\..\..\..\..\..\..\..\Kernel\Exports\DwfExport\Include -I..\..\..\..\..\..\..\..\Kernel\Exports\HoopsExport\Include -I..\..\..\..\..\..\..\..\Kernel\Exports\PdfExport\Include -I..\..\..\..\..\..\..\..\Kernel\Exports\RasterExport\Include -I..\..\..\..\..\..\..\..\Kernel\Exports\STLExport\Include -I..\..\..\..\..\..\..\..\Kernel\Exports\SvgExport\Include -I..\..\..\..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include -I..\..\..\..\..\..\..\..\Kernel\Exports\PdfExport\PDFToolkit -verbose -outcurrentdir ..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Drawings\Python\Python3\ODA_Drawings_Py3\ODA_Drawings_Py3.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+:VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/B/2/_/_/pkg/DRAWINGS.PY3_vc16_amd64dll/Swig/SwigODAProducts/Drawings/Python/Python3/ODA_Drawings_Py3/ODA_Drawings_Py3.i;..\..\..\..\..\..\..\..\Swig\SwigODAProducts\Drawings\Python\Python3\ODA_Drawings_Py3\ODA_Drawings_Py3.i;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ODA_Drawings_Py3_wrap.cxx;ODA_Drawings_Py3_wrap.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ODA_Drawings_Py3_wrap.cxx"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExKWIndex.cpp"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Drawing\Extensions\ExServices\ExDbCommandContext.cpp"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Drawing\Extensions\ExServices\ExHostAppServices.cpp"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExFileUndoController.cpp"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExUndoController.cpp"/>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExFileUndoController.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExUndoController.h"/>
+    <ClInclude Include="ODA_Drawings_Py3_wrap.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,61 @@
+/////////////////////////////////////////////////////////////////////////////// 
+// Copyright (C) 2002-2022, Open Design Alliance (the "Alliance"). 
+// All rights reserved. 
+// 
+// This software and its documentation and related materials are owned by 
+// the Alliance. The software may only be incorporated into application 
+// programs owned by members of the Alliance, subject to a signed 
+// Membership Agreement and Supplemental Software License Agreement with the
+// Alliance. The structure and organization of this software are the valuable  
+// trade secrets of the Alliance and its suppliers. The software is also 
+// protected by copyright law and international treaty provisions. Application  
+// programs incorporating this software must include the following statement 
+// with their copyright notices:
+//   
+//   This application incorporates Open Design Alliance software pursuant to a license 
+//   agreement with Open Design Alliance.
+//   Open Design Alliance Copyright (C) 2002-2022 by Open Design Alliance. 
+//   All rights reserved.
+//
+// By use of this software, its documentation or related materials, you 
+// acknowledge and accept the above terms.
+///////////////////////////////////////////////////////////////////////////////
+#include <windows.h>
+#include "TDVersion.h"
+
+#define COPYRIGHT_START_YEAR  "Copyright 2002 - 2022 Open Design Alliance. " TD_COPYRIGHT_START_S TD_COPYRIGHT_START_YEAR_S
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION TD_MAJOR_VERSION, TD_MINOR_VERSION, TD_MAJOR_BUILD, TD_MINOR_BUILD
+PRODUCTVERSION TD_MAJOR_VERSION, TD_MINOR_VERSION, TD_MAJOR_BUILD, TD_MINOR_BUILD
+FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+FILEFLAGS 0x1L
+#else
+FILEFLAGS 0x0L
+#endif
+FILEOS 0x4L
+FILETYPE 0x2L
+FILESUBTYPE 0x0L
+BEGIN
+BLOCK "StringFileInfo"
+BEGIN
+BLOCK "040904E4"
+//language ID = U.S. English, char set = Windows, Multilingual
+
+BEGIN
+VALUE "CompanyName", TD_COMPANY_NAME_S "\0"
+VALUE "FileDescription", "PDF 3D Stream extractor library.\0"
+VALUE "FileVersion", TD_PRODUCT_VER_STR_S "\0"
+VALUE "InternalName", "OdPdf3DStreamExtractor\0"
+VALUE "OriginalFilename", "OdPdf3DStreamExtractor" TD_PRODUCT_VER_STR_S ".tx\0"
+VALUE "ProductName", "OdPdf3DStreamExtractor.tx\0"
+VALUE "ProductVersion", TD_PRODUCT_VER_STR_S "\0"
+VALUE "LegalCopyright", TD_COPYRIGHT_START_S COPYRIGHT_START_YEAR TD_COPYRIGHT_END_S "\0"
+END
+END
+BLOCK "VarFileInfo"
+BEGIN
+VALUE "Translation", 0x0409, 1252
+END
+END

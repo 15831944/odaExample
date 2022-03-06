@@ -1,0 +1,17 @@
+C:\B\2\_\_\exe\vc16_amd64dll\WpfViewDirectX.exe
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\WpfViewDirectX.csproj.AssemblyReference.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\App.baml
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\MainWindow.g.cs
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\Control.g.cs
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\App.g.cs
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\GeneratedInternalTypeHelper.g.cs
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\WpfViewDirectX_MarkupCompile.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\WpfViewDirectX_MarkupCompile.lref
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\MainWindow.baml
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\Control.baml
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\WpfViewDirectX.g.resources
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\WpfViewDirectX.Resources.resources
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\WpfViewDirectX.csproj.GenerateResource.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\WpfViewDirectX.csproj.CoreCompileInputs.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\WpfViewDirectX.csproj.CopyComplete
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\WpfViewDirectX\obj\x64\Release\WpfViewDirectX.exe

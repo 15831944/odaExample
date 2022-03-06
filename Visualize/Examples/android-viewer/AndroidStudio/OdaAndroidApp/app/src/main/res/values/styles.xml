@@ -1,0 +1,31 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<resources>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#FF9B9B9B</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="title">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:lineSpacingMultiplier">1.29</item>
+    </style>
+
+    <style name="menu_item_selected">
+        <item name="android:textColor">#fd401d</item>
+        <item name="android:fillColor">#fd401d</item>
+    </style>
+
+    <style name="context_menu_item">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+</resources>

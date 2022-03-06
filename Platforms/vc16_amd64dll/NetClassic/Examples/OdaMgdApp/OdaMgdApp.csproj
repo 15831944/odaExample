@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B52F0E08-7CE8-3F03-BA62-1A54C2CE4F73}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OdaMgdApp</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>OdaMgdApp</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>OdaMgdApp</AssemblyName>
+    <StartAction>Project</StartAction>
+    <StartProgram>..\..\..\..\..\exe\vc16_amd64dll\OdaMgdApp.exe</StartProgram>
+    <AdditionalOptions>/langversion:latest</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\AppSettings.cs">
+      <Link>AppSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\AuxCls.cs">
+      <Link>AuxCls.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\HostAppServices.cs">
+      <Link>HostAppServices.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\Common\HostApplicationServicesExample.cs" />
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Orbit.cs">
+      <Link>Orbit.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\SelectionReactor.cs">
+      <Link>SelectionReactor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\GripPoints\MarkForGripPoint.cs">
+      <Link>GripPoints\MarkForGripPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\GripPoints\MarkForDragPoint.cs">
+      <Link>GripPoints\MarkForDragPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\GripPoints\GripManager.cs">
+      <Link>GripPoints\GripManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\GripPoints\GripData.cs">
+      <Link>GripPoints\GripData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\GripPoints\Overruling\ImageOverrule.cs">
+      <Link>GripPoints\Overruling\ImageOverrule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\GripPoints\Overruling\LineOverrule.cs">
+      <Link>GripPoints\Overruling\LineOverrule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\GripPoints\Overruling\GeneralOverrule.cs">
+      <ObjectFileName>$(IntDir)/GripPoints/Overruling/GeneralOverrule.cs</ObjectFileName>
+      <Link>GripPoints\Overruling\GeneralOverrule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\SnapPoints\SnapManager.cs">
+      <Link>SnapPoints\SnapManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\SnapPoints\MarkForSnapPoint.cs">
+      <Link>SnapPoints\MarkForSnapPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\SnapPoints\Overruling\GeneralOverrule.cs">
+      <ObjectFileName>$(IntDir)/SnapPoints/Overruling/GeneralOverrule.cs</ObjectFileName>
+      <Link>SnapPoints\Overruling\GeneralOverrule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Jig\CustomFormEventHandler.cs">
+      <Link>Jig\CustomFormEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Jig\LineJig.cs">
+      <Link>Jig\LineJig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\ImExport.cs">
+      <Link>Export_Import\ImExport.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Print\Print.cs">
+      <Link>Print\Print.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\UserIO\Editor.cs">
+      <Link>UserIO\Editor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\UserIO\SelectionSet.cs">
+      <Link>UserIO\SelectionSet.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\UserIO\Selector.cs">
+      <Link>UserIO\Selector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\UserIO\PointPicker.cs">
+      <Link>UserIO\PointPicker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\ThirdParty\activation\OdActivationInfo.cs" />
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\BlockInsert.cs">
+      <Link>BlockInsert.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\BlockInsert.Designer.cs">
+      <DependentUpon>BlockInsert.cs</DependentUpon>
+      <DependentUpon>BlockInsert.cs</DependentUpon>
+      <Link>BlockInsert.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\File_Dependency.cs">
+      <Link>File_Dependency.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\File_Dependency.Designer.cs">
+      <DependentUpon>File_Dependency.cs</DependentUpon>
+      <DependentUpon>File_Dependency.cs</DependentUpon>
+      <Link>File_Dependency.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\BMPExport.cs">
+      <Link>Export_Import\BMPExport.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\BMPExport.Designer.cs">
+      <DependentUpon>BMPExport.cs</DependentUpon>
+      <DependentUpon>BMPExport.cs</DependentUpon>
+      <Link>Export_Import\BMPExport.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\MainForm.cs">
+      <Link>MainForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <Link>MainForm.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\DrawingForm.cs">
+      <Link>DrawingForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\DrawingForm.designer.cs">
+      <DependentUpon>DrawingForm.cs</DependentUpon>
+      <Link>DrawingForm.designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\PDFExport.cs">
+      <Link>Export_Import\PDFExport.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\PDFExport.Designer.cs">
+      <DependentUpon>PDFExport.cs</DependentUpon>
+      <DependentUpon>PDFExport.cs</DependentUpon>
+      <Link>Export_Import\PDFExport.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\PublishDrawingSheets.cs">
+      <Link>Export_Import\PublishDrawingSheets.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\PublishDrawingSheets.Designer.cs">
+      <DependentUpon>PublishDrawingSheets.cs</DependentUpon>
+      <DependentUpon>PublishDrawingSheets.cs</DependentUpon>
+      <Link>Export_Import\PublishDrawingSheets.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\publishSetting.cs">
+      <Link>Export_Import\publishSetting.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\publishSetting.Designer.cs">
+      <DependentUpon>publishSetting.cs</DependentUpon>
+      <DependentUpon>publishSetting.cs</DependentUpon>
+      <Link>Export_Import\publishSetting.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\PasswordDlg.cs">
+      <Link>PasswordDlg.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\PasswordDlg.designer.cs">
+      <DependentUpon>PasswordDlg.cs</DependentUpon>
+      <Link>PasswordDlg.designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Print\PageSetup.cs">
+      <Link>Print\PageSetup.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Print\PageSetup.Designer.cs">
+      <DependentUpon>PageSetup.cs</DependentUpon>
+      <DependentUpon>PageSetup.cs</DependentUpon>
+      <Link>Print\PageSetup.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\SelectLayouts.cs">
+      <Link>SelectLayouts.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\SelectLayouts.Designer.cs">
+      <DependentUpon>SelectLayouts.cs</DependentUpon>
+      <DependentUpon>SelectLayouts.cs</DependentUpon>
+      <Link>SelectLayouts.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Layers.cs">
+      <Link>Layers.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Layers.Designer.cs">
+      <DependentUpon>Layers.cs</DependentUpon>
+      <DependentUpon>Layers.cs</DependentUpon>
+      <Link>Layers.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\NetClassic\Examples\GeneralAssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\BlockInsert.resx">
+      <DependentUpon>BlockInsert.cs</DependentUpon>
+      <Link>BlockInsert.resx</Link>
+      <DependentUpon>BlockInsert.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\File_Dependency.resx">
+      <DependentUpon>File_Dependency.cs</DependentUpon>
+      <Link>File_Dependency.resx</Link>
+      <DependentUpon>File_Dependency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\BMPExport.resx">
+      <DependentUpon>BMPExport.cs</DependentUpon>
+      <Link>BMPExport.resx</Link>
+      <DependentUpon>BMPExport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <Link>MainForm.resx</Link>
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\DrawingForm.resx">
+      <DependentUpon>DrawingForm.cs</DependentUpon>
+      <Link>DrawingForm.resx</Link>
+      <DependentUpon>DrawingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\PDFExport.resx">
+      <DependentUpon>PDFExport.cs</DependentUpon>
+      <Link>PDFExport.resx</Link>
+      <DependentUpon>PDFExport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\PublishDrawingSheets.resx">
+      <DependentUpon>PublishDrawingSheets.cs</DependentUpon>
+      <Link>PublishDrawingSheets.resx</Link>
+      <DependentUpon>PublishDrawingSheets.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Export_Import\publishSetting.resx">
+      <DependentUpon>publishSetting.cs</DependentUpon>
+      <Link>publishSetting.resx</Link>
+      <DependentUpon>publishSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\PasswordDlg.resx">
+      <DependentUpon>PasswordDlg.cs</DependentUpon>
+      <Link>PasswordDlg.resx</Link>
+      <DependentUpon>PasswordDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Print\PageSetup.resx">
+      <DependentUpon>PageSetup.cs</DependentUpon>
+      <Link>PageSetup.resx</Link>
+      <DependentUpon>PageSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\SelectLayouts.resx">
+      <DependentUpon>SelectLayouts.cs</DependentUpon>
+      <Link>SelectLayouts.resx</Link>
+      <DependentUpon>SelectLayouts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\NetClassic\Examples\OdaMgdApp\Layers.resx">
+      <DependentUpon>Layers.cs</DependentUpon>
+      <Link>Layers.resx</Link>
+      <DependentUpon>Layers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Link>Resources.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TD_Mgd_23.1_lic16, Version=23.1.0.0, Culture=neutral, PublicKeyToken=460a0bef3ba73253">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>..\..\..\..\..\..\exe\vc16_amd64dll\TD_Mgd_23.1_lic16.dll</HintPath>
+</Reference>
+
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

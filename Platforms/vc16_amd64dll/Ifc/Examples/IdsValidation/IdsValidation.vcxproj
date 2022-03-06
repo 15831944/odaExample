@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C29846CE-89F2-3F36-BE68-11274E83B42B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>IdsValidation</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IdsValidation.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IdsValidation_23.1_lic16</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.tx</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source;..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include;..\..\..\..\..\Ifc\Include;..\..\..\..\..\Ifc\Include\Common;..\..\..\..\..\Sdai\Include;..\..\..\..\..\Sdai\Include\Common;..\..\..\..\..\Sdai\Include\daiHeader;..\..\..\..\..\Sdai\Include\daiValidation;..\..\..\..\..\Sdai\Include\daiAggr;..\..\..\..\..\Kernel\Include;..\..\..\..\..\ThirdParty\LibXML\Include;..\..\..\..\..\Ifc\Examples\Common;..\..\..\..\..\Kernel\DevInclude\DbRoot;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\LibXML\include;..\..\..\..\..\ThirdParty\LibXML;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /MP4</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;TEIGHA_TRIAL;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;IDS_VALIDATION_EXPORTS;IDS_EXPORTS;IFC_DYNAMIC_BUILD;ADT_DYNAMIC_BUILD;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";IdsValidation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;TEIGHA_TRIAL;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;IDS_VALIDATION_EXPORTS;IDS_EXPORTS;IFC_DYNAMIC_BUILD;ADT_DYNAMIC_BUILD;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";IdsValidation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source;..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include;..\..\..\..\..\Ifc\Include;..\..\..\..\..\Ifc\Include\Common;..\..\..\..\..\Sdai\Include;..\..\..\..\..\Sdai\Include\Common;..\..\..\..\..\Sdai\Include\daiHeader;..\..\..\..\..\Sdai\Include\daiValidation;..\..\..\..\..\Sdai\Include\daiAggr;..\..\..\..\..\Kernel\Include;..\..\..\..\..\ThirdParty\LibXML\Include;..\..\..\..\..\Ifc\Examples\Common;..\..\..\..\..\Kernel\DevInclude\DbRoot;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\LibXML\include;..\..\..\..\..\ThirdParty\LibXML;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source;..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include;..\..\..\..\..\Ifc\Include;..\..\..\..\..\Ifc\Include\Common;..\..\..\..\..\Sdai\Include;..\..\..\..\..\Sdai\Include\Common;..\..\..\..\..\Sdai\Include\daiHeader;..\..\..\..\..\Sdai\Include\daiValidation;..\..\..\..\..\Sdai\Include\daiAggr;..\..\..\..\..\Kernel\Include;..\..\..\..\..\ThirdParty\LibXML\Include;..\..\..\..\..\Ifc\Examples\Common;..\..\..\..\..\Kernel\DevInclude\DbRoot;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\LibXML\include;..\..\..\..\..\ThirdParty\LibXML;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>sdai.lib;TD_DbRoot.lib;TD_Root.lib;libXML.lib;TD_Alloc.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\lib\vc16_amd64dll\IdsValidation.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\IdsValidation_23.1_lic16.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidationExport.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidationCommon.h" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidationCommon.cpp" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Include\Common\IdsValidationModule.h" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidationModule.cpp" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsInstanceValidationTask.h" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsInstanceValidationTask.cpp" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsExtentValidationTask.h" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsExtentValidationTask.cpp" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidationTaskCreator.h" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidationTaskCreator.cpp" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIds.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsIds.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsIdsType.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsInfo.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsEntityType.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsClassificationType.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsClassificationTypeLocation.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsApplicabilityType.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsApplicabilityTypeProperty.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsApplicabilityTypeMaterial.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsSystemType.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsPropertyType.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsPropertyTypeLocation.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsMaterialType.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsMaterialTypeLocation.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsRequirementsType.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsRequirementsTypeClassification.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsRequirementsTypeProperty.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsRequirementsTypeMaterial.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsSpecificationType.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsUse.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdXmlRestriction.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsAuthor.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsIdsValue.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsIfcversion.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsSpecificationTypeNecessity.h" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIds.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsIds.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsIdsType.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsInfo.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsEntityType.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsClassificationType.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsClassificationTypeLocation.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsApplicabilityType.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsApplicabilityTypeProperty.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsApplicabilityTypeMaterial.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsSystemType.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsPropertyType.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsPropertyTypeLocation.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsMaterialType.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsMaterialTypeLocation.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsRequirementsType.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsRequirementsTypeClassification.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsRequirementsTypeProperty.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsRequirementsTypeMaterial.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsSpecificationType.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsUse.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdXmlRestriction.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsAuthor.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsIdsValue.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsIfcversion.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsSpecificationTypeNecessity.cpp" />
+    <ResourceCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidation.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

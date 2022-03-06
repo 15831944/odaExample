@@ -1,0 +1,54 @@
+﻿<Window
+    x:Class="WpfVisualizeViewer.Dialogs.SaveMarkupDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfVisualizeViewer.Dialogs"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Save markup"
+    d:DesignHeight="300"
+    d:DesignWidth="300"
+    ContentRendered="SaveMarkupDialog_OnContentRendered"
+    Icon="{StaticResource OdalogoImg}"
+    ResizeMode="NoResize"
+    SizeToContent="WidthAndHeight"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Label
+            Name="lbl"
+            Grid.Row="0"
+            Content="Enter the name:" />
+        <TextBox
+            Name="txtBox"
+            Grid.Row="1"
+            MinWidth="250" />
+
+        <WrapPanel
+            Grid.Row="2"
+            Margin="0,15,0,0"
+            HorizontalAlignment="Right">
+            <Button
+                Name="okBtn"
+                MinWidth="70"
+                Margin="0,0,10,0"
+                Click="OkBtn_OnClick"
+                Content="Ok"
+                IsDefault="True" />
+
+            <Button
+                MinWidth="70"
+                Click="ButtonCancel_OnClick"
+                Content="Cancel"
+                IsCancel="True" />
+
+        </WrapPanel>
+
+    </Grid>
+</Window>

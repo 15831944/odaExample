@@ -1,0 +1,161 @@
+﻿<UserControl
+    x:Class="WpfVisualizeViewer.TvPropertiesPalette"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfVisualizeViewer.ModelBrowser"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Height="Auto"
+    d:DesignHeight="300"
+    d:DesignWidth="300"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Style x:Key="TextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Margin" Value="10,0,0,0" />
+            <Setter Property="Background" Value="#f8f8f8" />
+            <Setter Property="FontFamily" Value="Open Sans" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="Foreground" Value="#283593" />
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Background="#f8f8f8">
+
+        <ScrollViewer PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" VerticalScrollBarVisibility="Auto">
+            <ListBox>
+                <!--  Set items style  -->
+                <ListBox.Resources>
+                    <Style TargetType="{x:Type Expander}">
+                        <Setter Property="IsExpanded" Value="{Binding Path=IsSelected, RelativeSource={RelativeSource AncestorType={x:Type ListBoxItem}}}" />
+                    </Style>
+                </ListBox.Resources>
+
+                <ListBox.Template>
+                    <ControlTemplate TargetType="{x:Type ListBox}">
+                        <ItemsPresenter />
+                    </ControlTemplate>
+                </ListBox.Template>
+
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListBoxItem}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                    <ContentPresenter Content="{TemplateBinding Content}" />
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+
+                <!--  Add expanders  -->
+                <Expander Background="#dfdfe7">
+                    <Expander.Header>
+                        <BulletDecorator Height="33">
+                            <Label
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Content="Object properties"
+                                FontFamily="Open Sans"
+                                FontSize="15"
+                                Foreground="#283593" />
+                        </BulletDecorator>
+                    </Expander.Header>
+
+                    <Grid Name="PropertiesPaletteList" Background="#f8f8f8" />
+
+                </Expander>
+
+                <Expander Background="#dfdfe7" IsExpanded="True">
+                    <Expander.Header>
+                        <BulletDecorator Height="33">
+
+                            <Label
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Content="General"
+                                FontFamily="Open Sans"
+                                FontSize="15"
+                                Foreground="#283593" />
+
+                        </BulletDecorator>
+                    </Expander.Header>
+
+                    <StackPanel
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Background="#f8f8f8"
+                        Orientation="Vertical">
+
+                        <CheckBox
+                            Margin="0,10,0,0"
+                            Click="OnOffWcs_Click"
+                            IsChecked="False">
+                            <TextBlock Style="{StaticResource TextBlockStyle}" Text="Axis triad" />
+                        </CheckBox>
+
+                        <CheckBox
+                            Margin="0,10,0,0"
+                            Click="OnOffFPS_Click"
+                            IsChecked="False">
+                            <TextBlock Style="{StaticResource TextBlockStyle}" Text="Show FPS" />
+                        </CheckBox>
+
+                        <CheckBox
+                            Margin="0,10,0,0"
+                            Click="OnOffAnimation_Click"
+                            IsChecked="True">
+                            <TextBlock Style="{StaticResource TextBlockStyle}" Text="Use animation" />
+                        </CheckBox>
+
+                        <StackPanel
+                            x:Name="ZoomStepPanel"
+                            Margin="0,10,0,0"
+                            Height="25"
+                            HorizontalAlignment="Stretch"
+                            Orientation="Horizontal">
+
+                            <TextBlock
+                                x:Name="ZoomStepTextBlock"
+                                VerticalAlignment="Center"
+                                FontFamily="Open Sans"
+                                FontSize="15"
+                                Foreground="#283593"
+                                Text="Zoom step:"
+                                Margin="0 0 5 0"/>
+                            <local:DoubleTextBox x:Name="ZoomStepTb" VerticalAlignment="Stretch" 
+                                     HorizontalAlignment="Stretch"
+                                     VerticalContentAlignment="Center"
+                                     Width="50" 
+                                     FontFamily="Open Sans"
+                                     FontSize="15"
+                                     Foreground="#283593"
+                                     Text ="{Binding ZoomStep, UpdateSourceTrigger=LostFocus, Mode=TwoWay}"/>
+
+                        </StackPanel>
+
+                        <StackPanel
+                            x:Name="BackgroundPanel"
+                            Margin="0,10,0,0"
+                            HorizontalAlignment="Stretch"
+                            Orientation="Horizontal">
+                            <TextBlock
+                                x:Name="BackgroundTextBlock"
+                                VerticalAlignment="Center"
+                                FontFamily="Open Sans"
+                                FontSize="15"
+                                Foreground="#283593"
+                                Text="Background"
+                                Visibility="Collapsed" />
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </Expander>
+
+            </ListBox>
+        </ScrollViewer>
+
+    </Grid>
+</UserControl>

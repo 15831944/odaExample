@@ -1,0 +1,4 @@
+C:\B\2\_\_\exe\vc16_amd64dll\OdReadExMgd.exe
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdReadExMgd\obj\x64\Release\OdReadExMgd.csproj.CoreCompileInputs.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdReadExMgd\obj\x64\Release\OdReadExMgd.csproj.CopyComplete
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdReadExMgd\obj\x64\Release\OdReadExMgd.exe

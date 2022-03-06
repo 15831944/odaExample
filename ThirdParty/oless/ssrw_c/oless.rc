@@ -1,0 +1,42 @@
+#include <windows.h>
+#include "Include/TDVersion.h"
+
+#define COPYRIGHT_START_YEAR  "1998-2017 The OpenSSL Project. " TD_COPYRIGHT_START_S TD_COPYRIGHT_START_YEAR_S
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION TD_MAJOR_VERSION, TD_MINOR_VERSION, TD_MAJOR_BUILD, TD_MINOR_BUILD
+ PRODUCTVERSION TD_MAJOR_VERSION, TD_MINOR_VERSION, TD_MAJOR_BUILD, TD_MINOR_BUILD
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    //language ID = U.S. English, char set = Windows, Multilingual
+    BEGIN
+      VALUE "CompanyName", "Schema Software Inc.\0"
+      VALUE "FileDescription", "oless\0"
+      VALUE "FileVersion", TD_PRODUCT_VER_STR_S "\0"
+      VALUE "InternalName", "oless.dll\0"
+      VALUE "OriginalFilename", "oless.dll\0"
+      VALUE "ProductName", "oless\0"
+      VALUE "ProductVersion", TD_PRODUCT_VER_STR_S "\0"
+      VALUE "LegalCopyright", "Schema Software Inc., 2001-2003. " TD_COPYRIGHT_START_S COPYRIGHT_START_YEAR TD_COPYRIGHT_END_S "\0"
+      VALUE "LegalTrademarks", "\0"
+      VALUE "PrivateBuild", "\0"
+      VALUE "SpecialBuild", "\0"
+      VALUE "Comments", "oless. version 3.12"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0409, 1252
+  END
+END

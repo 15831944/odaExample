@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C741AEA2-FB4F-3B42-96C9-EC4E1463FA58}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>OdVisualizeFirstApp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OdVisualizeFirstApp.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OdVisualizeFirstApp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\..\Visualize;..\..\..\..\..\..\..\Visualize\Include;..\..\..\..\..\..\..\Visualize\Core\Include;..\..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\..\PointCloud\Include;..\..\..\..\..\..\..\PointCloud\Include\RcsFileServices;..\..\..\..\..\..\..\Sdai\Include;..\..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /MP4</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;TEIGHA_TRIAL;TB_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFDB_ENABLED;IFC_MODULES_ENABLED;DWG_MODULES_ENABLED;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;TEIGHA_TRIAL;TB_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFDB_ENABLED;IFC_MODULES_ENABLED;DWG_MODULES_ENABLED;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\..\Visualize;..\..\..\..\..\..\..\Visualize\Include;..\..\..\..\..\..\..\Visualize\Core\Include;..\..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\..\PointCloud\Include;..\..\..\..\..\..\..\PointCloud\Include\RcsFileServices;..\..\..\..\..\..\..\Sdai\Include;..\..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\..\Visualize;..\..\..\..\..\..\..\Visualize\Include;..\..\..\..\..\..\..\Visualize\Core\Include;..\..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\..\PointCloud\Include;..\..\..\..\..\..\..\PointCloud\Include\RcsFileServices;..\..\..\..\..\..\..\Sdai\Include;..\..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TD_Ge.lib;TV_Visualize.lib;TD_Root.lib;TD_Alloc.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /entry:wWinMainCRTStartup</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>OdVisualizeFirstApp.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdVisualizeFirstApp.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Visualize\Examples\win\OdVisualizeFirstApp\resource.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Visualize\Examples\win\OdVisualizeFirstApp\stdafx.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Visualize\Examples\win\OdVisualizeFirstApp\OdVisualizeFirstApp.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Visualize\Examples\win\OdVisualizeFirstApp\OdVisualizeFirstApp.cpp" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Visualize\Examples\win\OdVisualizeFirstApp\small.ico" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Visualize\Examples\win\OdVisualizeFirstApp\OdVisualizeFirstApp.ico" />
+    <ResourceCompile Include="..\..\..\..\..\..\..\CommonApplications\Visualize\Examples\win\OdVisualizeFirstApp\OdVisualizeFirstApp.rc" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Visualize\Examples\win\OdVisualizeFirstApp\OdVisualizeSamples.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Visualize\Examples\win\OdVisualizeFirstApp\OdVisualizeSamples.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Visualize\Examples\win\OdVisualizeFirstApp\OdVisualizeAppStreaming.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Visualize\Examples\win\OdVisualizeFirstApp\OdVisualizeAppStreaming.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Visualize\Examples\win\OdVisualizeFirstApp\targetver.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

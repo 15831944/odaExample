@@ -1,0 +1,2 @@
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\ManagedCommands\ManagedCommandsCPP\ManagedCommandsCPP.dir\ManagedCommandsCPP.vcxproj.AssemblyReference.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\ManagedCommands\ManagedCommandsCPP\ManagedCommandsCPP.dir\ManagedCommandsCPP.vcxproj.CopyComplete

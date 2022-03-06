@@ -1,0 +1,270 @@
+/////////////////////////////////////////////////////////////////////////////// 
+// Copyright (C) 2002-2022, Open Design Alliance (the "Alliance"). 
+// All rights reserved. 
+// 
+// This software and its documentation and related materials are owned by 
+// the Alliance. The software may only be incorporated into application 
+// programs owned by members of the Alliance, subject to a signed 
+// Membership Agreement and Supplemental Software License Agreement with the
+// Alliance. The structure and organization of this software are the valuable  
+// trade secrets of the Alliance and its suppliers. The software is also 
+// protected by copyright law and international treaty provisions. Application  
+// programs incorporating this software must include the following statement 
+// with their copyright notices:
+//   
+//   This application incorporates Open Design Alliance software pursuant to a license 
+//   agreement with Open Design Alliance.
+//   Open Design Alliance Copyright (C) 2002-2022 by Open Design Alliance. 
+//   All rights reserved.
+//
+// By use of this software, its documentation or related materials, you 
+// acknowledge and accept the above terms.
+//////////////////////////////////////////////////////////////////////////////
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ODVISUALIZEFIRSTAPP ICON                    "OdVisualizeFirstApp.ico"
+
+IDI_SMALL               ICON                    "small.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_ODVISUALIZEFIRSTAPP MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Generate Sample",             ID_FILE_GENERATESAMPLE
+        MENUITEM "Open",                        ID_FILE_OPEN_CMD
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "Navigation"
+    BEGIN
+        MENUITEM "Pan",                         ID_NAVIGATION_PAN
+        MENUITEM "Orbit",                       ID_NAVIGATION_ORBIT
+        MENUITEM "Zoom to extents",             ID_ZOOMTOEXTENTS
+        MENUITEM "Change active view",          ID_CHANGEACTIVEVIEW
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+    POPUP "Samples"
+    BEGIN
+        MENUITEM "Multiple views",            	  ID_SAMPLE_MULTIVIEW
+        MENUITEM "Walking animation",        	    ID_SAMPLE_WALKINGANIMATION
+        MENUITEM "Highlight customization 1",     ID_SAMPLE_HIGHLIGHTCUSTOMIZATION_1
+        MENUITEM "Highlight customization 2",     ID_SAMPLE_HIGHLIGHTCUSTOMIZATION_2
+        MENUITEM "Highlight customization 3",     ID_SAMPLE_HIGHLIGHTCUSTOMIZATION_3
+    END
+#ifdef OD_VISUALIZE_APP_ENABLE_STREAMING
+    POPUP "Streaming"
+    BEGIN
+        MENUITEM "Do stream",            	      ID_DO_STREAM
+        MENUITEM "Regen All",                   ID_REGENALL_CMD
+        MENUITEM "Update",                      ID_UPDATE_CMD 
+    END
+#endif    
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_ODVISUALIZEFIRSTAPP ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OdVisualizeFirstApp"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_SMALL,IDC_STATIC,14,14,20,20
+    LTEXT           "OdVisualizeFirstApp, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2022",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DSTREAMING_DIALOG DIALOGEX 0, 0, 309, 338
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Streaming"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,198,317,104,14
+    GROUPBOX        "Streaming",IDC_STATIC,18,18,273,141
+    GROUPBOX        "Log",IDC_STATIC,19,169,270,145
+    LTEXT           "File",IDC_STATIC,28,34,20,13
+    EDITTEXT        IDC_FILE_NAME,53,31,205,16,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_FILE_OPEN_VSFX,264,35,20,12
+    LTEXT           "Chunk size",IDC_STATIC,31,100,35,8
+    EDITTEXT        IDC_CHUNKSIZE_EDIT,77,95,99,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CHUNKSIZE_COMBO,183,97,48,77,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Do stream",IDC_DOSTREAM_BTN,29,114,116,14
+    PUSHBUTTON      "Do stream all",IDC_DOSTREAM_ALL_BTN,154,114,116,14
+    LISTBOX         IDC_LOG_LIST,34,180,241,111,LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "Update:",IDC_STATIC,30,141,27,8
+    COMBOBOX        IDC_UPDATE_COMBO,88,139,117,54,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Partial mode",IDC_PARTIALMODE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,58,68,10
+    CONTROL         "Memory Limit",IDC_MEMLIMIT_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,58,59,10
+    EDITTEXT        IDC_MEMLIMIT_EDIT,203,57,69,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Scheduler",IDC_SHEDULER_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,80,50,10
+    EDITTEXT        IDC_SHEDULER_EDIT,203,79,69,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Objects unloading",IDC_UNLOADING_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,80,88,10
+    PUSHBUTTON      "Clear",IDC_LOG_CLEAR_BTN,106,295,50,14
+    PUSHBUTTON      "Setup",IDC_LOG_SETUP_BTN,160,295,50,14
+END
+
+IDD_LOG_SETUP_DIALOG DIALOGEX 0, 0, 247, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Log Setup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,132,124,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,188,124,50,14
+    GROUPBOX        "Log hint filter",IDC_STATIC,24,15,103,118
+    CONTROL         "Important",IDC_LOG_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,29,79,10
+    CONTROL         "Streaming-related",IDC_LOG_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,43,79,10
+    CONTROL         "Timing-related",IDC_LOG_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,57,79,10
+    CONTROL         "Other",IDC_LOG_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,113,79,10
+    CONTROL         "Unloading-related",IDC_LOG_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,99,79,10
+    CONTROL         "Request-releated",IDC_LOG_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,71,79,10
+    CONTROL         "Memory-related",IDC_LOG_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,85,79,10
+    PUSHBUTTON      "Check all",IDC_LOG_CHECKALL_BTN,144,27,76,14
+    PUSHBUTTON      "Uncheck all",IDC_LOG_UNCHECKALL_BTN,144,57,76,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "OdVisualizeFirstApp"
+    IDC_ODVISUALIZEFIRSTAPP "ODVISUALIZEFIRSTAPP"
+END
+
+#ifdef _DEBUG
+#define FILE_DESCRIPTION TD_PRODUCT_NAME_S " Visualize Viewer First Demo Application (Debug)"
+#else
+#define FILE_DESCRIPTION TD_PRODUCT_NAME_S " Visualize Viewer First Demo Application"
+#endif
+
+#define INTERNAL_NAME "OdVisualizeFirstApp\0"
+#define ORIGINAL_FILE_NAME "OdVisualizeFirstApp\0"
+#define PRODUCT_NAME_ADDITION TD_PRODUCT_NAME_ADDITION_S
+#define COPYRIGHT_START_YEAR  TD_COPYRIGHT_START_YEAR_S
+
+#include "TvVisualizeVersionInfo.rc2"
+
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

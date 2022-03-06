@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidationCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidationModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsInstanceValidationTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsExtentValidationTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidationTaskCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIds.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsIds.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsIdsType.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsInfo.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsEntityType.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsClassificationType.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsClassificationTypeLocation.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsApplicabilityType.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsApplicabilityTypeProperty.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsApplicabilityTypeMaterial.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsSystemType.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsPropertyType.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsPropertyTypeLocation.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsMaterialType.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsMaterialTypeLocation.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsRequirementsType.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsRequirementsTypeClassification.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsRequirementsTypeProperty.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsRequirementsTypeMaterial.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsSpecificationType.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsUse.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdXmlRestriction.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsAuthor.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsIdsValue.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsIfcversion.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Source\OdIdsSpecificationTypeNecessity.cpp">
+      <Filter>Source Files\IDS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidationExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidationCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Include\Common\IdsValidationModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsInstanceValidationTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsExtentValidationTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidationTaskCreator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIds.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsIds.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsIdsType.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsInfo.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsEntityType.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsClassificationType.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsClassificationTypeLocation.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsApplicabilityType.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsApplicabilityTypeProperty.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsApplicabilityTypeMaterial.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsSystemType.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsPropertyType.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsPropertyTypeLocation.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsMaterialType.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsMaterialTypeLocation.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsRequirementsType.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsRequirementsTypeClassification.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsRequirementsTypeProperty.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsRequirementsTypeMaterial.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsSpecificationType.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsUse.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdXmlRestriction.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsAuthor.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsIdsValue.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsIfcversion.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\IdsValidation\ids\Include\OdIdsSpecificationTypeNecessity.h">
+      <Filter>Header Files\IDS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\Ifc\Examples\IdsValidation\IdsValidation.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{40FB4FC7-61A7-3C4A-BD74-83328FA9FF80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IDS">
+      <UniqueIdentifier>{197476A2-40A8-3D7B-A3BC-DD6CC518554C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{06CAB9B1-521A-38FB-BDAD-5991FAF99E7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IDS">
+      <UniqueIdentifier>{2C0AD229-5C6E-34C3-AD95-52B854F85FD9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

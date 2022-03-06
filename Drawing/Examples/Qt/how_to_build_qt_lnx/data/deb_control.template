@@ -1,0 +1,16 @@
+Package: %PRODUCT_LC%
+Version: %VERSION%
+Section: non-free/graphics
+Priority: optional
+Architecture: %ARCH%
+Pre-Depends: libqt5opengl5,libqt5opengl5-dev
+%DEPENDS%Installed-Size: %SIZE%
+Maintainer: ODA <oda@opendesign.com>
+Homepage: http://www.opendesign.com/guestfiles
+Description: %PRODUCT% v%VERSION% package created by ODA.
+ %DESCRIPTION%
+ This software was created with using ODA SDK for .dwg/.dwf files and Qt.
+ .
+ * Free to download.
+Changes:
+ .

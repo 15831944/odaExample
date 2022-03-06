@@ -1,0 +1,15 @@
+﻿  NETLOADCommand.cpp
+  NetloadModule.cpp
+  AssemblyInfo.cpp
+  GeneralAssemblyInfo.cpp
+  .NETFramework,Version=v4.8.AssemblyAttributes.cpp
+..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\NetloadCommandModule\AssemblyInfo.cpp(31,29): warning C4947: 'System::Security::Permissions::SecurityAction::RequestMinimum': marked as obsolete
+..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\NetloadCommandModule\AssemblyInfo.cpp(31,29): message : Message: 'Assembly level declarative security is obsolete and is no longer enforced by the CLR by default. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.'
+..\..\..\..\..\..\NetClassic\Examples\GeneralAssemblyInfo.cpp(61,29): warning C4947: 'System::Security::Permissions::SecurityAction::RequestMinimum': marked as obsolete
+..\..\..\..\..\..\NetClassic\Examples\GeneralAssemblyInfo.cpp(61,29): message : Message: 'Assembly level declarative security is obsolete and is no longer enforced by the CLR by default. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.'
+     Creating library ..\..\..\..\..\..\lib\vc16_amd64dll\NetloadCommandModule.lib and object ..\..\..\..\..\..\lib\vc16_amd64dll\NetloadCommandModule.exp
+NETLOADCommand.obj : warning LNK4248: unresolved typeref token (01000020) for 'OdDbStub'; image may not run
+NETLOADCommand.obj : warning LNK4248: unresolved typeref token (01000024) for 'OdGiWorldDraw'; image may not run
+NETLOADCommand.obj : warning LNK4248: unresolved typeref token (01000025) for 'OdGiViewportDraw'; image may not run
+NETLOADCommand.obj : warning LNK4248: unresolved typeref token (01000028) for 'OdGiViewport'; image may not run
+  NetloadCommandModule.vcxproj -> C:\B\2\_\_\exe\vc16_amd64dll\NetloadCommandModule_23.1_lic16.tx

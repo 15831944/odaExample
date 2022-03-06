@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B5FA77E0-6828-358A-BD95-392F0839F7B9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OdaDgnAppSwigMgd</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>OdaDgnAppSwigMgd</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>OdaDgnAppSwigMgd</AssemblyName>
+    <StartAction>Project</StartAction>
+    <StartProgram>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdaDgnAppSwigMgd.exe</StartProgram>
+    <AdditionalOptions>/langversion:latest /MP4</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>TEIGHA_TRIAL;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;NET48</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\Program.cs">
+      <Link>Sources\Program.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\OdExSystemServices.cs">
+      <Link>Sources\OdExSystemServices.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\OdExGiContextForDgDatabaseToExport.cs">
+      <Link>Sources\OdExGiContextForDgDatabaseToExport.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\OdExDgnHostApplicationServices.cs">
+      <Link>Sources\OdExDgnHostApplicationServices.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\ThirdParty\activation\trial\OdActivationInfo.cs" />
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\FindObjectDlg.cs">
+      <Link>Sources\FindObjectDlg.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\FindObjectDlg.Designer.cs">
+      <DependentUpon>FindObjectDlg.cs</DependentUpon>
+      <DependentUpon>FindObjectDlg.cs</DependentUpon>
+      <Link>Sources\FindObjectDlg.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\Form1.cs">
+      <Link>Sources\Form1.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <DependentUpon>Form1.cs</DependentUpon>
+      <Link>Sources\Form1.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\Tree.cs">
+      <Link>Sources\Tree.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\Tree.Designer.cs">
+      <DependentUpon>Tree.cs</DependentUpon>
+      <DependentUpon>Tree.cs</DependentUpon>
+      <Link>Sources\Tree.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\VectorizeForm.cs">
+      <Link>Sources\VectorizeForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\VectorizeForm.Designer.cs">
+      <DependentUpon>VectorizeForm.cs</DependentUpon>
+      <DependentUpon>VectorizeForm.cs</DependentUpon>
+      <Link>Sources\VectorizeForm.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\Common\GeneralAssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Core">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="OdDgnExamplesLibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdDgnExamplesLibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="OdDgnExamplesUILibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdDgnExamplesUILibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="OdKernelExamplesLibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdKernelExamplesLibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="OdKernelExamplesUILibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdKernelExamplesUILibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigCoreMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TG_SwigDbMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TG_SwigDbMgd.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\FindObjectDlg.resx">
+      <DependentUpon>FindObjectDlg.cs</DependentUpon>
+      <Link>FindObjectDlg.resx</Link>
+      <DependentUpon>FindObjectDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <Link>Form1.resx</Link>
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\Tree.resx">
+      <DependentUpon>Tree.cs</DependentUpon>
+      <Link>Tree.resx</Link>
+      <DependentUpon>Tree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\OdaDgnAppSwig\Sources\VectorizeForm.resx">
+      <DependentUpon>VectorizeForm.cs</DependentUpon>
+      <Link>VectorizeForm.resx</Link>
+      <DependentUpon>VectorizeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Link>Resources.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OdDgnExamplesLib\OdDgnExamplesLibMgd.csproj">
+      <Project>{2B3DB3AF-F98F-3711-A8DE-2B3EFEA1C7E9}</Project>
+      <Name>OdDgnExamplesLibMgd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OdDgnExamplesUILib\OdDgnExamplesUILibMgd.csproj">
+      <Project>{85FC8E5A-A3EF-3CD1-A3BF-7CA8A67505D7}</Project>
+      <Name>OdDgnExamplesUILibMgd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Kernel\CSharp\OdKernelExamplesLib\OdKernelExamplesLibMgd.csproj">
+      <Project>{DF3B2B0F-266B-39C9-B280-67E442CB471A}</Project>
+      <Name>OdKernelExamplesLibMgd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Kernel\CSharp\OdKernelExamplesUILib\OdKernelExamplesUILibMgd.csproj">
+      <Project>{B28F2FEE-5FF4-3F63-8B04-E25E5096C5E2}</Project>
+      <Name>OdKernelExamplesUILibMgd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

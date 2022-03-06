@@ -1,0 +1,2915 @@
+ENTITY IfcOrganization
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Id" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "Identification" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcActorRole
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HasExternalReference" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcTelecomAddress
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "MessagingIDs" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "WWWHomePageURL":
+          Type "IfcLabel" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcURIReference" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcPerson
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Id" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "Identification" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcOrganizationRelationship
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Name" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "Description" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+
+ENTITY IfcClassificationReference
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Description" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Sort" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ClassificationRefForObjects" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasReferences" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "ReferencedSource":
+          Type "IfcClassification" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcClassificationReferenceSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcExternalReference
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ItemReference" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "Identification" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ExternalReferenceForResources" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Location":
+          Type "IfcLabel" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcURIReference" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcLibraryReference
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ReferenceIntoLibrary" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "Description" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Language" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ReferencedLibrary" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LibraryRefForObjects" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcLibraryInformation
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "LibraryReference" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "Location" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Description" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LibraryInfoForObjects" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasLibraryReferences" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Publisher":
+          Type "IfcOrganization" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcActorSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "VersionDate":
+          Type "IfcCalendarDate" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcDocumentReference
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ReferenceToDocument" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "Description" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ReferencedDocument" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "DocumentRefForObjects" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcDocumentInformation
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "DocumentId" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "DocumentReferences" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "Identification" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Location" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "DocumentInfoForObjects" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasDocumentReferences" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Editors":
+          Type "OdDAI::SetBounded<OdIfc2x_final::IfcActorSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcActorSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcActorSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+          Type "OdDAI::SetBounded<OdIfc4::IfcActorSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcActorSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcActorSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcActorSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcActorSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+      Attr "CreationTime":
+          Type "IfcDateAndTime" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "LastRevisionTime":
+          Type "IfcDateAndTime" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "ElectronicFormat":
+          Type "IfcDocumentElectronicFormat" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcIdentifier" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "ValidFrom":
+          Type "IfcCalendarDate" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcDate" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "ValidUntil":
+          Type "IfcCalendarDate" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcDate" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcClassification
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Contains" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "Description" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Location" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ReferenceTokens" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ClassificationForObjects" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasReferences" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "EditionDate":
+          Type "IfcCalendarDate" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcDate" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcConnectionPointGeometry
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "PointOnRelatingElement":
+          Type "IfcPoint" in : IFC2X_FINAL IFC2X2_FINAL
+          Type "IfcPointOrVertexPoint" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "PointOnRelatedElement":
+          Type "IfcPoint" in : IFC2X_FINAL IFC2X2_FINAL
+          Type "IfcPointOrVertexPoint" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcConnectionCurveGeometry
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "CurveOnRelatingElement":
+          Type "IfcBoundedCurve" in : IFC2X_FINAL IFC2X2_FINAL
+          Type "IfcCurveOrEdgeCurve" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "CurveOnRelatedElement":
+          Type "IfcBoundedCurve" in : IFC2X_FINAL IFC2X2_FINAL
+          Type "IfcCurveOrEdgeCurve" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcConnectionSurfaceGeometry
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "SurfaceOnRelatingElement":
+          Type "IfcSurface" in : IFC2X_FINAL IFC2X2_FINAL
+          Type "IfcSurfaceOrFaceSurface" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "SurfaceOnRelatedElement":
+          Type "IfcSurface" in : IFC2X_FINAL IFC2X2_FINAL
+          Type "IfcSurfaceOrFaceSurface" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcGridAxis
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PartOfW" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "PartOfV" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "PartOfU" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasIntersections" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcGridPlacement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "PlacementRefDirection":
+          Type "IfcVirtualGridIntersection" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcGridPlacementDirectionSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcObjectPlacement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ReferencedByPlacements" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1
+      Attr "PlacesObject" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "PlacementRelTo" in schemas: IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcLocalPlacement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PlacementRelTo" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1
+
+ENTITY IfcHalfSpaceSolid
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "AgreementFlag":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcPolygonalBoundedHalfSpace
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "PolygonalBoundary":
+          Type "IfcPolyline" in : IFC2X_FINAL IFC2X2_FINAL
+          Type "IfcBoundedCurve" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcGeometricSet
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Elements":
+          Type "OdDAI::SetBounded<OdIfc2x_final::IfcGeometricSetSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcGeometricSetSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcGeometricSetSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+          Type "OdDAI::SetBounded<OdIfc4::IfcGeometricSetSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcGeometricSetSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcGeometricSetSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcGeometricSetSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcGeometricSetSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+
+ENTITY IfcShellBasedSurfaceModel
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "SbsmBoundary":
+          Type "OdDAI::SetBounded<OdIfc2x_final::IfcShell, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcShell, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcShell, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+          Type "OdDAI::SetBounded<OdIfc4::IfcShell, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcShell, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcShell, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcShell, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcShell, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+
+ENTITY IfcPlacement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Location":
+          Type "IfcCartesianPoint" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1
+          Type "IfcPoint" in : IFC4X3_RC3
+
+
+ENTITY IfcRepresentationItem
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "LayerAssignments" in schemas: IFC2X3
+      Attr "StyledByItem" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LayerAssignment" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRepresentationMap
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HasShapeAspects" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcCartesianTransformationOperator
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Scale":
+          Type "double" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcReal" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcCartesianTransformationOperator2DnonUniform
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Scale2":
+          Type "double" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcReal" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcCartesianTransformationOperator3DnonUniform
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Scale2":
+          Type "double" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcReal" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "Scale3":
+          Type "double" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcReal" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcCompositeCurveSegment
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Transition" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1
+      Attr "UsingCurves" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1
+  Attributes types differences:
+      Attr "SameSense":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcBoundedCurve
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PositioningElement" in schemas: IFC4X2 IFC4X3_RC1
+
+ENTITY IfcCompositeCurve
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "SelfIntersect":
+          Type "OdDAI::Logical" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcLogical" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcTrimmedCurve
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Trim1":
+          Type "OdDAI::SetBounded<OdIfc2x_final::IfcTrimmingSelect, 1, 2>" in : IFC2X_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcTrimmingSelect, 1, 2>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcTrimmingSelect, 1, 2>" in : IFC2X3
+          Type "OdDAI::SetBounded<OdIfc4::IfcTrimmingSelect, 1, 2>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcTrimmingSelect, 1, 2>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcTrimmingSelect, 1, 2>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcTrimmingSelect, 1, 2>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcTrimmingSelect, 1, 2>" in : IFC4X3_RC3
+
+      Attr "Trim2":
+          Type "OdDAI::SetBounded<OdIfc2x_final::IfcTrimmingSelect, 1, 2>" in : IFC2X_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcTrimmingSelect, 1, 2>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcTrimmingSelect, 1, 2>" in : IFC2X3
+          Type "OdDAI::SetBounded<OdIfc4::IfcTrimmingSelect, 1, 2>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcTrimmingSelect, 1, 2>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcTrimmingSelect, 1, 2>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcTrimmingSelect, 1, 2>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcTrimmingSelect, 1, 2>" in : IFC4X3_RC3
+
+      Attr "SenseAgreement":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcOffsetCurve2D
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "BasisCurve" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4
+  Attributes types differences:
+      Attr "SelfIntersect":
+          Type "OdDAI::Logical" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcLogical" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcOffsetCurve3D
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "BasisCurve" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4
+  Attributes types differences:
+      Attr "SelfIntersect":
+          Type "OdDAI::Logical" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcLogical" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcCurveBoundedPlane
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "OuterBoundary":
+          Type "Ifc2DCompositeCurve" in : IFC2X_FINAL
+          Type "IfcCurve" in : IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "InnerBoundaries":
+          Type "OdDAI::Set<OdDAIObjectId>" in : IFC2X_FINAL
+          Type "OdDAI::SetBounded<OdDAIObjectId, 0, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcRectangularTrimmedSurface
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Usense":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "Vsense":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcMaterial
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ClassifiedAs" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "HasRepresentation" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Description" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Category" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "IsRelatedWith" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "RelatesTo" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcMaterialClassificationRelationship
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "MaterialClassifications":
+          Type "OdDAI::SetBounded<OdIfc2x_final::IfcClassificationNotationSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcClassificationNotationSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcClassificationNotationSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+          Type "OdDAI::SetBounded<OdIfc4::IfcClassificationSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcClassificationSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcClassificationSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcClassificationSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcClassificationSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+
+ENTITY IfcMaterialLayer
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Name" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Description" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Category" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Priority" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "LayerThickness":
+          Type "IfcPositiveLengthMeasure" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "IsVentilated":
+          Type "IfcBoolean" in : IFC2X_FINAL IFC2X2_FINAL
+          Type "IfcLogical" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcMaterialLayerSet
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Description" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcMaterialLayerSetUsage
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ReferenceExtent" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcContextDependentUnit
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HasExternalReference" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcConversionBasedUnit
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HasExternalReference" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcMonetaryUnit
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Currency":
+          Type "IfcCurrencyEnum" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcLabel" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcUnitAssignment
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Units":
+          Type "OdDAI::SetBounded<OdIfc2x_final::IfcUnit, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcUnit, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcUnit, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+          Type "OdDAI::SetBounded<OdIfc4::IfcUnit, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcUnit, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcUnit, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcUnit, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcUnit, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+
+ENTITY IfcProfileDef
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HasExternalReference" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasProperties" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcCircleProfileDef
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Position" in schemas: IFC2X_FINAL
+
+ENTITY IfcRectangleProfileDef
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Position" in schemas: IFC2X_FINAL
+
+ENTITY IfcTrapeziumProfileDef
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Position" in schemas: IFC2X_FINAL
+
+ENTITY IfcEllipseProfileDef
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Position" in schemas: IFC2X_FINAL
+
+ENTITY IfcRoundedRectangleProfileDef
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Position" in schemas: IFC2X_FINAL
+      Attr "XDim" in schemas: IFC2X_FINAL
+      Attr "YDim" in schemas: IFC2X_FINAL
+
+ENTITY IfcPropertyEnumeratedValue
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "EnumerationValues":
+          Type "OdDAI::List<OdIfc2x_final::IfcValue>" in : IFC2X_FINAL
+          Type "OdDAI::List<OdIfc2x2_final::IfcValue>" in : IFC2X2_FINAL
+          Type "OdDAI::List<OdIfc2x3::IfcValue>" in : IFC2X3
+          Type "OdDAI::List<OdIfc4::IfcValue>" in : IFC4
+          Type "OdDAI::List<OdIfc4x1::IfcValue>" in : IFC4X1
+          Type "OdDAI::List<OdIfc4x2::IfcValue>" in : IFC4X2
+          Type "OdDAI::List<OdIfc4x3_rc1::IfcValue>" in : IFC4X3_RC1
+          Type "OdDAI::List<OdIfc4x3_rc3::IfcValue>" in : IFC4X3_RC3
+
+
+ENTITY IfcProperty
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PropertyForDependance" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "PropertyDependsOn" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "PartOfPset" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasConstraints" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasApprovals" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcComplexProperty
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "HasProperties":
+          Type "OdDAI::OdDAIObjectIdList" in : IFC2X_FINAL
+          Type "OdDAI::SetBounded<OdDAIObjectId, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcPropertyBoundedValue
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "SetPointValue" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcPropertyTableValue
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "CurveInterpolation" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "DefiningValues":
+          Type "OdDAI::List<OdIfc2x_final::IfcValue>" in : IFC2X_FINAL
+          Type "OdDAI::List<OdIfc2x2_final::IfcValue>" in : IFC2X2_FINAL
+          Type "OdDAI::List<OdIfc2x3::IfcValue>" in : IFC2X3
+          Type "OdDAI::List<OdIfc4::IfcValue>" in : IFC4
+          Type "OdDAI::List<OdIfc4x1::IfcValue>" in : IFC4X1
+          Type "OdDAI::List<OdIfc4x2::IfcValue>" in : IFC4X2
+          Type "OdDAI::List<OdIfc4x3_rc1::IfcValue>" in : IFC4X3_RC1
+          Type "OdDAI::List<OdIfc4x3_rc3::IfcValue>" in : IFC4X3_RC3
+
+      Attr "DefinedValues":
+          Type "OdDAI::List<OdIfc2x_final::IfcValue>" in : IFC2X_FINAL
+          Type "OdDAI::List<OdIfc2x2_final::IfcValue>" in : IFC2X2_FINAL
+          Type "OdDAI::List<OdIfc2x3::IfcValue>" in : IFC2X3
+          Type "OdDAI::List<OdIfc4::IfcValue>" in : IFC4
+          Type "OdDAI::List<OdIfc4x1::IfcValue>" in : IFC4X1
+          Type "OdDAI::List<OdIfc4x2::IfcValue>" in : IFC4X2
+          Type "OdDAI::List<OdIfc4x3_rc1::IfcValue>" in : IFC4X3_RC1
+          Type "OdDAI::List<OdIfc4x3_rc3::IfcValue>" in : IFC4X3_RC3
+
+
+ENTITY IfcPropertyReferenceValue
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "UsageName":
+          Type "IfcLabel" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcText" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcPropertyEnumeration
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "EnumerationValues":
+          Type "OdDAI::List<OdIfc2x_final::IfcValue>" in : IFC2X_FINAL
+          Type "OdDAI::List<OdIfc2x2_final::IfcValue>" in : IFC2X2_FINAL
+          Type "OdDAI::List<OdIfc2x3::IfcValue>" in : IFC2X3
+          Type "OdDAI::List<OdIfc4::IfcValue>" in : IFC4
+          Type "OdDAI::List<OdIfc4x1::IfcValue>" in : IFC4X1
+          Type "OdDAI::List<OdIfc4x2::IfcValue>" in : IFC4X2
+          Type "OdDAI::List<OdIfc4x3_rc1::IfcValue>" in : IFC4X3_RC1
+          Type "OdDAI::List<OdIfc4x3_rc3::IfcValue>" in : IFC4X3_RC3
+
+
+ENTITY IfcPhysicalQuantity
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Unit" in schemas: IFC2X_FINAL
+      Attr "PartOfComplex" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasExternalReferences" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcQuantityLength
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Formula" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcQuantityArea
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Formula" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcQuantityVolume
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Formula" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcQuantityCount
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Formula" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcQuantityWeight
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Formula" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcGeometricRepresentationContext
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HasSubContexts" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasCoordinateOperation" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Precision":
+          Type "double" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcReal" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcRepresentation
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "RepresentationMap" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LayerAssignments" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcShapeRepresentation
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "OfShapeAspect" in schemas: IFC2X_FINAL IFC2X2_FINAL
+
+ENTITY IfcShapeAspect
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HasExternalReferences" in schemas: IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "ProductDefinitional":
+          Type "OdDAI::Logical" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcLogical" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "PartOfProductDefinitionShape":
+          Type "IfcProductDefinitionShape" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcProductRepresentationSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcProductDefinitionShape
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ShapeOfProduct" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcOrientedEdge
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Orientation":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcEdgeCurve
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "SameSense":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcFace
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HasTextureMaps" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcFaceSurface
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "SameSense":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcFaceBound
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Orientation":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcTable
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Columns" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Name":
+          Type "OdAnsiString" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcLabel" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcTableRow
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "OfTable" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "RowCells":
+          Type "OdDAI::List<OdIfc2x_final::IfcMeasureValue>" in : IFC2X_FINAL
+          Type "OdDAI::List<OdIfc2x2_final::IfcValue>" in : IFC2X2_FINAL
+          Type "OdDAI::List<OdIfc2x3::IfcValue>" in : IFC2X3
+          Type "OdDAI::List<OdIfc4::IfcValue>" in : IFC4
+          Type "OdDAI::List<OdIfc4x1::IfcValue>" in : IFC4X1
+          Type "OdDAI::List<OdIfc4x2::IfcValue>" in : IFC4X2
+          Type "OdDAI::List<OdIfc4x3_rc1::IfcValue>" in : IFC4X3_RC1
+          Type "OdDAI::List<OdIfc4x3_rc3::IfcValue>" in : IFC4X3_RC3
+
+      Attr "IsHeading":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcProduct
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PositionedRelativeTo" in schemas: IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ReferencedInStructures" in schemas: IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcObject
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HasAssociations" in schemas: IFC2X_FINAL IFC2X2_FINAL
+      Attr "HasAssignments" in schemas: IFC2X_FINAL IFC2X2_FINAL
+      Attr "Decomposes" in schemas: IFC2X_FINAL IFC2X2_FINAL
+      Attr "IsDecomposedBy" in schemas: IFC2X_FINAL IFC2X2_FINAL
+      Attr "IsDeclaredBy" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Declares" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "IsTypedBy" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcPropertyDefinition
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HasContext" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcTypeObject
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ObjectTypeOf" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "Types" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "ApplicableOccurrence":
+          Type "IfcLabel" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcIdentifier" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "HasPropertySets":
+          Type "OdDAI::OdDAIObjectIdList" in : IFC2X_FINAL IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdDAIObjectId, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcTypeProduct
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ReferencedBy" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcPropertySetDefinition
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PropertyDefinitionOf" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "IsDefinedBy" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "DefinesOccurrence" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelDefinesByProperties
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "RelatedObjects" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatingPropertyDefinition":
+          Type "IfcPropertySetDefinition" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcPropertySetDefinitionSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcRelDefines
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "RelatedObjects" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+
+ENTITY IfcRelAssignsToProcess
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatingProcess":
+          Type "IfcProcess" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcProcessSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcProcess
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Productivity" in schemas: IFC2X_FINAL
+      Attr "Identification" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LongDescription" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelSequence
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "UserDefinedSequenceType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "TimeLag":
+          Type "IfcTimeMeasure" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcLagTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcRelAssignsToProduct
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatingProduct":
+          Type "IfcProduct" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcProductSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcControl
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Identification" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelAssignsToResource
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatingResource":
+          Type "IfcResource" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcResourceSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcResource
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ResourceConsumption" in schemas: IFC2X_FINAL
+      Attr "BaseUnit" in schemas: IFC2X_FINAL
+      Attr "Identification" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LongDescription" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcGroup
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "IsGroupedBy":
+          Type "undefined" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "OdDAI::OdDAIObjectIdSet" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcRelDecomposes
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "RelatingObject" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "RelatedObjects" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+
+ENTITY IfcRelAggregates
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "RelatingObject" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "RelatedObjects" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelNests
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "RelatingObject" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "RelatedObjects" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelAssociates
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatedObjects":
+          Type "OdDAI::SetBounded<OdDAIObjectId, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "OdDAI::SetBounded<OdIfc4::IfcDefinitionSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcDefinitionSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcDefinitionSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcDefinitionSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcDefinitionSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+
+ENTITY IfcRelAssociatesClassification
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatingClassification":
+          Type "IfcClassificationNotationSelect" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcClassificationSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcRelDefinesByType
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "RelatedObjects" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcProject
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "LongName" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "Phase" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "RepresentationContexts" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "UnitsInContext" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+
+ENTITY IfcZone
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "LongName" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcSystem
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ServicesFacilities" in schemas: IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelVoidsElement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatingBuildingElement":
+          Type "IfcBuildingElement" in : IFC2X_FINAL
+          Type "IfcElement" in : IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "RelatedOpeningElement":
+          Type "IfcOpeningElement" in : IFC2X_FINAL
+          Type "IfcFeatureElementSubtraction" in : IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcBuildingElement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2
+  Attributes difference:
+      Attr "ProvidesBoundaries" in schemas: IFC2X_FINAL
+      Attr "HasOpenings" in schemas: IFC2X_FINAL
+      Attr "FillsVoids" in schemas: IFC2X_FINAL
+
+ENTITY IfcElement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "FillsVoids" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasCoverings" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasProjections" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasPorts" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "HasOpenings" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "IsConnectionRealization" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ProvidesBoundaries" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasStructuralMember" in schemas: IFC2X3
+      Attr "ReferencedInStructures" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2
+      Attr "IsInterferedByElements" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "InterferesElements" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcSpatialStructureElement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "LongName" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "ContainsElements" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "ServicedBySystems" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "ReferencesElements" in schemas: IFC2X3
+
+ENTITY IfcBuilding
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ServicedBySystems" in schemas: IFC2X_FINAL
+
+ENTITY IfcSpace
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "InteriorOrExteriorSpace" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "HasCoverings" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelSpaceBoundary
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatingSpace":
+          Type "IfcSpace" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcSpaceBoundarySelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "RelatedBuildingElement":
+          Type "IfcBuildingElement" in : IFC2X_FINAL
+          Type "IfcElement" in : IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "ConnectionGeometry":
+          Type "IfcConnectionSurfaceGeometry" in : IFC2X_FINAL
+          Type "IfcConnectionGeometry" in : IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcRelContainedInSpatialStructure
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatingStructure":
+          Type "IfcSpatialStructureElement" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcSpatialElement" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcGrid
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ContainedInStructure" in schemas: IFC2X2_FINAL IFC2X3 IFC4
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcOpeningElement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "VoidsElements" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelFillsElement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatedBuildingElement":
+          Type "IfcBuildingElement" in : IFC2X_FINAL
+          Type "IfcElement" in : IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcDistributionElement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HasPorts" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcTransportElement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "OperationType" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "CapacityByWeight" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "CapacityByNumber" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcBuildingElementProxy
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "CompositionType" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelCoversBldgElements
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatingBuildingElement":
+          Type "IfcBuildingElement" in : IFC2X_FINAL
+          Type "IfcElement" in : IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "RelatedCoverings":
+          Type "OdDAI::OdDAIObjectIdList" in : IFC2X_FINAL
+          Type "OdDAI::SetBounded<OdDAIObjectId, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcWall
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcCovering
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Covers" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "CoversSpaces" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "CoversElements" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcColumn
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcBeam
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcDoor
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "OperationType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "UserDefinedOperationType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcWindow
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "PartitioningType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "UserDefinedPartitioningType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRoof
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ShapeType" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcStair
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ShapeType" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcStairFlight
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "NumberOfRiser" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "NumberOfRisers" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "NumberOfTreads":
+          Type "int" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcInteger" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcRamp
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ShapeType" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRampFlight
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcDoorStyle
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "ParameterTakesPrecedence":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "Sizeable":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcWindowStyle
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "ParameterTakesPrecedence":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "Sizeable":
+          Type "OdDAI::Boolean" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcDoorLiningProperties
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "LiningToPanelOffsetX" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LiningToPanelOffsetY" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "LiningThickness":
+          Type "IfcPositiveLengthMeasure" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "ThresholdThickness":
+          Type "IfcPositiveLengthMeasure" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "TransomThickness":
+          Type "IfcPositiveLengthMeasure" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcWindowLiningProperties
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "LiningOffset" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LiningToPanelOffsetX" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LiningToPanelOffsetY" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "LiningThickness":
+          Type "IfcPositiveLengthMeasure" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "TransomThickness":
+          Type "IfcPositiveLengthMeasure" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "MullionThickness":
+          Type "IfcPositiveLengthMeasure" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcApproval
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "AuthorizingAgent" in schemas: IFC2X_FINAL
+      Attr "RequestFrom" in schemas: IFC2X_FINAL
+      Attr "RequestTo" in schemas: IFC2X_FINAL
+      Attr "RequestingDate" in schemas: IFC2X_FINAL
+      Attr "RequestedDate" in schemas: IFC2X_FINAL
+      Attr "ApprovalDate" in schemas: IFC2X_FINAL
+      Attr "ApprovalStatus" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "ApprovalConstraint" in schemas: IFC2X_FINAL
+      Attr "ApprovalDateTime" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "ApprovalLevel" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "ApprovalQualifier" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "Name" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Identifier" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Actors" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "IsRelatedWith" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Relates" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "TimeOfApproval" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Status" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Level" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Qualifier" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "RequestingApproval" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "GivingApproval" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasExternalReferences" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ApprovedObjects" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ApprovedResources" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcConstraint
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Aggregates" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "IsAggregatedIn" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "UserDefinedGrade" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ClassifiedAs" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "RelatesConstraints" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "IsRelatedWith" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "PropertiesForConstraint" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasExternalReferences" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "CreationTime":
+          Type "IfcDateTimeSelect" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcMetric
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Values" in schemas: IFC2X_FINAL
+      Attr "Benchmark" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ValueSource" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "DataValue" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ReferencePath" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcObjective
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ResultValues" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "UserDefinedQualifier" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LogicalAggregator" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "BenchmarkValues":
+          Type "OdDAI::OdDAIObjectIdList" in : IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+          Type "IfcMetric" in : IFC2X2_FINAL IFC2X3
+
+
+ENTITY IfcConstraintAggregationRelationship
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "Name" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "Description" in schemas: IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "LogicalAggregator":
+          Type "IfcAggregatorEnum" in : IFC2X_FINAL
+          Type "IfcLogicalOperatorEnum" in : IFC2X2_FINAL IFC2X3
+
+
+ENTITY IfcCostValue
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "BaseCostValue" in schemas: IFC2X_FINAL
+      Attr "FinalCostValue" in schemas: IFC2X_FINAL
+      Attr "Currency" in schemas: IFC2X_FINAL
+      Attr "UnitCostBasis" in schemas: IFC2X_FINAL
+      Attr "CostType" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "CostDate" in schemas: IFC2X_FINAL
+      Attr "CostModifiers" in schemas: IFC2X_FINAL
+      Attr "ValueOfComponents" in schemas: IFC2X_FINAL
+      Attr "IsComponentIn" in schemas: IFC2X_FINAL
+      Attr "CostsReferenced" in schemas: IFC2X_FINAL
+      Attr "Condition" in schemas: IFC2X2_FINAL IFC2X3
+
+ENTITY IfcMaterialProperties
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Material":
+          Type "IfcMaterial" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcMaterialDefinition" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcMechanicalMaterialProperties
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "YoungModulus" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "ShearModulus" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "PoissonRatio" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "ThermalExpansionCoefficient" in schemas: IFC2X2_FINAL IFC2X3
+
+ENTITY IfcSurfaceStyle
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Name" in schemas: IFC2X_FINAL IFC2X2_FINAL
+      Attr "Properties" in schemas: IFC2X_FINAL
+      Attr "Usages" in schemas: IFC2X_FINAL
+      Attr "Side" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Styles" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcTask
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "TaskId" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "WBSCode" in schemas: IFC2X_FINAL
+      Attr "WBSSource" in schemas: IFC2X_FINAL
+      Attr "Milestones" in schemas: IFC2X_FINAL
+      Attr "InPlaceQuantity" in schemas: IFC2X_FINAL
+      Attr "EstimatedQuantity" in schemas: IFC2X_FINAL
+      Attr "BudgetQuantity" in schemas: IFC2X_FINAL
+      Attr "IsRootTask" in schemas: IFC2X_FINAL
+      Attr "IsMilestone" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Priority" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "TaskTime" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Status":
+          Type "IfcTaskStatusEnum" in : IFC2X_FINAL
+          Type "IfcLabel" in : IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcScheduleTimeControl
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "ActualStart":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+
+      Attr "EarlyStart":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+
+      Attr "LateStart":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+
+      Attr "ScheduleStart":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+
+      Attr "ActualFinish":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+
+      Attr "EarlyFinish":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+
+      Attr "LateFinish":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+
+      Attr "ScheduleFinish":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+
+      Attr "StatusTime":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+
+
+ENTITY IfcRelAssignsTasks
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "Milestone" in schemas: IFC2X_FINAL
+
+ENTITY IfcWorkControl
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Identifier" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "WorkControlType" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "UserDefinedControlType" in schemas: IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "CreationDate":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "Duration":
+          Type "IfcTimeMeasure" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcDuration" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "TotalFloat":
+          Type "IfcTimeMeasure" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcDuration" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "StartTime":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "FinishTime":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcWorkPlan
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcWorkSchedule
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelConnectsPorts
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "FlowDirection" in schemas: IFC2X_FINAL
+      Attr "PortConnectionType" in schemas: IFC2X_FINAL
+      Attr "RelatingPort" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "RelatedPort" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "RealizingElement" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcDistributionFlowElement
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "FlowElementType" in schemas: IFC2X_FINAL
+
+ENTITY IfcFlowFitting
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC2X_FINAL
+      Attr "PrimaryFittingType" in schemas: IFC2X_FINAL
+
+ENTITY IfcFlowSegment
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC2X_FINAL
+
+ENTITY IfcAirTerminal
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "AirFlowType" in schemas: IFC2X_FINAL
+      Attr "Throw" in schemas: IFC2X_FINAL
+      Attr "AirDiffusionPerformanceIndex" in schemas: IFC2X_FINAL
+      Attr "FinishType" in schemas: IFC2X_FINAL
+      Attr "FinishColor" in schemas: IFC2X_FINAL
+      Attr "MountingType" in schemas: IFC2X_FINAL
+      Attr "FaceType" in schemas: IFC2X_FINAL
+      Attr "CoreType" in schemas: IFC2X_FINAL
+      Attr "CoreSetVertical" in schemas: IFC2X_FINAL
+      Attr "CoreSetHorizontal" in schemas: IFC2X_FINAL
+      Attr "IntegralControl" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcCoil
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "CoilType" in schemas: IFC2X_FINAL
+      Attr "BypassFactor" in schemas: IFC2X_FINAL
+      Attr "FaceVelocity" in schemas: IFC2X_FINAL
+      Attr "FlowArrangement" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcTubeBundle
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "TubeSize" in schemas: IFC2X_FINAL
+      Attr "TubeMaterial" in schemas: IFC2X_FINAL
+      Attr "TubeLength" in schemas: IFC2X_FINAL
+      Attr "TubeSpacing" in schemas: IFC2X_FINAL
+      Attr "TubeFluidEnteringTemperature" in schemas: IFC2X_FINAL
+      Attr "TubeFluidLeavingTemperature" in schemas: IFC2X_FINAL
+      Attr "FinMaterial" in schemas: IFC2X_FINAL
+      Attr "ShellMaterial" in schemas: IFC2X_FINAL
+      Attr "FinSpacing" in schemas: IFC2X_FINAL
+      Attr "TubeFoulingFactor" in schemas: IFC2X_FINAL
+      Attr "NumberOfTubeCircuits" in schemas: IFC2X_FINAL
+      Attr "NumberOfTubeRows" in schemas: IFC2X_FINAL
+      Attr "ShellFluidLeavingTemperature" in schemas: IFC2X_FINAL
+      Attr "ShellFluidEnteringTemperature" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcHeatExchanger
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HeatExchangerType" in schemas: IFC2X_FINAL
+      Attr "HeatExchangerArrangement" in schemas: IFC2X_FINAL
+      Attr "NumberOfPlates" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcCoolingTower
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "CoolingTowerType" in schemas: IFC2X_FINAL
+      Attr "AmbientDesignTemperature" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcChiller
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ChillerType" in schemas: IFC2X_FINAL
+      Attr "NominalCoolingCapacity" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcBoiler
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "BoilerType" in schemas: IFC2X_FINAL
+      Attr "HeatOutput" in schemas: IFC2X_FINAL
+      Attr "PressureRating" in schemas: IFC2X_FINAL
+      Attr "EnergyInputRate" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcCompressor
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "CompressorType" in schemas: IFC2X_FINAL
+      Attr "HotGasBypass" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcFan
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "AirFlowType" in schemas: IFC2X_FINAL
+      Attr "StaticPressure" in schemas: IFC2X_FINAL
+      Attr "FanPressureClass" in schemas: IFC2X_FINAL
+      Attr "FanWheelType" in schemas: IFC2X_FINAL
+      Attr "WheelMaterial" in schemas: IFC2X_FINAL
+      Attr "WheelTipSpeed" in schemas: IFC2X_FINAL
+      Attr "DischargeVelocity" in schemas: IFC2X_FINAL
+      Attr "HousingMaterial" in schemas: IFC2X_FINAL
+      Attr "DischargePressureLoss" in schemas: IFC2X_FINAL
+      Attr "FanDischargeType" in schemas: IFC2X_FINAL
+      Attr "FanArrangement" in schemas: IFC2X_FINAL
+      Attr "FanRotation" in schemas: IFC2X_FINAL
+      Attr "FanDriveArrangement" in schemas: IFC2X_FINAL
+      Attr "DrivePowerLoss" in schemas: IFC2X_FINAL
+      Attr "MotorDriveType" in schemas: IFC2X_FINAL
+      Attr "MotorInAirstream" in schemas: IFC2X_FINAL
+      Attr "FanMountingType" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcPump
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PumpType" in schemas: IFC2X_FINAL
+      Attr "NetPositiveSuctionHead" in schemas: IFC2X_FINAL
+      Attr "ImpellerSealMaterial" in schemas: IFC2X_FINAL
+      Attr "PumpBaseType" in schemas: IFC2X_FINAL
+      Attr "MotorDriveType" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcTank
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Volume" in schemas: IFC2X_FINAL
+      Attr "ReliefValveSetting" in schemas: IFC2X_FINAL
+      Attr "ChargePressure" in schemas: IFC2X_FINAL
+      Attr "PressureRegulatorSetting" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcFluidFlowProperties
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "MaximumFlowRate" in schemas: IFC2X_FINAL
+      Attr "DesignFlowrate" in schemas: IFC2X_FINAL
+      Attr "MinimumFlowrate" in schemas: IFC2X_FINAL
+      Attr "PressureLoss" in schemas: IFC2X_FINAL
+      Attr "WorkingPressure" in schemas: IFC2X_FINAL
+      Attr "PressureRating" in schemas: IFC2X_FINAL
+      Attr "DesignVelocity" in schemas: IFC2X_FINAL
+      Attr "DesignTemperature" in schemas: IFC2X_FINAL
+      Attr "MaximumTemperature" in schemas: IFC2X_FINAL
+      Attr "MinimumTemperature" in schemas: IFC2X_FINAL
+      Attr "WorkingTemperature" in schemas: IFC2X_FINAL
+      Attr "WorkingQuality" in schemas: IFC2X_FINAL
+      Attr "PropertySource" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "FlowConditionTimeSeries" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "VelocityTimeSeries" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "FlowrateTimeSeries" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "PressureTimeSeries" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "UserDefinedPropertySource" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "TemperatureSingleValue" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "WetBulbTemperatureSingleValue" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "WetBulbTemperatureTimeSeries" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "TemperatureTimeSeries" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "FlowrateSingleValue" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "FlowConditionSingleValue" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "VelocitySingleValue" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "PressureSingleValue" in schemas: IFC2X2_FINAL IFC2X3
+
+ENTITY IfcElectricalBaseProperties
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "InputPhase" in schemas: IFC2X2_FINAL IFC2X3
+
+ENTITY IfcAsset
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "AssetLocation" in schemas: IFC2X_FINAL
+      Attr "AssetIdentifier" in schemas: IFC2X_FINAL
+      Attr "AssetRisks" in schemas: IFC2X_FINAL
+      Attr "LeasedFrom" in schemas: IFC2X_FINAL
+      Attr "LeasedTo" in schemas: IFC2X_FINAL
+      Attr "CommissioningDate" in schemas: IFC2X_FINAL
+      Attr "WarrantyDuration" in schemas: IFC2X_FINAL
+      Attr "ExpectedLife" in schemas: IFC2X_FINAL
+      Attr "OperatingFunction" in schemas: IFC2X_FINAL
+      Attr "AssetID" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "Identification" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "IncorporationDate":
+          Type "IfcCalendarDate" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcDate" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcSystemFurnitureElement
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcFurniture
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcInventory
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "DefinedType" in schemas: IFC2X_FINAL
+      Attr "InventoryType" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "LastUpdateDate":
+          Type "IfcCalendarDate" in : IFC2X_FINAL IFC2X2_FINAL IFC2X3
+          Type "IfcDate" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcCostSchedule
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Title" in schemas: IFC2X_FINAL
+      Attr "SubmittedBy" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "ApprovedBy" in schemas: IFC2X_FINAL
+      Attr "PreparedBy" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "TotalCost" in schemas: IFC2X_FINAL
+      Attr "CostElements" in schemas: IFC2X_FINAL
+      Attr "IntendedUse" in schemas: IFC2X_FINAL
+      Attr "Comments" in schemas: IFC2X_FINAL
+      Attr "TargetUsers" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "ValidFromDate" in schemas: IFC2X_FINAL
+      Attr "ValidToDate" in schemas: IFC2X_FINAL
+      Attr "ScheduleNumber" in schemas: IFC2X_FINAL
+      Attr "ID" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "SubmittedOn":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "UpdateDate":
+          Type "IfcCalendarDate" in : IFC2X_FINAL
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcProjectOrder
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "OrderNumber" in schemas: IFC2X_FINAL
+      Attr "TransactionCode" in schemas: IFC2X_FINAL
+      Attr "IssuingDate" in schemas: IFC2X_FINAL
+      Attr "IssuedBy" in schemas: IFC2X_FINAL
+      Attr "IssuedTo" in schemas: IFC2X_FINAL
+      Attr "AdditionalContacts" in schemas: IFC2X_FINAL
+      Attr "Remarks" in schemas: IFC2X_FINAL
+      Attr "Signoff" in schemas: IFC2X_FINAL
+      Attr "BudgetSource" in schemas: IFC2X_FINAL
+      Attr "ID" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Status" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LongDescription" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelInteractionRequirements
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "RelatingActor" in schemas: IFC2X_FINAL
+      Attr "RelatedActor" in schemas: IFC2X_FINAL
+
+ENTITY IfcOccupant
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "LeeseOrRentalDate" in schemas: IFC2X_FINAL
+      Attr "LeeseOrRentalPeriod" in schemas: IFC2X_FINAL
+      Attr "OccupationType" in schemas: IFC2X_FINAL
+      Attr "UnlimitedPeriod" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcSpaceProgram
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "MinEstimatedCost" in schemas: IFC2X_FINAL
+      Attr "MaxEstimatedCost" in schemas: IFC2X_FINAL
+
+ENTITY IfcCurtainWall
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcConstructionEquipmentResource
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcLaborResource
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Title" in schemas: IFC2X_FINAL
+      Attr "SkillSet" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcConstructionProductResource
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcSubContractResource
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "SubContractResourceID" in schemas: IFC2X_FINAL
+      Attr "SubContractor" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "JobDescription" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcConstructionMaterialResource
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Suppliers" in schemas: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+      Attr "OrderQuantity" in schemas: IFC2X_FINAL
+      Attr "DesignMaterial" in schemas: IFC2X_FINAL
+      Attr "UsageRatio" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcCrewResource
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcElectricMotor
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "MotorWindingType" in schemas: IFC2X_FINAL
+      Attr "Efficiency" in schemas: IFC2X_FINAL
+      Attr "PowerOutput" in schemas: IFC2X_FINAL
+      Attr "FrameConfiguration" in schemas: IFC2X_FINAL
+      Attr "InsulationRating" in schemas: IFC2X_FINAL
+      Attr "MotorHousing" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcLightFixture
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "MaximumSpaceSensibleLoad" in schemas: IFC2X_FINAL
+      Attr "MaximumPlenumSensibleLoad" in schemas: IFC2X_FINAL
+      Attr "SensibleLoadToRadiant" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcOutlet
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "OutletType" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcMove
+Schema presence: IFC2X_FINAL IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "MoveConstraints" in schemas: IFC2X_FINAL
+
+ENTITY IfcActuator
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "FailPosition" in schemas: IFC2X_FINAL
+
+ENTITY IfcController
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcValve
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "CloseOffRating" in schemas: IFC2X_FINAL
+      Attr "ValveFlowCoefficient" in schemas: IFC2X_FINAL
+      Attr "ValveType" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcAirTerminalBox
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "TerminalBoxType" in schemas: IFC2X_FINAL
+      Attr "SoundLevel" in schemas: IFC2X_FINAL
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcDamper
+Schema presence: IFC2X_FINAL IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "FrameDepth" in schemas: IFC2X_FINAL
+      Attr "SizingMethod" in schemas: IFC2X_FINAL
+      Attr "CloseOffRating" in schemas: IFC2X_FINAL
+      Attr "LeakageAirFlowRate" in schemas: IFC2X_FINAL
+      Attr "PercentOpen" in schemas: IFC2X_FINAL
+
+ENTITY IfcActionRequest
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "RequestID" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Status" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LongDescription" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcAnnotation
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcAnnotationFillArea
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Boundaries" in schemas: IFC2X2_FINAL
+      Attr "OuterBoundary" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "InnerBoundaries" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcAnnotationFillAreaOccurrence
+Schema presence: IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "GlobalOrLocal" in schemas: IFC2X3
+
+ENTITY IfcAppliedValue
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ValuesReferenced" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "ValueOfComponents" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "IsComponentIn" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "Category" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Condition" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ArithmeticOperator" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Components" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasExternalReference" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "ApplicableDate":
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+          Type "IfcDate" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "FixedUntilDate":
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+          Type "IfcDate" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcApprovalRelationship
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "RelatedApproval" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "Description" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "Name" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "RelatedApprovals" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcAsymmetricIShapeProfileDef
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "CentreOfGravityInY" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "BottomFlangeWidth" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "OverallDepth" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "WebThickness" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "BottomFlangeThickness" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "BottomFlangeFilletRadius" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "BottomFlangeEdgeRadius" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "BottomFlangeSlope" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "TopFlangeEdgeRadius" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "TopFlangeSlope" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "TopFlangeFilletRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcBSplineCurve
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Degree":
+          Type "int" in : IFC2X2_FINAL IFC2X3
+          Type "IfcInteger" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "ClosedCurve":
+          Type "OdDAI::Logical" in : IFC2X2_FINAL IFC2X3
+          Type "IfcLogical" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "SelfIntersect":
+          Type "OdDAI::Logical" in : IFC2X2_FINAL IFC2X3
+          Type "IfcLogical" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcBoundaryEdgeCondition
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "LinearStiffnessByLengthX" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "LinearStiffnessByLengthY" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "LinearStiffnessByLengthZ" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "TranslationalStiffnessByLengthX" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "TranslationalStiffnessByLengthY" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "TranslationalStiffnessByLengthZ" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RotationalStiffnessByLengthX":
+          Type "IfcModulusOfRotationalSubgradeReactionMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcModulusOfRotationalSubgradeReactionSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "RotationalStiffnessByLengthY":
+          Type "IfcModulusOfRotationalSubgradeReactionMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcModulusOfRotationalSubgradeReactionSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "RotationalStiffnessByLengthZ":
+          Type "IfcModulusOfRotationalSubgradeReactionMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcModulusOfRotationalSubgradeReactionSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcBoundaryFaceCondition
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "LinearStiffnessByAreaX" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "LinearStiffnessByAreaY" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "LinearStiffnessByAreaZ" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "TranslationalStiffnessByAreaX" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "TranslationalStiffnessByAreaY" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "TranslationalStiffnessByAreaZ" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcBoundaryNodeCondition
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "LinearStiffnessX" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "LinearStiffnessY" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "LinearStiffnessZ" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "TranslationalStiffnessX" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "TranslationalStiffnessY" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "TranslationalStiffnessZ" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RotationalStiffnessX":
+          Type "IfcRotationalStiffnessMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcRotationalStiffnessSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "RotationalStiffnessY":
+          Type "IfcRotationalStiffnessMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcRotationalStiffnessSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "RotationalStiffnessZ":
+          Type "IfcRotationalStiffnessMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcRotationalStiffnessSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcBoundaryNodeConditionWarping
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "WarpingStiffness":
+          Type "IfcWarpingMomentMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcWarpingStiffnessSelect" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcBuildingElementPart
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcCShapeProfileDef
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "CentreOfGravityInX" in schemas: IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "InternalFilletRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcColourSpecification
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Name" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcConstraintClassificationRelationship
+Schema presence: IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "RelatedClassifications":
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcClassificationNotationSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcClassificationNotationSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+
+
+ENTITY IfcConstructionResource
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ResourceIdentifier" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "ResourceGroup" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "ResourceConsumption" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "Usage" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "BaseCosts" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "BaseQuantity":
+          Type "IfcMeasureWithUnit" in : IFC2X2_FINAL IFC2X3
+          Type "IfcPhysicalQuantity" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcCostItem
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "CostValues" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "CostQuantities" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcCurrencyRelationship
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RateDateTime":
+          Type "IfcDateAndTime" in : IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcCurveStyle
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Name" in schemas: IFC2X2_FINAL
+      Attr "ModelOrDraughting" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcCurveStyleFontPattern
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "VisibleSegmentLength":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL
+          Type "IfcLengthMeasure" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcDiscreteAccessory
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcDiscreteAccessoryType
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcDistributionChamberElement
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcDistributionControlElement
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ControlElementId" in schemas: IFC2X2_FINAL IFC2X3
+
+ENTITY IfcDistributionPort
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "SystemType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcDraughtingCallout
+Schema presence: IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "Contents":
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcDraughtingCalloutElement, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcDraughtingCalloutElement, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+
+
+ENTITY IfcFastener
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcFastenerType
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcFillAreaStyle
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Name" in schemas: IFC2X2_FINAL
+      Attr "ModelorDraughting" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1
+      Attr "ModelOrDraughting" in schemas: IFC4X3_RC3
+  Attributes types differences:
+      Attr "FillStyles":
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcFillStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcFillStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+          Type "OdDAI::SetBounded<OdIfc4::IfcFillStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcFillStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcFillStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcFillStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcFillStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+
+ENTITY IfcFillAreaStyleHatching
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "StartOfNextHatchLine":
+          Type "IfcOneDirectionRepeatFactor" in : IFC2X2_FINAL
+          Type "IfcHatchLineDistanceSelect" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcFillAreaStyleTiles
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "TilingPattern":
+          Type "IfcOneDirectionRepeatFactor" in : IFC2X2_FINAL IFC2X3
+          Type "OdDAI::OdDAIObjectIdList" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "Tiles":
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcFillAreaStyleTileShapeSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcFillAreaStyleTileShapeSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+          Type "OdDAI::SetBounded<OdDAIObjectId, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcFurnitureType
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcIShapeProfileDef
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "FlangeEdgeRadius" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "FlangeSlope" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "FilletRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcImageTexture
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "UrlReference" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "URLReference" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcIrregularTimeSeriesValue
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "TimeStamp":
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "ListValues":
+          Type "OdDAI::List<OdIfc2x2_final::IfcValue>" in : IFC2X2_FINAL
+          Type "OdDAI::List<OdIfc2x3::IfcValue>" in : IFC2X3
+          Type "OdDAI::List<OdIfc4::IfcValue>" in : IFC4
+          Type "OdDAI::List<OdIfc4x1::IfcValue>" in : IFC4X1
+          Type "OdDAI::List<OdIfc4x2::IfcValue>" in : IFC4X2
+          Type "OdDAI::List<OdIfc4x3_rc1::IfcValue>" in : IFC4X3_RC1
+          Type "OdDAI::List<OdIfc4x3_rc3::IfcValue>" in : IFC4X3_RC3
+
+
+ENTITY IfcLShapeProfileDef
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "CentreOfGravityInX" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "CentreOfGravityInY" in schemas: IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "FilletRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "EdgeRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcMechanicalFastener
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcMechanicalFastenerType
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "NominalDiameter" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "NominalLength" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcMember
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcPerformanceHistory
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcPermit
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PermitID" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Status" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "LongDescription" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcPlate
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcPort
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "ContainedIn":
+          Type "undefined" in : IFC2X2_FINAL IFC2X3
+          Type "OdDAI::OdDAIObjectIdSet" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcPresentationLayerAssignment
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Identifier" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "AssignedItems":
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcLayeredItem, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcLayeredItem, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+          Type "OdDAI::SetBounded<OdIfc4::IfcLayeredItem, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcLayeredItem, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcLayeredItem, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcLayeredItem, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcLayeredItem, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+
+ENTITY IfcPresentationStyleAssignment
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1
+  Attributes types differences:
+      Attr "Styles":
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcPresentationStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcPresentationStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+          Type "OdDAI::SetBounded<OdIfc4::IfcPresentationStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcPresentationStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcPresentationStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcPresentationStyleSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+
+
+ENTITY IfcProcedure
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ProcedureID" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "ProcedureType" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "UserDefinedProcedureType" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcProfileProperties
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ProfileName" in schemas: IFC2X2_FINAL IFC2X3
+
+ENTITY IfcProjectionElement
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcPropertyDependencyRelationship
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Name" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "Description" in schemas: IFC2X2_FINAL IFC2X3
+
+ENTITY IfcPropertyListValue
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "ListValues":
+          Type "OdDAI::List<OdIfc2x2_final::IfcValue>" in : IFC2X2_FINAL
+          Type "OdDAI::List<OdIfc2x3::IfcValue>" in : IFC2X3
+          Type "OdDAI::List<OdIfc4::IfcValue>" in : IFC4
+          Type "OdDAI::List<OdIfc4x1::IfcValue>" in : IFC4X1
+          Type "OdDAI::List<OdIfc4x2::IfcValue>" in : IFC4X2
+          Type "OdDAI::List<OdIfc4x3_rc1::IfcValue>" in : IFC4X3_RC1
+          Type "OdDAI::List<OdIfc4x3_rc3::IfcValue>" in : IFC4X3_RC3
+
+
+ENTITY IfcQuantityTime
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Formula" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRectangleHollowProfileDef
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "InnerFilletRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "OuterFilletRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcReinforcingBar
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "BarRole" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcReinforcingMesh
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelAssociatesProfileProperties
+Schema presence: IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "ProfileOrientation" in schemas: IFC2X3
+
+ENTITY IfcRelConnectsPortToElement
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatedElement":
+          Type "IfcElement" in : IFC2X2_FINAL IFC2X3
+          Type "IfcDistributionElement" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcSoundProperties
+Schema presence: IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "PointOfMeasurement" in schemas: IFC2X2_FINAL
+
+ENTITY IfcStructuralAction
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ProjectedOrTrue" in schemas: IFC2X2_FINAL
+      Attr "CausedBy" in schemas: IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "DestabilizingLoad":
+          Type "OdDAI::Boolean" in : IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcStructuralActivity
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "AssignedToStructuralItem":
+          Type "undefined" in : IFC2X2_FINAL IFC2X3
+          Type "OdDAI::OdDAIObjectIdSet" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcStructuralAnalysisModel
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "SharedPlacement" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcStructuralCurveConnection
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Axis" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcStructuralCurveMember
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Axis" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "PredefinedType":
+          Type "IfcStructuralCurveTypeEnum" in : IFC2X2_FINAL IFC2X3
+          Type "IfcStructuralCurveMemberTypeEnum" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcStructuralLinearAction
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ProjectedOrTrue" in schemas: IFC2X3
+
+ENTITY IfcStructuralLoadGroup
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Coefficient":
+          Type "IfcPositiveRatioMeasure" in : IFC2X2_FINAL
+          Type "IfcRatioMeasure" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcStructuralLoadTemperature
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "DeltaT_Constant" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "DeltaT_Y" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "DeltaT_Z" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "DeltaTConstant" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "DeltaTY" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "DeltaTZ" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcStructuralMember
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ReferencesElement" in schemas: IFC2X3
+
+ENTITY IfcStructuralPlanarAction
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ProjectedOrTrue" in schemas: IFC2X3
+
+ENTITY IfcStructuralPointConnection
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ConditionCoordinateSystem" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcStructuralProfileProperties
+Schema presence: IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "CentreOfGravityInX" in schemas: IFC2X3
+      Attr "CentreOfGravityInY" in schemas: IFC2X3
+
+ENTITY IfcStructuralReaction
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Causes" in schemas: IFC2X2_FINAL IFC2X3
+
+ENTITY IfcStructuralResultGroup
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "IsLinear":
+          Type "OdDAI::Boolean" in : IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcStructuralSurfaceMember
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "PredefinedType":
+          Type "IfcStructuralSurfaceTypeEnum" in : IFC2X2_FINAL IFC2X3
+          Type "IfcStructuralSurfaceMemberTypeEnum" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcStructuralSurfaceMemberVarying
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "SubsequentThickness" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "VaryingThicknessLocation" in schemas: IFC2X2_FINAL IFC2X3
+
+ENTITY IfcStyledItem
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Styles":
+          Type "OdDAI::SetBounded<OdDAIObjectId, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL IFC2X3 IFC4X3_RC3
+          Type "OdDAI::SetBounded<OdIfc4::IfcStyleAssignmentSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcStyleAssignmentSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcStyleAssignmentSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcStyleAssignmentSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+
+
+ENTITY IfcSurfaceCurveSweptAreaSolid
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Directrix" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2
+      Attr "StartParam" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2
+      Attr "EndParam" in schemas: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2
+
+ENTITY IfcSurfaceStyleRendering
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Transparency" in schemas: IFC2X2_FINAL IFC2X3
+
+ENTITY IfcSurfaceStyleShading
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Transparency" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcSurfaceStyleWithTextures
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "HasTextureCoordinates" in schemas: IFC2X2_FINAL
+  Attributes types differences:
+      Attr "Textures":
+          Type "OdDAI::SetBounded<OdDAIObjectId, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::OdDAIObjectIdList" in : IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcSurfaceTexture
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "TextureType" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "Mode" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "Parameter" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "IsMappedBy" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "UsedInStyles" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RepeatS":
+          Type "OdDAI::Boolean" in : IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "RepeatT":
+          Type "OdDAI::Boolean" in : IFC2X2_FINAL IFC2X3
+          Type "IfcBoolean" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcSymbolStyle
+Schema presence: IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "Name" in schemas: IFC2X2_FINAL
+
+ENTITY IfcSystemFurnitureElementType
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcTShapeProfileDef
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "CentreOfGravityInY" in schemas: IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "FilletRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "FlangeEdgeRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "WebEdgeRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcTendonAnchor
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcTextLiteral
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Alignment" in schemas: IFC2X2_FINAL
+      Attr "Font" in schemas: IFC2X2_FINAL
+
+ENTITY IfcTextLiteralWithExtent
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "BoxAlignment" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcTextStyle
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Name" in schemas: IFC2X2_FINAL
+      Attr "CharacterGlyphAppearance" in schemas: IFC2X2_FINAL
+      Attr "TextStyles" in schemas: IFC2X2_FINAL
+      Attr "TextCharacterAppearance" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "TextStyle" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "TextFontStyle" in schemas: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "ModelOrDraughting" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcTextStyleWithBoxCharacteristics
+Schema presence: IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "CharacterSpacing" in schemas: IFC2X3
+
+ENTITY IfcTextureCoordinate
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Texture" in schemas: IFC2X2_FINAL
+      Attr "AnnotatedSurface" in schemas: IFC2X3
+      Attr "Maps" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcTextureCoordinateGenerator
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Parameter":
+          Type "OdDAI::List<OdIfc2x2_final::IfcSimpleValue>" in : IFC2X2_FINAL
+          Type "OdDAI::List<OdIfc2x3::IfcSimpleValue>" in : IFC2X3
+          Type "OdDAI::DoubleList" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcTextureMap
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "VertexBasedTextures" in schemas: IFC2X2_FINAL
+      Attr "TextureMaps" in schemas: IFC2X3
+      Attr "Vertices" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "MappedTo" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcTimeSeries
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "DocumentedBy" in schemas: IFC2X2_FINAL IFC2X3
+      Attr "HasExternalReference" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "StartTime":
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "EndTime":
+          Type "IfcDateTimeSelect" in : IFC2X2_FINAL IFC2X3
+          Type "IfcDateTime" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcTimeSeriesReferenceRelationship
+Schema presence: IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "TimeSeriesReferences":
+          Type "OdDAI::SetBounded<OdIfc2x2_final::IfcDocumentSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X2_FINAL
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcDocumentSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+
+
+ENTITY IfcTimeSeriesSchedule
+Schema presence: IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "ApplicableDates":
+          Type "OdDAI::List<OdIfc2x2_final::IfcDateTimeSelect>" in : IFC2X2_FINAL
+          Type "OdDAI::List<OdIfc2x3::IfcDateTimeSelect>" in : IFC2X3
+
+
+ENTITY IfcTimeSeriesValue
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "ListValues":
+          Type "OdDAI::List<OdIfc2x2_final::IfcValue>" in : IFC2X2_FINAL
+          Type "OdDAI::List<OdIfc2x3::IfcValue>" in : IFC2X3
+          Type "OdDAI::List<OdIfc4::IfcValue>" in : IFC4
+          Type "OdDAI::List<OdIfc4x1::IfcValue>" in : IFC4X1
+          Type "OdDAI::List<OdIfc4x2::IfcValue>" in : IFC4X2
+          Type "OdDAI::List<OdIfc4x3_rc1::IfcValue>" in : IFC4X3_RC1
+          Type "OdDAI::List<OdIfc4x3_rc3::IfcValue>" in : IFC4X3_RC3
+
+
+ENTITY IfcTransportElementType
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "PredefinedType":
+          Type "IfcTransportElementTypeEnum" in : IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2
+          Type "IfcTransportElementTypeSelect" in : IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcUShapeProfileDef
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "CentreOfGravityInX" in schemas: IFC2X2_FINAL IFC2X3
+  Attributes types differences:
+      Attr "FilletRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "EdgeRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcVertexBasedTextureMap
+Schema presence: IFC2X2_FINAL IFC2X3
+  Attributes difference:
+      Attr "VertexBasedGeometry" in schemas: IFC2X2_FINAL
+      Attr "TexturePoints" in schemas: IFC2X3
+
+ENTITY IfcZShapeProfileDef
+Schema presence: IFC2X2_FINAL IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "FilletRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "EdgeRadius":
+          Type "IfcPositiveLengthMeasure" in : IFC2X2_FINAL IFC2X3
+          Type "IfcNonNegativeLengthMeasure" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcBlobTexture
+Schema presence: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RasterCode":
+          Type "OdDAI::Boolean" in : IFC2X3
+          Type "IfcBinary" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcObjectDefinition
+Schema presence: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Nests" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "IsNestedBy" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+      Attr "HasContext" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcPresentationLayerWithStyle
+Schema presence: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "LayerOn":
+          Type "OdDAI::Logical" in : IFC2X3
+          Type "IfcLogical" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "LayerFrozen":
+          Type "OdDAI::Logical" in : IFC2X3
+          Type "IfcLogical" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "LayerBlocked":
+          Type "OdDAI::Logical" in : IFC2X3
+          Type "IfcLogical" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "LayerStyles":
+          Type "OdDAI::SetBounded<OdIfc2x3::IfcPresentationStyleSelect, 0, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3
+          Type "OdDAI::SetBounded<OdDAIObjectId, 0, OdDAI::unorderedDefaultUpperBound>" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcRelCoversSpaces
+Schema presence: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "RelatedSpace" in schemas: IFC2X3
+      Attr "RelatingSpace" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcRelReferencedInSpatialStructure
+Schema presence: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatedElements":
+          Type "OdDAI::SetBounded<OdDAIObjectId, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC2X3 IFC4 IFC4X1 IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcSpatialReferenceSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcSpatialReferenceSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+      Attr "RelatingStructure":
+          Type "IfcSpatialStructureElement" in : IFC2X3
+          Type "IfcSpatialElement" in : IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcSpaceType
+Schema presence: IFC2X3 IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "LongName" in schemas: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcCartesianPointList2D
+Schema presence: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "TagList" in schemas: IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcCartesianPointList3D
+Schema presence: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "TagList" in schemas: IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcExternalReferenceRelationship
+Schema presence: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatedResourceObjects":
+          Type "OdDAI::SetBounded<OdIfc4::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+
+ENTITY IfcFixedReferenceSweptAreaSolid
+Schema presence: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Directrix" in schemas: IFC4 IFC4X1 IFC4X2
+      Attr "StartParam" in schemas: IFC4 IFC4X1 IFC4X2
+      Attr "EndParam" in schemas: IFC4 IFC4X1 IFC4X2
+
+ENTITY IfcIndexedPolyCurve
+Schema presence: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "Segments":
+          Type "OdDAI::List<OdIfc4::IfcSegmentIndexSelect>" in : IFC4
+          Type "OdDAI::List<OdIfc4x1::IfcSegmentIndexSelect>" in : IFC4X1
+          Type "OdDAI::List<OdIfc4x2::IfcSegmentIndexSelect>" in : IFC4X2
+          Type "OdDAI::List<OdIfc4x3_rc1::IfcSegmentIndexSelect>" in : IFC4X3_RC1
+          Type "OdDAI::List<OdIfc4x3_rc3::IfcSegmentIndexSelect>" in : IFC4X3_RC3
+
+
+ENTITY IfcMapConversion
+Schema presence: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "ScaleY" in schemas: IFC4X3_RC3
+      Attr "ScaleZ" in schemas: IFC4X3_RC3
+
+ENTITY IfcReinforcingBarType
+Schema presence: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "BendingParameters":
+          Type "OdDAI::List<OdIfc4::IfcBendingParameterSelect>" in : IFC4
+          Type "OdDAI::List<OdIfc4x1::IfcBendingParameterSelect>" in : IFC4X1
+          Type "OdDAI::List<OdIfc4x2::IfcBendingParameterSelect>" in : IFC4X2
+          Type "OdDAI::List<OdIfc4x3_rc1::IfcBendingParameterSelect>" in : IFC4X3_RC1
+          Type "OdDAI::List<OdIfc4x3_rc3::IfcBendingParameterSelect>" in : IFC4X3_RC3
+
+
+ENTITY IfcReinforcingMeshType
+Schema presence: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "BendingParameters":
+          Type "OdDAI::List<OdIfc4::IfcBendingParameterSelect>" in : IFC4
+          Type "OdDAI::List<OdIfc4x1::IfcBendingParameterSelect>" in : IFC4X1
+          Type "OdDAI::List<OdIfc4x2::IfcBendingParameterSelect>" in : IFC4X2
+          Type "OdDAI::List<OdIfc4x3_rc1::IfcBendingParameterSelect>" in : IFC4X3_RC1
+          Type "OdDAI::List<OdIfc4x3_rc3::IfcBendingParameterSelect>" in : IFC4X3_RC3
+
+
+ENTITY IfcRelDeclares
+Schema presence: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatedDefinitions":
+          Type "OdDAI::SetBounded<OdIfc4::IfcDefinitionSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcDefinitionSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcDefinitionSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcDefinitionSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcDefinitionSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+
+ENTITY IfcRelInterferesElements
+Schema presence: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatingElement":
+          Type "IfcElement" in : IFC4 IFC4X1 IFC4X2
+          Type "IfcInterferenceSelect" in : IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "RelatedElement":
+          Type "IfcElement" in : IFC4 IFC4X1 IFC4X2
+          Type "IfcInterferenceSelect" in : IFC4X3_RC1 IFC4X3_RC3
+
+      Attr "ImpliedOrder":
+          Type "OdDAI::Logical" in : IFC4 IFC4X1 IFC4X2
+          Type "IfcLogical" in : IFC4X3_RC1 IFC4X3_RC3
+
+
+ENTITY IfcResourceApprovalRelationship
+Schema presence: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatedResourceObjects":
+          Type "OdDAI::SetBounded<OdIfc4::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+
+ENTITY IfcResourceConstraintRelationship
+Schema presence: IFC4 IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "RelatedResourceObjects":
+          Type "OdDAI::SetBounded<OdIfc4::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4
+          Type "OdDAI::SetBounded<OdIfc4x1::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X1
+          Type "OdDAI::SetBounded<OdIfc4x2::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X2
+          Type "OdDAI::SetBounded<OdIfc4x3_rc1::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC1
+          Type "OdDAI::SetBounded<OdIfc4x3_rc3::IfcResourceObjectSelect, 1, OdDAI::unorderedDefaultUpperBound>" in : IFC4X3_RC3
+
+
+ENTITY IfcLinearPlacement
+Schema presence: IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PlacementRelTo" in schemas: IFC4X1
+      Attr "Distance" in schemas: IFC4X1 IFC4X2 IFC4X3_RC1
+      Attr "Orientation" in schemas: IFC4X1 IFC4X2 IFC4X3_RC1
+      Attr "PlacementMeasuredAlong" in schemas: IFC4X2 IFC4X3_RC1
+      Attr "RelativePlacement" in schemas: IFC4X3_RC3
+
+ENTITY IfcLinearPositioningElement
+Schema presence: IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Axis" in schemas: IFC4X1 IFC4X2 IFC4X3_RC1
+
+ENTITY IfcPositioningElement
+Schema presence: IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Positions" in schemas: IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcSectionedSolidHorizontal
+Schema presence: IFC4X1 IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "CrossSectionPositions":
+          Type "OdDAI::OdDAIObjectIdList" in : IFC4X1 IFC4X2 IFC4X3_RC1
+          Type "OdDAI::List<OdIfc4x3_rc3::IfcCurveMeasureSelect>" in : IFC4X3_RC3
+
+
+ENTITY IfcBridgePart
+Schema presence: IFC4X2 IFC4X3_RC1
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4X2
+
+ENTITY IfcFacilityPart
+Schema presence: IFC4X2 IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4X3_RC1 IFC4X3_RC3
+      Attr "UsageType" in schemas: IFC4X3_RC1 IFC4X3_RC3
+
+ENTITY IfcDirectrixCurveSweptAreaSolid
+Schema presence: IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "StartParam":
+          Type "IfcParameterValue" in : IFC4X3_RC1
+          Type "IfcCurveMeasureSelect" in : IFC4X3_RC3
+
+      Attr "EndParam":
+          Type "IfcParameterValue" in : IFC4X3_RC1
+          Type "IfcCurveMeasureSelect" in : IFC4X3_RC3
+
+
+ENTITY IfcDirectrixDistanceSweptAreaSolid
+Schema presence: IFC4X3_RC1 IFC4X3_RC3
+  Attributes types differences:
+      Attr "StartDistance":
+          Type "IfcDistanceExpression" in : IFC4X3_RC1
+          Type "IfcPointByDistanceExpression" in : IFC4X3_RC3
+
+      Attr "EndDistance":
+          Type "IfcDistanceExpression" in : IFC4X3_RC1
+          Type "IfcPointByDistanceExpression" in : IFC4X3_RC3
+
+
+ENTITY IfcInclinedReferenceSweptAreaSolid
+Schema presence: IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "Inclinating" in schemas: IFC4X3_RC1
+
+ENTITY IfcRailway
+Schema presence: IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4X3_RC3
+
+ENTITY IfcRoad
+Schema presence: IFC4X3_RC1 IFC4X3_RC3
+  Attributes difference:
+      Attr "PredefinedType" in schemas: IFC4X3_RC3
+

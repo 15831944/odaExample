@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Switch
+            android:id="@+id/rs_wcsSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettingsDialogSwitchStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_enable_wcs"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+        <Switch
+            android:id="@+id/rs_fpsSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettingsDialogSwitchStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_enable_fps"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Switch
+            android:id="@+id/rs_animSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettingsDialogSwitchStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_enable_animation"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Switch
+            android:id="@+id/rs_ffrSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettingsDialogSwitchStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_fixed_frame_rate"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rs_ffrLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_fps"
+            android:layout_marginEnd="10dp"
+            style="@style/SettingsDialogTextStyle" />
+
+        <SeekBar
+            android:id="@+id/rs_ffrSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:max="30"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/rs_ffrValTextView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/corner_background"
+            style="@style/SettingsDialogTextStyle"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

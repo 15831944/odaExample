@@ -1,0 +1,154 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ifc", "Ifc", "{2C31AF62-8173-3C2A-9C4F-04E9E46AE89D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Ifc\Examples", "{8801DBBF-5082-30B6-BC31-2C772F762E52}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExBcfLoadFile", "Ifc\Examples\ExBcfLoadFile\ExBcfLoadFile.vcxproj", "{B7850B9E-DA1C-35F2-AE66-AB988ADF7982}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfc4SpatialStructureDump", "Ifc\Examples\ExIfc4SpatialStructureDump\ExIfc4SpatialStructureDump.vcxproj", "{36090A02-28FC-3926-ACDA-313A463064E7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcBridge", "Ifc\Examples\ExIfcBridge\ExIfcBridge.vcxproj", "{BB38472C-4F43-3641-9B90-E36D029BD005}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcCDAWalker", "Ifc\Examples\ExIfcCDAWalker\ExIfcCDAWalker.vcxproj", "{CA193B93-E03B-3F77-8DE6-C5684F8A9353}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcDump", "Ifc\Examples\ExIfcDump\ExIfcDump.vcxproj", "{D232E0FA-14D5-3B07-AAE7-6DD15451C920}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcExtractData", "Ifc\Examples\ExIfcExtractData\ExIfcExtractData.vcxproj", "{E05AF200-D581-3E08-8457-1085C925C724}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcFileGenerator", "Ifc\Examples\ExIfcFileGenerator\ExIfcFileGenerator.vcxproj", "{BB50B8F3-6F73-3238-9219-EB51714E4880}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcFirstApp", "Ifc\Examples\ExIfcFirstApp\ExIfcFirstApp.vcxproj", "{243C9DFB-F0AD-3545-8026-30D237CDC843}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcModelFiller", "Ifc\Examples\ExIfcModelFiller\ExIfcModelFiller.vcxproj", "{B3CBF068-07E9-39D2-99DC-E4BD29ADB8A5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcModelValidator", "Ifc\Examples\ExIfcModelValidator\ExIfcModelValidator.vcxproj", "{32D96AA1-0480-37B0-8839-B58CF32F772E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcReadFile", "Ifc\Examples\ExIfcReadFile\ExIfcReadFile.vcxproj", "{05F3C2DE-215A-3F54-AD7E-8BE8401F166D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcSchemaDump", "Ifc\Examples\ExIfcSchemaDump\ExIfcSchemaDump.vcxproj", "{B457202E-EC4A-312F-816A-A5ABABD9DD9B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcToBmp", "Ifc\Examples\ExIfcToBmp\ExIfcToBmp.vcxproj", "{AEA1797E-038D-324B-B1A4-D6189ECD2734}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcVectorize", "Ifc\Examples\ExIfcVectorize\ExIfcVectorize.vcxproj", "{9E2BFBA5-82FC-375B-A31E-BBE949672987}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExIfcWriteFile", "Ifc\Examples\ExIfcWriteFile\ExIfcWriteFile.vcxproj", "{1F450FA3-A4C8-32C4-8057-4332CE8AFFC5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExLandXML2Ifc", "Ifc\Examples\ExLandXML2Ifc\ExLandXML2Ifc.vcxproj", "{3547D1C8-706E-3EBE-B416-F394DDE94D71}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExSDAISAS", "Ifc\Examples\ExSDAISAS\ExSDAISAS.vcxproj", "{6D6FE6DE-0476-3043-97B8-FCA6757EA813}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExXtr2Ifc", "Ifc\Examples\ExXtr2Ifc\ExXtr2Ifc.vcxproj", "{3AE3605F-CACE-3FCC-9B33-1703265F221C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IdsValidation", "Ifc\Examples\IdsValidation\IdsValidation.vcxproj", "{C29846CE-89F2-3F36-BE68-11274E83B42B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7850B9E-DA1C-35F2-AE66-AB988ADF7982}.Release|x64.ActiveCfg = Release|x64
+		{B7850B9E-DA1C-35F2-AE66-AB988ADF7982}.Release|x64.Build.0 = Release|x64
+		{36090A02-28FC-3926-ACDA-313A463064E7}.Release|x64.ActiveCfg = Release|x64
+		{36090A02-28FC-3926-ACDA-313A463064E7}.Release|x64.Build.0 = Release|x64
+		{BB38472C-4F43-3641-9B90-E36D029BD005}.Release|x64.ActiveCfg = Release|x64
+		{BB38472C-4F43-3641-9B90-E36D029BD005}.Release|x64.Build.0 = Release|x64
+		{CA193B93-E03B-3F77-8DE6-C5684F8A9353}.Release|x64.ActiveCfg = Release|x64
+		{CA193B93-E03B-3F77-8DE6-C5684F8A9353}.Release|x64.Build.0 = Release|x64
+		{D232E0FA-14D5-3B07-AAE7-6DD15451C920}.Release|x64.ActiveCfg = Release|x64
+		{D232E0FA-14D5-3B07-AAE7-6DD15451C920}.Release|x64.Build.0 = Release|x64
+		{E05AF200-D581-3E08-8457-1085C925C724}.Release|x64.ActiveCfg = Release|x64
+		{E05AF200-D581-3E08-8457-1085C925C724}.Release|x64.Build.0 = Release|x64
+		{BB50B8F3-6F73-3238-9219-EB51714E4880}.Release|x64.ActiveCfg = Release|x64
+		{BB50B8F3-6F73-3238-9219-EB51714E4880}.Release|x64.Build.0 = Release|x64
+		{243C9DFB-F0AD-3545-8026-30D237CDC843}.Release|x64.ActiveCfg = Release|x64
+		{243C9DFB-F0AD-3545-8026-30D237CDC843}.Release|x64.Build.0 = Release|x64
+		{B3CBF068-07E9-39D2-99DC-E4BD29ADB8A5}.Release|x64.ActiveCfg = Release|x64
+		{B3CBF068-07E9-39D2-99DC-E4BD29ADB8A5}.Release|x64.Build.0 = Release|x64
+		{32D96AA1-0480-37B0-8839-B58CF32F772E}.Release|x64.ActiveCfg = Release|x64
+		{32D96AA1-0480-37B0-8839-B58CF32F772E}.Release|x64.Build.0 = Release|x64
+		{05F3C2DE-215A-3F54-AD7E-8BE8401F166D}.Release|x64.ActiveCfg = Release|x64
+		{05F3C2DE-215A-3F54-AD7E-8BE8401F166D}.Release|x64.Build.0 = Release|x64
+		{B457202E-EC4A-312F-816A-A5ABABD9DD9B}.Release|x64.ActiveCfg = Release|x64
+		{B457202E-EC4A-312F-816A-A5ABABD9DD9B}.Release|x64.Build.0 = Release|x64
+		{AEA1797E-038D-324B-B1A4-D6189ECD2734}.Release|x64.ActiveCfg = Release|x64
+		{AEA1797E-038D-324B-B1A4-D6189ECD2734}.Release|x64.Build.0 = Release|x64
+		{9E2BFBA5-82FC-375B-A31E-BBE949672987}.Release|x64.ActiveCfg = Release|x64
+		{9E2BFBA5-82FC-375B-A31E-BBE949672987}.Release|x64.Build.0 = Release|x64
+		{1F450FA3-A4C8-32C4-8057-4332CE8AFFC5}.Release|x64.ActiveCfg = Release|x64
+		{1F450FA3-A4C8-32C4-8057-4332CE8AFFC5}.Release|x64.Build.0 = Release|x64
+		{3547D1C8-706E-3EBE-B416-F394DDE94D71}.Release|x64.ActiveCfg = Release|x64
+		{3547D1C8-706E-3EBE-B416-F394DDE94D71}.Release|x64.Build.0 = Release|x64
+		{6D6FE6DE-0476-3043-97B8-FCA6757EA813}.Release|x64.ActiveCfg = Release|x64
+		{6D6FE6DE-0476-3043-97B8-FCA6757EA813}.Release|x64.Build.0 = Release|x64
+		{3AE3605F-CACE-3FCC-9B33-1703265F221C}.Release|x64.ActiveCfg = Release|x64
+		{3AE3605F-CACE-3FCC-9B33-1703265F221C}.Release|x64.Build.0 = Release|x64
+		{C29846CE-89F2-3F36-BE68-11274E83B42B}.Release|x64.ActiveCfg = Release|x64
+		{C29846CE-89F2-3F36-BE68-11274E83B42B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8801DBBF-5082-30B6-BC31-2C772F762E52} = {2C31AF62-8173-3C2A-9C4F-04E9E46AE89D}
+		{B7850B9E-DA1C-35F2-AE66-AB988ADF7982} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{36090A02-28FC-3926-ACDA-313A463064E7} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{BB38472C-4F43-3641-9B90-E36D029BD005} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{CA193B93-E03B-3F77-8DE6-C5684F8A9353} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{D232E0FA-14D5-3B07-AAE7-6DD15451C920} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{E05AF200-D581-3E08-8457-1085C925C724} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{BB50B8F3-6F73-3238-9219-EB51714E4880} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{243C9DFB-F0AD-3545-8026-30D237CDC843} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{B3CBF068-07E9-39D2-99DC-E4BD29ADB8A5} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{32D96AA1-0480-37B0-8839-B58CF32F772E} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{05F3C2DE-215A-3F54-AD7E-8BE8401F166D} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{B457202E-EC4A-312F-816A-A5ABABD9DD9B} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{AEA1797E-038D-324B-B1A4-D6189ECD2734} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{9E2BFBA5-82FC-375B-A31E-BBE949672987} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{1F450FA3-A4C8-32C4-8057-4332CE8AFFC5} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{3547D1C8-706E-3EBE-B416-F394DDE94D71} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{6D6FE6DE-0476-3043-97B8-FCA6757EA813} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{3AE3605F-CACE-3FCC-9B33-1703265F221C} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+		{C29846CE-89F2-3F36-BE68-11274E83B42B} = {8801DBBF-5082-30B6-BC31-2C772F762E52}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D721145-943F-3FA6-9D2B-38D5E521DB38}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

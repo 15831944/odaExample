@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{649430E8-82B0-31DB-990D-0EB028B40B05}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OdExWpfSampleWinFormsHostMgd</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>OdExWpfSampleWinFormsHostMgd</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>OdExWpfSampleWinFormsHostMgd</AssemblyName>
+    <StartAction>Project</StartAction>
+    <StartProgram>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdExWpfSampleWinFormsHostMgd.exe</StartProgram>
+    <AdditionalOptions>/langversion:latest /MP4</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>TEIGHA_TRIAL;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;NET48</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdExWpfSampleWinFormsHost\Sources\OdExCustomServices.cs">
+      <Link>Sources\OdExCustomServices.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdExWpfSampleWinFormsHost\Sources\OdExSystemServices.cs">
+      <Link>Sources\OdExSystemServices.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\ThirdParty\activation\trial\OdActivationInfo.cs" />
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdExWpfSampleWinFormsHost\Sources\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <Link>Sources\App.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdExWpfSampleWinFormsHost\Sources\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <Link>Sources\MainWindow.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdExWpfSampleWinFormsHost\Sources\OdExViewWpfControlWinFormsHost.xaml.cs">
+      <DependentUpon>OdExViewWpfControlWinFormsHost.xaml</DependentUpon>
+      <Link>Sources\OdExViewWpfControlWinFormsHost.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdExWpfSampleWinFormsHost\Sources\OdExLayoutManagerWpfWindow.xaml.cs">
+      <DependentUpon>OdExLayoutManagerWpfWindow.xaml</DependentUpon>
+      <Link>Sources\OdExLayoutManagerWpfWindow.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\Common\GeneralAssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.cs</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Core">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="OdDrawingsExamplesLibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdDrawingsExamplesLibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="OdDrawingsExamplesUILibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdDrawingsExamplesUILibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="OdKernelExamplesLibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdKernelExamplesLibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="OdKernelExamplesUILibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdKernelExamplesUILibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigCoreMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigDbMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigDbMgd.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Link>Resources.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdExWpfSampleWinFormsHost\Sources\App.xaml">
+      <Link>Sources\App.xaml</Link>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdExWpfSampleWinFormsHost\Sources\MainWindow.xaml">
+      <Link>Sources\MainWindow.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdExWpfSampleWinFormsHost\Sources\OdExViewWpfControlWinFormsHost.xaml">
+      <Link>Sources\OdExViewWpfControlWinFormsHost.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdExWpfSampleWinFormsHost\Sources\OdExLayoutManagerWpfWindow.xaml">
+      <Link>Sources\OdExLayoutManagerWpfWindow.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OdDrawingsExamplesLib\OdDrawingsExamplesLibMgd.csproj">
+      <Project>{95949D93-5F60-3E1A-B2CD-059DF69874B4}</Project>
+      <Name>OdDrawingsExamplesLibMgd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OdDrawingsExamplesUILib\OdDrawingsExamplesUILibMgd.csproj">
+      <Project>{1F0C669C-67D9-3E5F-8B71-21BE37241C96}</Project>
+      <Name>OdDrawingsExamplesUILibMgd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Kernel\CSharp\OdKernelExamplesLib\OdKernelExamplesLibMgd.csproj">
+      <Project>{DF3B2B0F-266B-39C9-B280-67E442CB471A}</Project>
+      <Name>OdKernelExamplesLibMgd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Kernel\CSharp\OdKernelExamplesUILib\OdKernelExamplesUILibMgd.csproj">
+      <Project>{B28F2FEE-5FF4-3F63-8B04-E25E5096C5E2}</Project>
+      <Name>OdKernelExamplesUILibMgd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

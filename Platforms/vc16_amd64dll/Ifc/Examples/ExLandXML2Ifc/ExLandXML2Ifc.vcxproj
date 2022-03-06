@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3547D1C8-706E-3EBE-B416-F394DDE94D71}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ExLandXML2Ifc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExLandXML2Ifc.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExLandXML2Ifc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Ifc\Include;..\..\..\..\..\Ifc\Include\IfcModelerGeometry;..\..\..\..\..\Ifc\Include\Common;..\..\..\..\..\Ifc\Extensions\ExServices;..\..\..\..\..\Ifc\Examples\Common;..\..\..\..\..\Sdai\Include;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\LibXML\include;..\..\..\..\..\ThirdParty\LibXML;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /MP4</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;TEIGHA_TRIAL;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;IFC_DYNAMIC_BUILD;ADT_DYNAMIC_BUILD;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;TEIGHA_TRIAL;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;IFC_DYNAMIC_BUILD;ADT_DYNAMIC_BUILD;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Ifc\Include;..\..\..\..\..\Ifc\Include\IfcModelerGeometry;..\..\..\..\..\Ifc\Include\Common;..\..\..\..\..\Ifc\Extensions\ExServices;..\..\..\..\..\Ifc\Examples\Common;..\..\..\..\..\Sdai\Include;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\LibXML\include;..\..\..\..\..\ThirdParty\LibXML;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Ifc\Include;..\..\..\..\..\Ifc\Include\IfcModelerGeometry;..\..\..\..\..\Ifc\Include\Common;..\..\..\..\..\Ifc\Extensions\ExServices;..\..\..\..\..\Ifc\Examples\Common;..\..\..\..\..\Sdai\Include;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\LibXML\include;..\..\..\..\..\ThirdParty\LibXML;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>IfcCore.lib;sdai.lib;IfcGeom.lib;TD_Gi.lib;TD_Ge.lib;TD_Root.lib;TD_DbRoot.lib;libXML.lib;TD_ExamplesCommon.lib;TD_Alloc.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>ExLandXML2Ifc.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\ExLandXML2Ifc.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\ExLandXML2Ifc\ElementProcessor.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\ExLandXML2Ifc\ExLandXML2IfcConverter.h" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\ExLandXML2Ifc\ExLandXML2Ifc.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\ExLandXML2Ifc\ExLandXML2IfcSax.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\ExLandXML2Ifc\Processors.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\ExLandXML2Ifc\ExLandXML2IfcConverter.cpp" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\Common\IfcBuilder.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\Common\ExIfcModelFiller.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\Common\IfcBuildingBuilder.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\Common\IfcAlignmentBuilder.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\Common\IfcBridgeBuilder.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\Common\IfcRailwayBuilder.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\Common\IfcRepresentationBuilder.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\Common\IfcProfileBuilder.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\Common\IfcIndexedPolycurveBuilder.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\Common\IfcPropertySetFiller.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\Common\IfcQuantitySetFiller.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Examples\Common\AlignmentGeometryBuilder.h" />
+    <ClInclude Include="..\..\..\..\..\Ifc\Extensions\ExServices\ExIfcHostAppServices.h" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\Common\ExIfcModelFiller.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\Common\IfcBuildingBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\Common\IfcAlignmentBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\Common\IfcBridgeBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\Common\IfcRailwayBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\Common\IfcRepresentationBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\Common\IfcProfileBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\Common\IfcIndexedPolycurveBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\Common\IfcPropertySetFiller.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\Common\IfcQuantitySetFiller.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Examples\Common\AlignmentGeometryBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\..\Ifc\Extensions\ExServices\ExIfcHostAppServices.cpp" />
+    <ResourceCompile Include="..\..\..\..\..\Ifc\Examples\ExLandXML2Ifc\ExLandXML2Ifc.rc" />
+    <ClCompile Include="..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

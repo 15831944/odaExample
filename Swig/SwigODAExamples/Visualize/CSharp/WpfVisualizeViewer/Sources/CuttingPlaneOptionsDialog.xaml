@@ -1,0 +1,147 @@
+﻿<Window x:Class="WpfVisualizeViewer.CuttingPlaneOptionsDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:WpfVisualizeViewer.ModelBrowser"
+        mc:Ignorable="d" 
+        d:DesignHeight="400"
+        d:DesignWidth="400"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        Icon="{StaticResource OdalogoImg}"
+        WindowStartupLocation="CenterScreen"
+        Title="Cutting plane options"
+        >
+
+    <Grid Margin="5">
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <GroupBox Grid.Row="0" Header="Cutting plane filling">
+            <Grid Name="CutPlaneFillingGrid"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="2">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Name="lbl" VerticalAlignment="Center"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Content="Filling enabled:" />
+
+                <CheckBox Name="FillingEnabled" VerticalAlignment="Center"
+                          Grid.Column="1" Grid.Row="0"/>
+
+                <Label Name="FillingColor" VerticalAlignment="Center"
+                       Grid.Row="1" Grid.Column="0"
+                       Content="Filling color"/>
+
+                <Label Name="Alpha" VerticalAlignment="Center"
+                       Grid.Column="0" Grid.Row="2"
+                       Content="Alpha"/>
+
+                <local:IntTextBox x:Name="AlphaTextBox"
+                                  VerticalAlignment="Center"
+                                  Grid.Row="2" Grid.Column="1"
+                                  Text="255"/>
+
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Grid.Row="1" Header="Cutting plane filling pattern">
+
+            <Grid Name="CutPlaneFillingPatternGrid"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="2">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    VerticalAlignment="Center"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Content="Filling pattern enabled:" />
+
+                <CheckBox Name="FillingPatternEnabled"
+                          VerticalAlignment="Center"
+                          Grid.Column="1" Grid.Row="0"/>
+
+                <Label VerticalAlignment="Center"
+                       Grid.Row="1" Grid.Column="0"
+                       Content="Filling pattern style"/>
+
+                <ComboBox Name="FillPatternStyleCombobox" VerticalAlignment="Center"
+                          VerticalContentAlignment="Center"
+                          Grid.Row="1" Grid.Column="1"
+                          SelectedIndex="2">
+                    <TextBlock Text="Solid"/>
+                    <TextBlock Text="Checkerboard"/>
+                    <TextBlock Text="Crosshatch"/>
+                    <TextBlock Text="Diamonds"/>
+                    <TextBlock Text="Horizontal bars"/>
+                    <TextBlock Text="Slant left"/>
+                    <TextBlock Text="Slant right"/>
+                    <TextBlock Text="Square dots"/>
+                    <TextBlock Text="Vertical bars"/>
+                </ComboBox>
+
+                <Label VerticalAlignment="Center"
+                       Grid.Column="0" Grid.Row="2"
+                       Content="Filling pattern color"/>
+
+            </Grid>
+
+        </GroupBox>
+
+        <WrapPanel
+            Grid.Row="2"
+            Margin="0,15,0,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top">
+            <Button
+                Name="okBtn"
+                MinWidth="70"
+                Margin="0,0,10,0"
+                Content="Ok"
+                IsDefault="True"
+                Click="OkBtn_Click"/>
+
+            <Button
+                Name="closeBtn"
+                MinWidth="70"
+                Margin="0,0,10,0"
+                Content="Close"
+                IsCancel="True"
+                Click="CloseBtn_Click"/>
+
+            <Button
+                Name="applyBtn"
+                MinWidth="70"
+                Content="Apply"
+                Click="ApplyBtn_Click"/>
+
+        </WrapPanel>
+
+    </Grid>
+
+</Window>

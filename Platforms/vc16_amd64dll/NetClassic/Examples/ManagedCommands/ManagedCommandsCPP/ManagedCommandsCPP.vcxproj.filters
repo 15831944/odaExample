@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\ManagedCommandsCPP\ManagedCommandsCPP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\ManagedCommandsCPP\AssemblyInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\NetClassic\Examples\GeneralAssemblyInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\ManagedCommandsCPP\ManagedCommandsCPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\ManagedCommandsCPP\ManagedCommandsCPP.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6EDE76DB-1CA0-3427-9BC5-C10040D7D97B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{07832D95-4CD7-30EF-9AFE-C14923CF9A82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

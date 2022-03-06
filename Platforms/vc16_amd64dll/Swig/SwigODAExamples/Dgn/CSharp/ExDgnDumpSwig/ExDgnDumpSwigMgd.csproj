@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DEBFFD73-EC78-3940-AB10-C0A40FB679DE}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ExDgnDumpSwigMgd</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>ExDgnDumpSwigMgd</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>ExDgnDumpSwigMgd</AssemblyName>
+    <StartAction>Project</StartAction>
+    <StartProgram>..\..\..\..\..\..\..\exe\vc16_amd64dll\ExDgnDumpSwigMgd.exe</StartProgram>
+    <AdditionalOptions>/langversion:latest /MP4</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>TEIGHA_TRIAL;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;NET48</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\Program.cs">
+      <Link>Sources\Program.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdExCustomHostAppServices.cs">
+      <Link>Sources\OdExCustomHostAppServices.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdExSystemServices.cs">
+      <Link>Sources\OdExSystemServices.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgLineGripPointsPE.cs">
+      <Link>Sources\OdDgLineGripPointsPE.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgDumper.cs">
+      <Link>Sources\OdDgDumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgDatabase_Dumper.cs">
+      <Link>Sources\OdDgDatabase_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdRxObject_Dumper.cs">
+      <Link>Sources\OdRxObject_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgModel_Dumper.cs">
+      <Link>Sources\OdDgModel_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgSheetModel_Dumper.cs">
+      <Link>Sources\OdDgSheetModel_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgLine2d_Dumper.cs">
+      <Link>Sources\OdDgLine2d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgLine3d_Dumper.cs">
+      <Link>Sources\OdDgLine3d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgLineString2d_Dumper.cs">
+      <Link>Sources\OdDgLineString2d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgLineString3d_Dumper.cs">
+      <Link>Sources\OdDgLineString3d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgText2d_Dumper.cs">
+      <Link>Sources\OdDgText2d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgText3d_Dumper.cs">
+      <Link>Sources\OdDgText3d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgTextNode2d_Dumper.cs">
+      <Link>Sources\OdDgTextNode2d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgTextNode3d_Dumper.cs">
+      <Link>Sources\OdDgTextNode3d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgShape2d_Dumper.cs">
+      <Link>Sources\OdDgShape2d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgShape3d_Dumper.cs">
+      <Link>Sources\OdDgShape3d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgCurve2d_Dumper.cs">
+      <Link>Sources\OdDgCurve2d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgCurve3d_Dumper.cs">
+      <Link>Sources\OdDgCurve3d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgEllipse2d_Dumper.cs">
+      <Link>Sources\OdDgEllipse2d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgEllipse3d_Dumper.cs">
+      <Link>Sources\OdDgEllipse3d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgArc2d_Dumper.cs">
+      <Link>Sources\OdDgArc2d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgArc3d_Dumper.cs">
+      <Link>Sources\OdDgArc3d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgCone_Dumper.cs">
+      <Link>Sources\OdDgCone_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgComplexString_Dumper.cs">
+      <Link>Sources\OdDgComplexString_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgComplexShape_Dumper.cs">
+      <Link>Sources\OdDgComplexShape_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgPointString2d_Dumper.cs">
+      <Link>Sources\OdDgPointString2d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgPointString3d_Dumper.cs">
+      <Link>Sources\OdDgPointString3d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgDimension_Dumper.cs">
+      <Link>Sources\OdDgDimension_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgMultiline_Dumper.cs">
+      <Link>Sources\OdDgMultiline_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgBSplineCurve3d_Dumper.cs">
+      <Link>Sources\OdDgBSplineCurve3d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgBSplineCurve2d_Dumper.cs">
+      <Link>Sources\OdDgBSplineCurve2d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgSurface_Dumper.cs">
+      <Link>Sources\OdDgSurface_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgSolid_Dumper.cs">
+      <Link>Sources\OdDgSolid_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgRasterAttachmentHeader_Dumper.cs">
+      <Link>Sources\OdDgRasterAttachmentHeader_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgRasterHeader2d_Dumper.cs">
+      <Link>Sources\OdDgRasterHeader2d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgRasterHeader3d_Dumper.cs">
+      <Link>Sources\OdDgRasterHeader3d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgRasterComponent_Dumper.cs">
+      <Link>Sources\OdDgRasterComponent_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgTagElement_Dumper.cs">
+      <Link>Sources\OdDgTagElement_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgCellHeader2d_Dumper.cs">
+      <Link>Sources\OdDgCellHeader2d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgCellHeader3d_Dumper.cs">
+      <Link>Sources\OdDgCellHeader3d_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgBSplineSurface_Dumper.cs">
+      <Link>Sources\OdDgBSplineSurface_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgLevelTable_Dumper.cs">
+      <Link>Sources\OdDgLevelTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgLevelFilterTable_Dumper.cs">
+      <Link>Sources\OdDgLevelFilterTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgLevelTableRecord_Dumper.cs">
+      <Link>Sources\OdDgLevelTableRecord_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgLevelFilterTableRecord_Dumper.cs">
+      <Link>Sources\OdDgLevelFilterTableRecord_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgFontTable_Dumper.cs">
+      <Link>Sources\OdDgFontTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgFontTableRecord_Dumper.cs">
+      <Link>Sources\OdDgFontTableRecord_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgTextStyleTable_Dumper.cs">
+      <Link>Sources\OdDgTextStyleTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgTextStyleTableRecord_Dumper.cs">
+      <Link>Sources\OdDgTextStyleTableRecord_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgDimStyleTable_Dumper.cs">
+      <Link>Sources\OdDgDimStyleTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgDimStyleTableRecord_Dumper.cs">
+      <Link>Sources\OdDgDimStyleTableRecord_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgMultilineStyleTable_Dumper.cs">
+      <Link>Sources\OdDgMultilineStyleTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgMultilineStyleTableRecord_Dumper.cs">
+      <Link>Sources\OdDgMultilineStyleTableRecord_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgLineStyleTable_Dumper.cs">
+      <Link>Sources\OdDgLineStyleTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgLineStyleTableRecord_Dumper.cs">
+      <Link>Sources\OdDgLineStyleTableRecord_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgRegAppTable_Dumper.cs">
+      <Link>Sources\OdDgRegAppTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgRegAppTableRecord_Dumper.cs">
+      <Link>Sources\OdDgRegAppTableRecord_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgViewGroupTable_Dumper.cs">
+      <Link>Sources\OdDgViewGroupTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgViewGroup_Dumper.cs">
+      <Link>Sources\OdDgViewGroup_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgView_Dumper.cs">
+      <Link>Sources\OdDgView_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgNamedViewTable_Dumper.cs">
+      <Link>Sources\OdDgNamedViewTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgSharedCellDefinitionTable_Dumper.cs">
+      <Link>Sources\OdDgSharedCellDefinitionTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgSharedCellDefinition_Dumper.cs">
+      <Link>Sources\OdDgSharedCellDefinition_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgSharedCellReference_Dumper.cs">
+      <Link>Sources\OdDgSharedCellReference_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgTagDefinitionSetTable_Dumper.cs">
+      <Link>Sources\OdDgTagDefinitionSetTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgTagDefinitionSet_Dumper.cs">
+      <Link>Sources\OdDgTagDefinitionSet_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgTagDefinition_Dumper.cs">
+      <Link>Sources\OdDgTagDefinition_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgColorTable_Dumper.cs">
+      <Link>Sources\OdDgColorTable_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgReferenceHeader_Dumper.cs">
+      <Link>Sources\OdDgReferenceHeader_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgMeshFaceLoops_Dumper.cs">
+      <Link>Sources\OdDgMeshFaceLoops_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgMeshPointCloud_Dumper.cs">
+      <Link>Sources\OdDgMeshPointCloud_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgMeshTriangleList_Dumper.cs">
+      <Link>Sources\OdDgMeshTriangleList_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgMeshQuadList_Dumper.cs">
+      <Link>Sources\OdDgMeshQuadList_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgMeshTriangleGrid_Dumper.cs">
+      <Link>Sources\OdDgMeshTriangleGrid_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgMeshQuadGrid_Dumper.cs">
+      <Link>Sources\OdDgMeshQuadGrid_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgProxyElement_Dumper.cs">
+      <Link>Sources\OdDgProxyElement_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Dgn\CSharp\ExDgnDumpSwig\Sources\OdDgApplicationData_Dumper.cs">
+      <Link>Sources\OdDgApplicationData_Dumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\ThirdParty\activation\trial\OdActivationInfo.cs" />
+    <Compile Include="..\..\..\..\..\..\..\Swig\Common\GeneralAssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="OdCreationNetSwigExampleLibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdCreationNetSwigExampleLibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="OdKernelExamplesLibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdKernelExamplesLibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigCoreMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TG_SwigDbMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TG_SwigDbMgd.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\CSharp\OdCreationNetSwigExampleLib\OdCreationNetSwigExampleLibMgd.csproj">
+      <Project>{DA44D53D-6C7C-3BBF-BED9-9D1F58BE5EF2}</Project>
+      <Name>OdCreationNetSwigExampleLibMgd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Kernel\CSharp\OdKernelExamplesLib\OdKernelExamplesLibMgd.csproj">
+      <Project>{DF3B2B0F-266B-39C9-B280-67E442CB471A}</Project>
+      <Name>OdKernelExamplesLibMgd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,8 @@
+C:\B\2\_\_\exe\vc16_amd64dll\OdArchExMgd.exe
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdArchExMgd\obj\x64\Release\OdArchExMgd.csproj.AssemblyReference.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdArchExMgd\obj\x64\Release\OdArchExMgd.MainForm.resources
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdArchExMgd\obj\x64\Release\OdArchExMgd.Resources.resources
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdArchExMgd\obj\x64\Release\OdArchExMgd.csproj.GenerateResource.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdArchExMgd\obj\x64\Release\OdArchExMgd.csproj.CoreCompileInputs.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdArchExMgd\obj\x64\Release\OdArchExMgd.csproj.CopyComplete
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\OdArchExMgd\obj\x64\Release\OdArchExMgd.exe

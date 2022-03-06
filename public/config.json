@@ -1,0 +1,10 @@
+{
+  "registration_host": "https://odaweb.azurefd.net/auth",
+  "api_host": "https://odaweb.azurefd.net/api",
+  "visualizejs_url": "https://opencloud.azureedge.net/libs/visualizejs/23.1/Visualize.js",
+  "pageSize": 16,
+  "refreshFilesTimeout": 5000,
+  "chunkLoadingTime": 12000,
+  "cda": true,
+  "supportFormats": [ "DWG", "DGN", "DWF", "DXF", "OBJ", "PDF", "RCS", "RFA", "RVT", "IFC", "NWC", "NWD", "VSF", "STL" ]
+}

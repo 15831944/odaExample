@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1F0C669C-67D9-3E5F-8B71-21BE37241C96}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OdDrawingsExamplesUILibMgd</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>OdDrawingsExamplesUILibMgd</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>OdDrawingsExamplesUILibMgd</AssemblyName>
+    <AdditionalOptions>/langversion:latest /MP4</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>TEIGHA_TRIAL;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;NET48</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPrinting.cs">
+      <Link>Sources\ExPrinting\OdExPrinting.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExView\OdExViewDrawingControl.cs">
+      <Link>Sources\ExView\OdExViewDrawingControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExJigs\WinForms\OdExJigWinForms.cs">
+      <Link>Sources\ExJigs\WinForms\OdExJigWinForms.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExJigs\WinForms\OdExCircleRadiusJigWinForms.cs">
+      <Link>Sources\ExJigs\WinForms\OdExCircleRadiusJigWinForms.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExJigs\WinForms\OdExLineJigWinForms.cs">
+      <Link>Sources\ExJigs\WinForms\OdExLineJigWinForms.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExJigs\WinForms\OdExTextJigWinForms.cs">
+      <Link>Sources\ExJigs\WinForms\OdExTextJigWinForms.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExJigs\Wpf\OdExJigWpf.cs">
+      <Link>Sources\ExJigs\Wpf\OdExJigWpf.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExJigs\Wpf\OdExCircleRadiusJigWpf.cs">
+      <Link>Sources\ExJigs\Wpf\OdExCircleRadiusJigWpf.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExJigs\Wpf\OdExLineJigWpf.cs">
+      <Link>Sources\ExJigs\Wpf\OdExLineJigWpf.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExJigs\Wpf\OdExTextJigWpf.cs">
+      <Link>Sources\ExJigs\Wpf\OdExTextJigWpf.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExEditors\OdExDrawingEditorWinForms.cs">
+      <Link>Sources\ExEditors\OdExDrawingEditorWinForms.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExEditors\OdExDrawingEditorWpf.cs">
+      <Link>Sources\ExEditors\OdExDrawingEditorWpf.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\Export\Svg\OdExportSvgGUIExample.cs">
+      <Link>Sources\Export\Svg\OdExportSvgGUIExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\Import\Dwf\OdExDwfImportByCommandGUIExample.cs">
+      <Link>Sources\Import\Dwf\OdExDwfImportByCommandGUIExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\Import\Dwf\OdExDwfImportGUIExample.cs">
+      <Link>Sources\Import\Dwf\OdExDwfImportGUIExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\Import\Dgn\OdExDgnImportGUIExample.cs">
+      <Link>Sources\Import\Dgn\OdExDgnImportGUIExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\Import\Pdf\OdExPDF2dImportGUIExample.cs">
+      <Link>Sources\Import\Pdf\OdExPDF2dImportGUIExample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\ThirdParty\activation\trial\OdActivationInfo.cs" />
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExDbAuditGUI\OdExAuditInfoDlg.cs">
+      <Link>Sources\ExDbAuditGUI\OdExAuditInfoDlg.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExDbAuditGUI\OdExAuditInfoDlg.Designer.cs">
+      <DependentUpon>OdExAuditInfoDlg.cs</DependentUpon>
+      <Link>Sources\ExDbAuditGUI\OdExAuditInfoDlg.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExCustomMediaDlg.cs">
+      <Link>Sources\ExPrinting\OdExCustomMediaDlg.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExCustomMediaDlg.Designer.cs">
+      <DependentUpon>OdExCustomMediaDlg.cs</DependentUpon>
+      <Link>Sources\ExPrinting\OdExCustomMediaDlg.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPageSetupDlg.cs">
+      <Link>Sources\ExPrinting\OdExPageSetupDlg.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPageSetupDlg.Designer.cs">
+      <DependentUpon>OdExPageSetupDlg.cs</DependentUpon>
+      <Link>Sources\ExPrinting\OdExPageSetupDlg.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPsTableEditorDlg.cs">
+      <Link>Sources\ExPrinting\OdExPsTableEditorDlg.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPsTableEditorDlg.Designer.cs">
+      <DependentUpon>OdExPsTableEditorDlg.cs</DependentUpon>
+      <Link>Sources\ExPrinting\OdExPsTableEditorDlg.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPsWindowPointsDlg.cs">
+      <Link>Sources\ExPrinting\OdExPsWindowPointsDlg.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPsWindowPointsDlg.Designer.cs">
+      <DependentUpon>OdExPsWindowPointsDlg.cs</DependentUpon>
+      <Link>Sources\ExPrinting\OdExPsWindowPointsDlg.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPsEditLineweightDlg.cs">
+      <Link>Sources\ExPrinting\OdExPsEditLineweightDlg.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPsEditLineweightDlg.Designer.cs">
+      <DependentUpon>OdExPsEditLineweightDlg.cs</DependentUpon>
+      <Link>Sources\ExPrinting\OdExPsEditLineweightDlg.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\Common\GeneralAssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Core">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="OdDrawingsExamplesLibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdDrawingsExamplesLibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="OdKernelExamplesLibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdKernelExamplesLibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="OdKernelExamplesUILibMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdKernelExamplesUILibMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigCoreMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigDbMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigDbMgd.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExDbAuditGUI\OdExAuditInfoDlg.resx">
+      <DependentUpon>OdExAuditInfoDlg.cs</DependentUpon>
+      <Link>OdExAuditInfoDlg.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OdExAuditInfoDlg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExCustomMediaDlg.resx">
+      <DependentUpon>OdExCustomMediaDlg.cs</DependentUpon>
+      <Link>OdExCustomMediaDlg.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OdExCustomMediaDlg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPageSetupDlg.resx">
+      <DependentUpon>OdExPageSetupDlg.cs</DependentUpon>
+      <Link>OdExPageSetupDlg.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OdExPageSetupDlg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPsTableEditorDlg.resx">
+      <DependentUpon>OdExPsTableEditorDlg.cs</DependentUpon>
+      <Link>OdExPsTableEditorDlg.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OdExPsTableEditorDlg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPsWindowPointsDlg.resx">
+      <DependentUpon>OdExPsWindowPointsDlg.cs</DependentUpon>
+      <Link>OdExPsWindowPointsDlg.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OdExPsWindowPointsDlg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\CSharp\OdDrawingsExamplesUILib\Sources\ExPrinting\OdExPsEditLineweightDlg.resx">
+      <DependentUpon>OdExPsEditLineweightDlg.cs</DependentUpon>
+      <Link>OdExPsEditLineweightDlg.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OdExPsEditLineweightDlg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OdDrawingsExamplesLib\OdDrawingsExamplesLibMgd.csproj">
+      <Project>{95949D93-5F60-3E1A-B2CD-059DF69874B4}</Project>
+      <Name>OdDrawingsExamplesLibMgd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Kernel\CSharp\OdKernelExamplesLib\OdKernelExamplesLibMgd.csproj">
+      <Project>{DF3B2B0F-266B-39C9-B280-67E442CB471A}</Project>
+      <Name>OdKernelExamplesLibMgd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Kernel\CSharp\OdKernelExamplesUILib\OdKernelExamplesUILibMgd.csproj">
+      <Project>{B28F2FEE-5FF4-3F63-8B04-E25E5096C5E2}</Project>
+      <Name>OdKernelExamplesUILibMgd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

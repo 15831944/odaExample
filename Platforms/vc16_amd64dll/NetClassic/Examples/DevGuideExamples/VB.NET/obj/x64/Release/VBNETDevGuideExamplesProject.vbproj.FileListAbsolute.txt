@@ -1,0 +1,7 @@
+C:\B\2\_\_\exe\vc16_amd64dll\VBNETDevGuideExamplesProject.dll
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\VB.NET\obj\x64\Release\VBNETDevGuideExamplesProject.vbproj.AssemblyReference.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\VB.NET\obj\x64\Release\VBNETDevGuideExamplesProject.Resources.resources
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\VB.NET\obj\x64\Release\VBNETDevGuideExamplesProject.vbproj.GenerateResource.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\VB.NET\obj\x64\Release\VBNETDevGuideExamplesProject.vbproj.CoreCompileInputs.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\VB.NET\obj\x64\Release\VBNETDevGuideExamplesProject.vbproj.CopyComplete
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\VB.NET\obj\x64\Release\VBNETDevGuideExamplesProject.dll

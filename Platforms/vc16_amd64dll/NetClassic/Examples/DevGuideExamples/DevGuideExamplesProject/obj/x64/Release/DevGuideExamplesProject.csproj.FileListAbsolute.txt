@@ -1,0 +1,12 @@
+C:\B\2\_\_\exe\vc16_amd64dll\DevGuideExamplesProject.exe
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\DevGuideExamplesProject\obj\x64\Release\DevGuideExamplesProject.csproj.AssemblyReference.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\DevGuideExamplesProject\obj\x64\Release\Window1.baml
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\DevGuideExamplesProject\obj\x64\Release\Window1.g.cs
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\DevGuideExamplesProject\obj\x64\Release\App.g.cs
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\DevGuideExamplesProject\obj\x64\Release\DevGuideExamplesProject_MarkupCompile.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\DevGuideExamplesProject\obj\x64\Release\DevGuideExamplesProject.g.resources
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\DevGuideExamplesProject\obj\x64\Release\DevGuideExamplesProject.Resources.resources
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\DevGuideExamplesProject\obj\x64\Release\DevGuideExamplesProject.csproj.GenerateResource.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\DevGuideExamplesProject\obj\x64\Release\DevGuideExamplesProject.csproj.CoreCompileInputs.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\DevGuideExamplesProject\obj\x64\Release\DevGuideExamplesProject.csproj.CopyComplete
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\DevGuideExamplesProject\obj\x64\Release\DevGuideExamplesProject.exe

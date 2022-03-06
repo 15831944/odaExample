@@ -1,0 +1,58 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SWIG Python 2.x", "SWIG Python 2.x", "{E1CCCEA4-9042-35BF-AE0F-366160A3EC1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Products", "SWIG Python 2.x\Products", "{3659DDCE-4AFE-328D-B8C8-969BDC599001}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Drawings", "SWIG Python 2.x\Products\Drawings", "{6415121C-4C77-332F-93E5-6B6634D7D68B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "SWIG Python 2.x\Products\Drawings\Core", "{4DB8A39C-105A-3347-9E10-77815F44BAD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "SWIG Python 2.x\Products\Drawings\Examples", "{14540703-B782-3A7F-A139-46C64CD499EC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ODA_Drawings", "Swig\SwigODAProducts\Drawings\Python\Python2\ODA_Drawings\ODA_Drawings.vcxproj", "{AC754381-C794-312B-A141-4CD25A61EAB6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "OdDemoViewerExSwigPythonTK", "Swig\SwigODAExamples\Drawings\Python\Python2\OdDemoViewerExSwigPythonTK\OdDemoViewerExSwigPythonTK.pyproj", "{E17148DF-08B1-3206-929F-2107A29477A4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "OdReadExSwigPython", "Swig\SwigODAExamples\Drawings\Python\Python2\OdReadExSwigPython\OdReadExSwigPython.pyproj", "{D71AD74A-84C4-3B6A-929D-1ED3D7294041}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "OdWriteExSwigPython", "Swig\SwigODAExamples\Drawings\Python\Python2\OdWriteExSwigPython\OdWriteExSwigPython.pyproj", "{728BE5CF-7415-30FE-8A0B-85939555A5D2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC754381-C794-312B-A141-4CD25A61EAB6}.Release|x64.ActiveCfg = Release|x64
+		{AC754381-C794-312B-A141-4CD25A61EAB6}.Release|x64.Build.0 = Release|x64
+		{E17148DF-08B1-3206-929F-2107A29477A4}.Release|x64.ActiveCfg = Release|x64
+		{E17148DF-08B1-3206-929F-2107A29477A4}.Release|x64.Build.0 = Release|x64
+		{D71AD74A-84C4-3B6A-929D-1ED3D7294041}.Release|x64.ActiveCfg = Release|x64
+		{D71AD74A-84C4-3B6A-929D-1ED3D7294041}.Release|x64.Build.0 = Release|x64
+		{728BE5CF-7415-30FE-8A0B-85939555A5D2}.Release|x64.ActiveCfg = Release|x64
+		{728BE5CF-7415-30FE-8A0B-85939555A5D2}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3659DDCE-4AFE-328D-B8C8-969BDC599001} = {E1CCCEA4-9042-35BF-AE0F-366160A3EC1E}
+		{6415121C-4C77-332F-93E5-6B6634D7D68B} = {3659DDCE-4AFE-328D-B8C8-969BDC599001}
+		{4DB8A39C-105A-3347-9E10-77815F44BAD1} = {6415121C-4C77-332F-93E5-6B6634D7D68B}
+		{14540703-B782-3A7F-A139-46C64CD499EC} = {6415121C-4C77-332F-93E5-6B6634D7D68B}
+		{AC754381-C794-312B-A141-4CD25A61EAB6} = {4DB8A39C-105A-3347-9E10-77815F44BAD1}
+		{E17148DF-08B1-3206-929F-2107A29477A4} = {14540703-B782-3A7F-A139-46C64CD499EC}
+		{D71AD74A-84C4-3B6A-929D-1ED3D7294041} = {14540703-B782-3A7F-A139-46C64CD499EC}
+		{728BE5CF-7415-30FE-8A0B-85939555A5D2} = {14540703-B782-3A7F-A139-46C64CD499EC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA15B050-D121-3692-B51C-A5FE1F32DC19}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

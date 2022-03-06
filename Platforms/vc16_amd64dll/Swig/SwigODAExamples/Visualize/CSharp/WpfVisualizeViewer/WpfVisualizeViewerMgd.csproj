@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C9C58EE9-08F3-374A-9386-23988EF7332E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WpfVisualizeViewerMgd</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>WpfVisualizeViewerMgd</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>WpfVisualizeViewerMgd</AssemblyName>
+    <StartAction>Project</StartAction>
+    <StartProgram>..\..\..\..\..\..\..\exe\vc16_amd64dll\WpfVisualizeViewerMgd.exe</StartProgram>
+    <AdditionalOptions>/langversion:latest /MP4</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>TEIGHA_TRIAL;NET48</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\odaBgImg.png">
+      <Link>Sources\Images\odaBgImg.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\menu.png">
+      <Link>Sources\Images\menu.png</Link>
+    </Image>
+    <None Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Icon-ODA.ico">
+      <Link>Sources\Images\Icon-ODA.ico</Link>
+    </None>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Menu\3dpdf.png">
+      <Link>Sources\Images\Menu\3dpdf.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Menu\open.png">
+      <Link>Sources\Images\Menu\open.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Menu\pdf.png">
+      <Link>Sources\Images\Menu\pdf.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Menu\save.png">
+      <Link>Sources\Images\Menu\save.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Menu\saveAs.png">
+      <Link>Sources\Images\Menu\saveAs.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Navigation\orbit.png">
+      <Link>Sources\Images\Navigation\orbit.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Navigation\pan.png">
+      <Link>Sources\Images\Navigation\pan.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Navigation\zoom_in.png">
+      <Link>Sources\Images\Navigation\zoom_in.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Navigation\zoom_out.png">
+      <Link>Sources\Images\Navigation\zoom_out.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Navigation\zoom_ext.png">
+      <Link>Sources\Images\Navigation\zoom_ext.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\RenderMode\2dwireframe.png">
+      <Link>Sources\Images\RenderMode\2dwireframe.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\RenderMode\3dwireframe.png">
+      <Link>Sources\Images\RenderMode\3dwireframe.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\RenderMode\gouraudshaded.png">
+      <Link>Sources\Images\RenderMode\gouraudshaded.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\RenderMode\gouraudshaded_edges.png">
+      <Link>Sources\Images\RenderMode\gouraudshaded_edges.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\RenderMode\hiddenline.png">
+      <Link>Sources\Images\RenderMode\hiddenline.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\RenderMode\shaded.png">
+      <Link>Sources\Images\RenderMode\shaded.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\RenderMode\shaded_edges.png">
+      <Link>Sources\Images\RenderMode\shaded_edges.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Regen\regenAll.png">
+      <Link>Sources\Images\Regen\regenAll.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Regen\regenVisible.png">
+      <Link>Sources\Images\Regen\regenVisible.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Regen\regenVp.png">
+      <Link>Sources\Images\Regen\regenVp.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Markups\circ.png">
+      <Link>Sources\Images\Markups\circ.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Markups\cloud.png">
+      <Link>Sources\Images\Markups\cloud.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Markups\loadview.png">
+      <Link>Sources\Images\Markups\loadview.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Markups\handle.png">
+      <Link>Sources\Images\Markups\handle.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Markups\saveview.png">
+      <Link>Sources\Images\Markups\saveview.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Markups\txt.png">
+      <Link>Sources\Images\Markups\txt.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Markups\rect.png">
+      <Link>Sources\Images\Markups\rect.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Views\back.png">
+      <Link>Sources\Images\Views\back.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Views\bottom.png">
+      <Link>Sources\Images\Views\bottom.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Views\front.png">
+      <Link>Sources\Images\Views\front.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Views\left.png">
+      <Link>Sources\Images\Views\left.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Views\neIsometric.png">
+      <Link>Sources\Images\Views\neIsometric.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Views\nwIsometric.png">
+      <Link>Sources\Images\Views\nwIsometric.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Views\right.png">
+      <Link>Sources\Images\Views\right.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Views\seIsometric.png">
+      <Link>Sources\Images\Views\seIsometric.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Views\swIsometric.png">
+      <Link>Sources\Images\Views\swIsometric.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Views\top.png">
+      <Link>Sources\Images\Views\top.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Views\isometric.PNG">
+      <Link>Sources\Images\Views\isometric.PNG</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Views\perspective.png">
+      <Link>Sources\Images\Views\perspective.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\ModelBrowser\properties.png">
+      <Link>Sources\Images\ModelBrowser\properties.png</Link>
+    </Image>
+    <None Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\ModelBrowser\refresh.ico">
+      <Link>Sources\Images\ModelBrowser\refresh.ico</Link>
+    </None>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\ModelBrowser\tree.png">
+      <Link>Sources\Images\ModelBrowser\tree.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\ModelBrowser\downAll.png">
+      <Link>Sources\Images\ModelBrowser\downAll.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\ModelBrowser\expandArrow.png">
+      <Link>Sources\Images\ModelBrowser\expandArrow.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Sectioning\AddCuttingPlaneX.png">
+      <Link>Sources\Images\Sectioning\AddCuttingPlaneX.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Sectioning\AddCuttingPlaneY.png">
+      <Link>Sources\Images\Sectioning\AddCuttingPlaneY.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Sectioning\AddCuttingPlaneZ.png">
+      <Link>Sources\Images\Sectioning\AddCuttingPlaneZ.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Sectioning\CuttingPlane.png">
+      <Link>Sources\Images\Sectioning\CuttingPlane.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Sectioning\CuttingPlaneOff.png">
+      <Link>Sources\Images\Sectioning\CuttingPlaneOff.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Sectioning\FillCuttingPlane.png">
+      <Link>Sources\Images\Sectioning\FillCuttingPlane.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Sectioning\FillCuttingPlaneOff.png">
+      <Link>Sources\Images\Sectioning\FillCuttingPlaneOff.png</Link>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Images\Sectioning\RemoveCuttingPlane.png">
+      <Link>Sources\Images\Sectioning\RemoveCuttingPlane.png</Link>
+    </Image>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\OdTvWpfMainWindowModel.cs">
+      <Link>Sources\OdTvWpfMainWindowModel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\OdTvWpfView.cs">
+      <Link>Sources\OdTvWpfView.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\OdTvSelectDragger.cs">
+      <Link>Sources\Draggers\OdTvSelectDragger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\OdTvDragger.cs">
+      <Link>Sources\Draggers\OdTvDragger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\Navigation\OdTvOrbitDragger.cs">
+      <Link>Sources\Draggers\Navigation\OdTvOrbitDragger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\Navigation\OdTvPanDragger.cs">
+      <Link>Sources\Draggers\Navigation\OdTvPanDragger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\Markups\OdTvMarkupDragger.cs">
+      <Link>Sources\Draggers\Markups\OdTvMarkupDragger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\Markups\OdTvRectMarkupDragger.cs">
+      <Link>Sources\Draggers\Markups\OdTvRectMarkupDragger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\Markups\OdTvCircleMarkupDragger.cs">
+      <Link>Sources\Draggers\Markups\OdTvCircleMarkupDragger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\Markups\OdTvHandleMarkupDragger.cs">
+      <Link>Sources\Draggers\Markups\OdTvHandleMarkupDragger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\Markups\OdTvCloudMarkupDragger.cs">
+      <Link>Sources\Draggers\Markups\OdTvCloudMarkupDragger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\Markups\OdTvTextMarkupDragger.cs">
+      <Link>Sources\Draggers\Markups\OdTvTextMarkupDragger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\Markups\OdTvCaret.cs">
+      <Link>Sources\Draggers\Markups\OdTvCaret.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\OdTvAxisControl.cs">
+      <Link>Sources\Draggers\OdTvAxisControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\OdTvCuttingPlaneDragger.cs">
+      <Link>Sources\Draggers\OdTvCuttingPlaneDragger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\OdTvRotationAxisControl.cs">
+      <Link>Sources\Draggers\OdTvRotationAxisControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Draggers\OdTvSectioningOptions.cs">
+      <Link>Sources\Draggers\OdTvSectioningOptions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvTreeItem.cs">
+      <Link>Sources\ModelBrowser\TvTreeItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvNodeData.cs">
+      <Link>Sources\ModelBrowser\TvNodeData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\StretchingTreeView.cs">
+      <Link>Sources\ModelBrowser\StretchingTreeView.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\PropertiesCommon.cs">
+      <Link>Sources\ModelBrowser\PropertiesCommon.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\CustomControls.cs">
+      <Link>Sources\ModelBrowser\CustomControls.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvDatabaseInfo.cs">
+      <Link>Sources\ModelBrowser\TvDatabaseInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvDatabaseProperties.cs">
+      <Link>Sources\ModelBrowser\TvDatabaseProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvViewProperties.cs">
+      <Link>Sources\ModelBrowser\TvViewProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvDeviceProperties.cs">
+      <Link>Sources\ModelBrowser\TvDeviceProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvTextStyleProperties.cs">
+      <Link>Sources\ModelBrowser\TvTextStyleProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvLinetypeProperties.cs">
+      <Link>Sources\ModelBrowser\TvLinetypeProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvModelProperties.cs">
+      <Link>Sources\ModelBrowser\TvModelProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvRasterImageProperties.cs">
+      <Link>Sources\ModelBrowser\TvRasterImageProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvLayerProperties.cs">
+      <Link>Sources\ModelBrowser\TvLayerProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvEntityProperties.cs">
+      <Link>Sources\ModelBrowser\TvEntityProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvInsertProperties.cs">
+      <Link>Sources\ModelBrowser\TvInsertProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvLightProperties.cs">
+      <Link>Sources\ModelBrowser\TvLightProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvMaterialProperties.cs">
+      <Link>Sources\ModelBrowser\TvMaterialProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvBaseGeometryProperties.cs">
+      <Link>Sources\ModelBrowser\TvBaseGeometryProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvCircArcProperties.cs">
+      <Link>Sources\ModelBrowser\TvCircArcProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvCircleProperties.cs">
+      <Link>Sources\ModelBrowser\TvCircleProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvCircWedgeProperties.cs">
+      <Link>Sources\ModelBrowser\TvCircWedgeProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvEllipseProperties.cs">
+      <Link>Sources\ModelBrowser\TvEllipseProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvEllipticArcProperties.cs">
+      <Link>Sources\ModelBrowser\TvEllipticArcProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvPolygonProperties.cs">
+      <Link>Sources\ModelBrowser\TvPolygonProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvPolylineProperties.cs">
+      <Link>Sources\ModelBrowser\TvPolylineProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvTextProperties.cs">
+      <Link>Sources\ModelBrowser\TvTextProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvShellProperties.cs">
+      <Link>Sources\ModelBrowser\TvShellProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvSelectionInfo.cs">
+      <Link>Sources\ModelBrowser\TvSelectionInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvSphereProperties.cs">
+      <Link>Sources\ModelBrowser\TvSphereProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvCylinderProperties.cs">
+      <Link>Sources\ModelBrowser\TvCylinderProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvNurbsProperties.cs">
+      <Link>Sources\ModelBrowser\TvNurbsProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvRasterImageDataProperties.cs">
+      <Link>Sources\ModelBrowser\TvRasterImageDataProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvInfiniteLineProperties.cs">
+      <Link>Sources\ModelBrowser\TvInfiniteLineProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvMeshProperties.cs">
+      <Link>Sources\ModelBrowser\TvMeshProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvPointCloudProperties.cs">
+      <Link>Sources\ModelBrowser\TvPointCloudProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvGridProperties.cs">
+      <Link>Sources\ModelBrowser\TvGridProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ModelBrowser\TvColoredShapeProperties.cs">
+      <Link>Sources\ModelBrowser\TvColoredShapeProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Misc\TvWpfViewWCS.cs">
+      <Link>Sources\Misc\TvWpfViewWCS.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Misc\DropDownButton.cs">
+      <Link>Sources\Misc\DropDownButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\Misc\RelayCommand.cs">
+      <Link>Sources\Misc\RelayCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\ThirdParty\activation\trial\OdActivationInfo.cs" />
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <Link>Sources\App.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\OdTvWpfMainWindow.xaml.cs">
+      <DependentUpon>OdTvWpfMainWindow.xaml</DependentUpon>
+      <Link>Sources\OdTvWpfMainWindow.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\TvTreeModelBrowser.xaml.cs">
+      <DependentUpon>TvTreeModelBrowser.xaml</DependentUpon>
+      <Link>Sources\TvTreeModelBrowser.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\LoadMarkupDialog.xaml.cs">
+      <DependentUpon>LoadMarkupDialog.xaml</DependentUpon>
+      <Link>Sources\LoadMarkupDialog.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\SaveMarkupDialog.xaml.cs">
+      <DependentUpon>SaveMarkupDialog.xaml</DependentUpon>
+      <Link>Sources\SaveMarkupDialog.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\TvPropertiesPalette.xaml.cs">
+      <DependentUpon>TvPropertiesPalette.xaml</DependentUpon>
+      <Link>Sources\TvPropertiesPalette.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ColorPicker.xaml.cs">
+      <DependentUpon>ColorPicker.xaml</DependentUpon>
+      <Link>Sources\ColorPicker.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\BasePaletteProperties.xaml.cs">
+      <DependentUpon>BasePaletteProperties.xaml</DependentUpon>
+      <Link>Sources\BasePaletteProperties.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\CuttingPlaneOptionsDialog.xaml.cs">
+      <DependentUpon>CuttingPlaneOptionsDialog.xaml</DependentUpon>
+      <Link>Sources\CuttingPlaneOptionsDialog.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\Common\GeneralAssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.cs</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Core">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="TD_SwigCoreMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TV_SwigDbMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TV_SwigDbMgd.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Link>Resources.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\App.xaml">
+      <Link>Sources\App.xaml</Link>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\OdTvWpfMainWindow.xaml">
+      <Link>Sources\OdTvWpfMainWindow.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\TvTreeModelBrowser.xaml">
+      <Link>Sources\TvTreeModelBrowser.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\LoadMarkupDialog.xaml">
+      <Link>Sources\LoadMarkupDialog.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\SaveMarkupDialog.xaml">
+      <Link>Sources\SaveMarkupDialog.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\TvPropertiesPalette.xaml">
+      <Link>Sources\TvPropertiesPalette.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\ColorPicker.xaml">
+      <Link>Sources\ColorPicker.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\BasePaletteProperties.xaml">
+      <Link>Sources\BasePaletteProperties.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Visualize\CSharp\WpfVisualizeViewer\Sources\CuttingPlaneOptionsDialog.xaml">
+      <Link>Sources\CuttingPlaneOptionsDialog.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>NE 128</title>
+    <desc>Created with Sketch.</desc>
+    <g id="NE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(12.000000, 0.000000)" fill-rule="nonzero">
+            <polygon id="Shape" fill="#87A5C5" points="54.6133333 12.8 54.6133333 29.8666667 96 69.9733333 96 51.2"></polygon>
+            <g id="Group" fill="#05093B">
+                <path d="M102.826667,76.8 L51.2,128 L0,76.8 L51.2,25.6 L102.826667,76.8 Z M51.2,118.613333 L93.44,76.3733333 L51.2,34.56 L9.38666667,76.8 L51.2,118.613333 Z" id="Shape"></path>
+                <path d="M102.826667,51.2 L51.6266667,102.4 L0,51.2 L51.2,0 L102.826667,51.2 Z M51.2,93.44 L93.44,51.2 L51.2,9.38666667 L9.38666667,51.2 L51.2,93.44 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="48.2133333" y="4.69333333" width="6.4" height="25.1733333"></rect>
+                <polygon id="Rectangle-path" points="0 51.2 6.4 51.2 6.4 76.3733333 0 76.3733333"></polygon>
+                <polygon id="Rectangle-path" points="96 51.2 102.4 51.2 102.4 76.3733333 96 76.3733333"></polygon>
+                <polygon id="Rectangle-path" points="48.2133333 98.1333333 54.6133333 98.1333333 54.6133333 123.306667 48.2133333 123.306667"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

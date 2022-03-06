@@ -1,0 +1,74 @@
+﻿<Application
+    x:Class="WpfVisualizeViewer.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:WpfVisualizeViewer"
+    StartupUri="OdTvWpfMainWindow.xaml">
+    <Application.Resources>
+        <!--  Common images  -->
+        <BitmapImage x:Key="MenuImg" UriSource="pack://siteoforigin:,,,/Images/menu.png" />
+        <BitmapImage x:Key="OdaBgImg" UriSource="pack://siteoforigin:,,,/Images/odaBgImg.png" />
+        <BitmapImage x:Key="OdalogoImg" UriSource="pack://siteoforigin:,,,/Images/Icon-ODA.ico" />
+        <!-- Menu images -->
+        <BitmapImage x:Key="PublishImg" UriSource="pack://siteoforigin:,,,/Images/Menu/3dpdf.png" />
+        <BitmapImage x:Key="OpenImg" UriSource="pack://siteoforigin:,,,/Images/Menu/open.png" />
+        <BitmapImage x:Key="PdfImg" UriSource="pack://siteoforigin:,,,/Images/Menu/pdf.png" />
+        <BitmapImage x:Key="SaveImg" UriSource="pack://siteoforigin:,,,/Images/Menu/save.png" />
+        <BitmapImage x:Key="SaveAsImg" UriSource="pack://siteoforigin:,,,/Images/Menu/saveAs.png" />
+        <!--  Markup images  -->
+        <BitmapImage x:Key="MarkupCircImg" UriSource="pack://siteoforigin:,,,/Images/Markups/circ.png" />
+        <BitmapImage x:Key="MarkupCloudImg" UriSource="pack://siteoforigin:,,,/Images/Markups/cloud.png" />
+        <BitmapImage x:Key="MarkupHandleImg" UriSource="pack://siteoforigin:,,,/Images/Markups/handle.png" />
+        <BitmapImage x:Key="MarkupLoadImg" UriSource="pack://siteoforigin:,,,/Images/Markups/loadview.png" />
+        <BitmapImage x:Key="MarkupRectImg" UriSource="pack://siteoforigin:,,,/Images/Markups/rect.png" />
+        <BitmapImage x:Key="MarkupSaveImg" UriSource="pack://siteoforigin:,,,/Images/Markups/saveview.png" />
+        <BitmapImage x:Key="MarkupTextImg" UriSource="pack://siteoforigin:,,,/Images/Markups/txt.png" />
+        <!--  Navigation images  -->
+        <BitmapImage x:Key="PanImg" UriSource="pack://siteoforigin:,,,/Images/Navigation/pan.png" />
+        <BitmapImage x:Key="OrbitImg" UriSource="pack://siteoforigin:,,,/Images/Navigation/orbit.png" />
+        <BitmapImage x:Key="ZoomInImg" UriSource="pack://siteoforigin:,,,/Images/Navigation/zoom_in.png" />
+        <BitmapImage x:Key="ZoomOutImg" UriSource="pack://siteoforigin:,,,/Images/Navigation/zoom_out.png" />
+        <BitmapImage x:Key="ZoomExtImg" UriSource="pack://siteoforigin:,,,/Images/Navigation/zoom_ext.png" />
+        <!--  View type images  -->
+        <BitmapImage x:Key="ViewTopImg" UriSource="pack://siteoforigin:,,,/Images/Views/top.png" />
+        <BitmapImage x:Key="ViewBottomImg" UriSource="pack://siteoforigin:,,,/Images/Views/bottom.png" />
+        <BitmapImage x:Key="ViewLeftImg" UriSource="pack://siteoforigin:,,,/Images/Views/left.png" />
+        <BitmapImage x:Key="ViewRightImg" UriSource="pack://siteoforigin:,,,/Images/Views/right.png" />
+        <BitmapImage x:Key="ViewFrontImg" UriSource="pack://siteoforigin:,,,/Images/Views/front.png" />
+        <BitmapImage x:Key="ViewBackImg" UriSource="pack://siteoforigin:,,,/Images/Views/back.png" />
+        <BitmapImage x:Key="ViewSwImg" UriSource="pack://siteoforigin:,,,/Images/Views/swIsometric.png" />
+        <BitmapImage x:Key="ViewSeImg" UriSource="pack://siteoforigin:,,,/Images/Views/seIsometric.png" />
+        <BitmapImage x:Key="ViewNeImg" UriSource="pack://siteoforigin:,,,/Images/Views/neIsometric.png" />
+        <BitmapImage x:Key="ViewNwImg" UriSource="pack://siteoforigin:,,,/Images/Views/nwIsometric.png" />
+        <BitmapImage x:Key="ViewIsometricImg" UriSource="pack://siteoforigin:,,,/Images/Views/isometric.png" />
+        <BitmapImage x:Key="ViewPerspectiveImg" UriSource="pack://siteoforigin:,,,/Images/Views/perspective.png" />
+        <!--  Render mode images  -->
+        <BitmapImage x:Key="2DWireframeImg" UriSource="pack://siteoforigin:,,,/Images/RenderMode/2dwireframe.png" />
+        <BitmapImage x:Key="3DWireframeImg" UriSource="pack://siteoforigin:,,,/Images/RenderMode/3dwireframe.png" />
+        <BitmapImage x:Key="HiddenLineImg" UriSource="pack://siteoforigin:,,,/Images/RenderMode/hiddenline.png" />
+        <BitmapImage x:Key="ShadedImg" UriSource="pack://siteoforigin:,,,/Images/RenderMode/shaded.png" />
+        <BitmapImage x:Key="GouraudShadedImg" UriSource="pack://siteoforigin:,,,/Images/RenderMode/gouraudshaded.png" />
+        <BitmapImage x:Key="ShadedEdgesImg" UriSource="pack://siteoforigin:,,,/Images/RenderMode/shaded_edges.png" />
+        <BitmapImage x:Key="GouraudShadedEdgesImg" UriSource="pack://siteoforigin:,,,/Images/RenderMode/gouraudshaded_edges.png" />
+        <!--  Regen images  -->
+        <BitmapImage x:Key="RegenAllImg" UriSource="pack://siteoforigin:,,,/Images/Regen/regenAll.png" />
+        <BitmapImage x:Key="RegenVisibleImg" UriSource="pack://siteoforigin:,,,/Images/Regen/regenVisible.png" />
+        <BitmapImage x:Key="RegenViewImg" UriSource="pack://siteoforigin:,,,/Images/Regen/regenVp.png" />
+        <!--  Sectioning images  -->
+        <BitmapImage x:Key="AddCuttingPlaneX" UriSource="pack://siteoforigin:,,,/Images/Sectioning/AddCuttingPlaneX.png" />
+        <BitmapImage x:Key="AddCuttingPlaneY" UriSource="pack://siteoforigin:,,,/Images/Sectioning/AddCuttingPlaneY.png" />
+        <BitmapImage x:Key="AddCuttingPlaneZ" UriSource="pack://siteoforigin:,,,/Images/Sectioning/AddCuttingPlaneZ.png" />
+        <BitmapImage x:Key="CuttingPlane" UriSource="pack://siteoforigin:,,,/Images/Sectioning/CuttingPlane.png" />
+        <BitmapImage x:Key="CuttingPlaneColor" UriSource="pack://siteoforigin:,,,/Images/Sectioning/CuttingPlaneColor.png" />
+        <BitmapImage x:Key="CuttingPlaneOff" UriSource="pack://siteoforigin:,,,/Images/Sectioning/CuttingPlaneOff.png" />
+        <BitmapImage x:Key="FillCuttingPlane" UriSource="pack://siteoforigin:,,,/Images/Sectioning/FillCuttingPlane.png" />
+        <BitmapImage x:Key="RemoveCuttingPlane" UriSource="pack://siteoforigin:,,,/Images/Sectioning/RemoveCuttingPlane.png" />
+        <!--  Model browser images  -->
+        <BitmapImage x:Key="MbPropertiesImg" UriSource="pack://siteoforigin:,,,/Images/ModelBrowser/properties.png" />
+        <BitmapImage x:Key="MbRefreshImg" UriSource="pack://siteoforigin:,,,/Images/ModelBrowser/refresh.ico" />
+        <BitmapImage x:Key="MbTreeImg" UriSource="pack://siteoforigin:,,,/Images/ModelBrowser/tree.png" />
+        <BitmapImage x:Key="MbExpandImg" UriSource="pack://siteoforigin:,,,/Images/ModelBrowser/expandArrow.png" />
+        <BitmapImage x:Key="MbExpandAllImg" UriSource="pack://siteoforigin:,,,/Images/ModelBrowser/downAll.png" />
+
+    </Application.Resources>
+</Application>

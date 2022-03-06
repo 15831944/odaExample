@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		236961EA26DE27E80021C7A3 /* liblibcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 236961E926DE27E80021C7A3 /* liblibcrypto.dylib */; };
+		236961EB26DE27E80021C7A3 /* liblibcrypto.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 236961E926DE27E80021C7A3 /* liblibcrypto.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		23A31D012472840500BC5D9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A31D002472840500BC5D9F /* AppDelegate.m */; };
+		23A31D032472840C00BC5D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A31D022472840C00BC5D9F /* Assets.xcassets */; };
+		23A31D062472840C00BC5D9F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A31D042472840C00BC5D9F /* MainMenu.xib */; };
+		23A31D092472840C00BC5D9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A31D082472840C00BC5D9F /* main.m */; };
+		23A31D152472848100BC5D9F /* OdTvOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 23A31D142472848100BC5D9F /* OdTvOpenGLView.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		236961EC26DE27E80021C7A3 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				236961EB26DE27E80021C7A3 /* liblibcrypto.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		236961E926DE27E80021C7A3 /* liblibcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liblibcrypto.dylib; path = ../../../../bin/macOsX_x64_10.15picdbg/liblibcrypto.dylib; sourceTree = "<group>"; };
+		23A31CFC2472840500BC5D9F /* OdVisualizeFirstCocoaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdVisualizeFirstCocoaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A31CFF2472840500BC5D9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		23A31D002472840500BC5D9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		23A31D022472840C00BC5D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23A31D052472840C00BC5D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		23A31D072472840C00BC5D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A31D082472840C00BC5D9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23A31D0A2472840C00BC5D9F /* OdVisualizeFirstCocoaApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OdVisualizeFirstCocoaApp.entitlements; sourceTree = "<group>"; };
+		23A31D132472848100BC5D9F /* OdTvOpenGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OdTvOpenGLView.h; sourceTree = "<group>"; };
+		23A31D142472848100BC5D9F /* OdTvOpenGLView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OdTvOpenGLView.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23A31CF92472840500BC5D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				236961EA26DE27E80021C7A3 /* liblibcrypto.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		236961E826DE27E80021C7A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				236961E926DE27E80021C7A3 /* liblibcrypto.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23A31CF32472840500BC5D9F = {
+			isa = PBXGroup;
+			children = (
+				23A31CFE2472840500BC5D9F /* OdVisualizeFirstCocoaApp */,
+				23A31CFD2472840500BC5D9F /* Products */,
+				236961E826DE27E80021C7A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		23A31CFD2472840500BC5D9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23A31CFC2472840500BC5D9F /* OdVisualizeFirstCocoaApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23A31CFE2472840500BC5D9F /* OdVisualizeFirstCocoaApp */ = {
+			isa = PBXGroup;
+			children = (
+				23A31CFF2472840500BC5D9F /* AppDelegate.h */,
+				23A31D002472840500BC5D9F /* AppDelegate.m */,
+				23A31D022472840C00BC5D9F /* Assets.xcassets */,
+				23A31D042472840C00BC5D9F /* MainMenu.xib */,
+				23A31D072472840C00BC5D9F /* Info.plist */,
+				23A31D082472840C00BC5D9F /* main.m */,
+				23A31D0A2472840C00BC5D9F /* OdVisualizeFirstCocoaApp.entitlements */,
+				23A31D132472848100BC5D9F /* OdTvOpenGLView.h */,
+				23A31D142472848100BC5D9F /* OdTvOpenGLView.mm */,
+			);
+			path = OdVisualizeFirstCocoaApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23A31CFB2472840500BC5D9F /* OdVisualizeFirstCocoaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A31D0D2472840C00BC5D9F /* Build configuration list for PBXNativeTarget "OdVisualizeFirstCocoaApp" */;
+			buildPhases = (
+				23A31CF82472840500BC5D9F /* Sources */,
+				23A31CF92472840500BC5D9F /* Frameworks */,
+				23A31CFA2472840500BC5D9F /* Resources */,
+				236961EC26DE27E80021C7A3 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OdVisualizeFirstCocoaApp;
+			productName = OdVisualizeFirstCocoaApp;
+			productReference = 23A31CFC2472840500BC5D9F /* OdVisualizeFirstCocoaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23A31CF42472840500BC5D9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Open Design Alliance";
+				TargetAttributes = {
+					23A31CFB2472840500BC5D9F = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 23A31CF72472840500BC5D9F /* Build configuration list for PBXProject "OdVisualizeFirstCocoaApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23A31CF32472840500BC5D9F;
+			productRefGroup = 23A31CFD2472840500BC5D9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23A31CFB2472840500BC5D9F /* OdVisualizeFirstCocoaApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23A31CFA2472840500BC5D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A31D032472840C00BC5D9F /* Assets.xcassets in Resources */,
+				23A31D062472840C00BC5D9F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23A31CF82472840500BC5D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A31D152472848100BC5D9F /* OdTvOpenGLView.mm in Sources */,
+				23A31D092472840C00BC5D9F /* main.m in Sources */,
+				23A31D012472840500BC5D9F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		23A31D042472840C00BC5D9F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23A31D052472840C00BC5D9F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23A31D0B2472840C00BC5D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		23A31D0C2472840C00BC5D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		23A31D0E2472840C00BC5D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OdVisualizeFirstCocoaApp/OdVisualizeFirstCocoaApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4SVB9F72E4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../Visualize/Include,
+					../../../../KernelBase/Include,
+					../../../../Kernel/Include,
+					../../../../Kernel/Extensions/ExServices,
+					../../../../Drawing/Include,
+					../../../../ThirdParty/activation,
+					../../../../Visualize/Core/Include,
+				);
+				INFOPLIST_FILE = OdVisualizeFirstCocoaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../../../../lib/macOsX_x64_10.15picdbg/,
+					../../../../bin/macOsX_x64_10.15picdbg/,
+				);
+				OTHER_LDFLAGS = (
+					"-lTD_Zlib",
+					"-lThreadPool",
+					"-lFreeType",
+					"-lFreeImage",
+					"-lTD_Alloc",
+					"-lTD_Root",
+					"-lTD_DbRoot",
+					"-lATEXT",
+					"-lRText",
+					"-lTD_Db",
+					"-lTD_Ge",
+					"-lTD_Gs",
+					"-lTD_Gi",
+					"-lTD_SpatialIndex",
+					"-lTD_ExamplesCommon",
+					"-lRecomputeDimBlock",
+					"-lRasterProcessor",
+					"-lWinGLES2",
+					"-lModelerGeometry",
+					"-lModelerCommands",
+					"-lRxRasterServices",
+					"-lFreeImage",
+					"-lTD_Br",
+					"-lTD_BrepRenderer",
+					"-lTD_AcisBuilder",
+					"-lTrVec",
+					"-lTrBase",
+					"-lTD_BrepBuilder",
+					"-lOdBrepModeler",
+					"-lTD_BrepBuilderFiller",
+					"-lTrGL2",
+					"-lTD_DbEntities",
+					"-lTD_DbIO",
+					"-lISM",
+					"-lWipeOut",
+					"-lAcMPolygonObj15",
+					"-lACCAMERA",
+					"-lSCENEOE",
+					"-lUTF",
+					"-lTV_Visualize",
+					"-lRxCommonDataAccess",
+					"-lExVisualizeDevice",
+					"-lDwg2Visualize",
+					"-llibXML",
+					"-ltinyxml",
+					"-lOdDbPartialViewing",
+					"-lTrRenderBase",
+					"-lDbCryptModule",
+					"-lTD_DrawingsExamplesCommon",
+					"-lTD_png",
+					"-lTD_DbCore",
+					"-lTD_jpeg",
+					"-lTV_DbIO",
+					"-lOdTvDbPartialViewing",
+					"-lTV_DbCore",
+					"-lTV_ISM",
+					"-lTV_SCENEOE",
+					"-lTV_Tf",
+					"-llibcrypto",
+					"-lTD_tiff",
+					"-lTV_CoreDb",
+					"-lTV_CoreDbIO",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpenDesignAlliance.OdVisualizeFirstCocoaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		23A31D0F2472840C00BC5D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OdVisualizeFirstCocoaApp/OdVisualizeFirstCocoaApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4SVB9F72E4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../Visualize/Include,
+					../../../../KernelBase/Include,
+					../../../../Kernel/Include,
+					../../../../Kernel/Extensions/ExServices,
+					../../../../Drawing/Include,
+					../../../../ThirdParty/activation,
+					../../../../Visualize/Core/Include,
+				);
+				INFOPLIST_FILE = OdVisualizeFirstCocoaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../../../../lib/macOsX_x64_10.15pic/,
+					../../../../bin/macOsX_x64_10.15pic/,
+				);
+				OTHER_LDFLAGS = (
+					"-lTD_Zlib",
+					"-lThreadPool",
+					"-lFreeType",
+					"-lFreeImage",
+					"-lTD_Alloc",
+					"-lTD_Root",
+					"-lTD_DbRoot",
+					"-lATEXT",
+					"-lRText",
+					"-lTD_Db",
+					"-lTD_Ge",
+					"-lTD_Gs",
+					"-lTD_Gi",
+					"-lTD_SpatialIndex",
+					"-lTD_ExamplesCommon",
+					"-lRecomputeDimBlock",
+					"-lRasterProcessor",
+					"-lWinGLES2",
+					"-lModelerGeometry",
+					"-lModelerCommands",
+					"-lRxRasterServices",
+					"-lFreeImage",
+					"-lTD_Br",
+					"-lTD_BrepRenderer",
+					"-lTD_AcisBuilder",
+					"-lTrVec",
+					"-lTrBase",
+					"-lTD_BrepBuilder",
+					"-lOdBrepModeler",
+					"-lTD_BrepBuilderFiller",
+					"-lTrGL2",
+					"-lTD_DbEntities",
+					"-lTD_DbIO",
+					"-lISM",
+					"-lWipeOut",
+					"-lAcMPolygonObj15",
+					"-lACCAMERA",
+					"-lSCENEOE",
+					"-lUTF",
+					"-lTV_Visualize",
+					"-lRxCommonDataAccess",
+					"-lExVisualizeDevice",
+					"-lDwg2Visualize",
+					"-llibXML",
+					"-ltinyxml",
+					"-lOdDbPartialViewing",
+					"-lTrRenderBase",
+					"-lDbCryptModule",
+					"-lTD_DrawingsExamplesCommon",
+					"-lTD_png",
+					"-lTD_DbCore",
+					"-lTD_jpeg",
+					"-lTV_DbIO",
+					"-lOdTvDbPartialViewing",
+					"-lTV_DbCore",
+					"-lTV_ISM",
+					"-lTV_SCENEOE",
+					"-lTV_Tf",
+					"-llibcrypto",
+					"-lTD_tiff",
+					"-lTV_CoreDb",
+					"-lTV_CoreDbIO",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpenDesignAlliance.OdVisualizeFirstCocoaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23A31CF72472840500BC5D9F /* Build configuration list for PBXProject "OdVisualizeFirstCocoaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A31D0B2472840C00BC5D9F /* Debug */,
+				23A31D0C2472840C00BC5D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A31D0D2472840C00BC5D9F /* Build configuration list for PBXNativeTarget "OdVisualizeFirstCocoaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A31D0E2472840C00BC5D9F /* Debug */,
+				23A31D0F2472840C00BC5D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23A31CF42472840500BC5D9F /* Project object */;
+}

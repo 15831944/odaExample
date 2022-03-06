@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/visual_style_menu"
+android:orientation="horizontal" android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_margin="5dp"
+android:padding="5dp"
+android:background="@drawable/layout_bg"
+android:gravity="center_horizontal"
+android:layout_centerHorizontal="true">
+
+<ImageView
+    android:id="@+id/style_2d_wireframe"
+    android:tag="@string/style_2d_wireframe"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:src="@drawable/style_2d_wireframe" />
+
+<ImageView
+    android:id="@+id/style_3d_wireframe"
+    android:tag="@string/style_3d_wireframe"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:src="@drawable/style_3d_wireframe" />
+
+<ImageView
+    android:id="@+id/style_hidden_line"
+    android:tag="@string/style_hidden_line"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:src="@drawable/style_hidden_line" />
+
+<ImageView
+    android:id="@+id/style_shaded"
+    android:tag="@string/style_shaded"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:src="@drawable/style_shaded" />
+
+<ImageView
+    android:id="@+id/style_shaded_with_edges"
+    android:tag="@string/style_shaded_with_edges"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:src="@drawable/style_shaded_with_edges" />
+
+<ImageView
+    android:id="@+id/style_shades_of_gray"
+    android:tag="@string/style_shades_of_gray"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:src="@drawable/style_shades_of_gray" />
+
+<ImageView
+    android:id="@+id/style_gouraund_shaded_with_edges"
+    android:tag="@string/style_gouraund_shaded_with_edges"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:src="@drawable/style_gouraund_shaded_with_edges" />
+
+</LinearLayout>

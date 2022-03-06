@@ -1,0 +1,5 @@
+C:\B\2\_\_\exe\vc16_amd64dll\CDevGuideExamplesProject.dll
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\C#\obj\x64\Release\CDevGuideExamplesProject.csproj.AssemblyReference.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\C#\obj\x64\Release\CDevGuideExamplesProject.csproj.CoreCompileInputs.cache
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\C#\obj\x64\Release\CDevGuideExamplesProject.csproj.CopyComplete
+C:\B\2\_\_\Platforms\vc16_amd64dll\NetClassic\Examples\DevGuideExamples\C#\obj\x64\Release\CDevGuideExamplesProject.dll

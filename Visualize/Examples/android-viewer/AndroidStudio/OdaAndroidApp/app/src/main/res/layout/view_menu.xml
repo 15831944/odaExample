@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/view_menu"
+android:orientation="horizontal" android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:padding="5dp"
+android:background="@drawable/layout_bg"
+android:gravity="center_horizontal"
+android:layout_centerHorizontal="true">
+<!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+    <ImageView
+        android:id="@+id/view_top"
+        android:tag="0"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/view_top" />
+
+    <ImageView
+        android:id="@+id/view_left"
+        android:tag="1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/view_left" />
+
+    <ImageView
+        android:id="@+id/view_bottom"
+        android:tag="2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/view_bottom" />
+
+    <ImageView
+        android:id="@+id/view_right"
+        android:tag="3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/view_right" />
+
+    <ImageView
+        android:id="@+id/view_front"
+        android:tag="4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/view_front" />
+
+    <ImageView
+        android:id="@+id/view_back"
+        android:tag="5"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/view_back" />
+<!--</LinearLayout>-->
+<!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <ImageView
+        android:id="@+id/view_sw"
+        android:tag="6"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/view_sw" />
+
+    <ImageView
+        android:id="@+id/view_se"
+        android:tag="7"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/view_se" />
+
+    <ImageView
+        android:id="@+id/view_ne"
+        android:tag="8"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/view_ne" />
+
+    <ImageView
+        android:id="@+id/view_nw"
+        android:tag="9"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/view_nw" />
+<!--</LinearLayout>-->
+</LinearLayout>

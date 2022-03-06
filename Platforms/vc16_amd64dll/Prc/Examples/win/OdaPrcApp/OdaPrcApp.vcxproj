@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5D84921B-F27B-3225-AA75-8672780371B9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>OdaPrcApp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OdaPrcApp.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OdaPrcApp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\Prc\include;..\..\..\..\..\..\Prc\Extensions\ExServices;..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\KernelBase\Extensions\ExServices;..\..\..\..\..\..\Kernel\Extensions\win\ExtDialog;..\..\..\..\..\..\Prc\Extensions\PrcDump;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /MP4</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;TEIGHA_TRIAL;TB_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;TEIGHA_TRIAL;TB_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\Prc\include;..\..\..\..\..\..\Prc\Extensions\ExServices;..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\KernelBase\Extensions\ExServices;..\..\..\..\..\..\Kernel\Extensions\win\ExtDialog;..\..\..\..\..\..\Prc\Extensions\PrcDump;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\Prc\include;..\..\..\..\..\..\Prc\Extensions\ExServices;..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\KernelBase\Extensions\ExServices;..\..\..\..\..\..\Kernel\Extensions\win\ExtDialog;..\..\..\..\..\..\Prc\Extensions\PrcDump;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+copy /Y "$(TargetDir)..\..\Prc\Examples\win\OdaPrcApp\res\OdaPrcApp.exe.manifest" "$(TargetDir)OdaPrcApp.exe.manifest"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+:VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\..\..\lib\vc16_amd64dll\OdPrcDumpModule.lib;TD_BrepRenderer.lib;TD_Br.lib;OdPrcModule.lib;TD_Ge.lib;TD_SpatialIndex.lib;TD_Gi.lib;TD_DbRoot.lib;TD_Root.lib;RxRasterServices.lib;TD_Alloc.lib;FileDlgExt.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /entry:wWinMainCRTStartup</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>OdaPrcApp.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>..\..\..\..\..\..\exe\vc16_amd64dll\OdaPrcApp.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>$(TargetDir)/OdaPrcApp.exe.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\ChildFrm.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\ExPrcElementDumperPE.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\ExPrcElementDumperPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\FindObjectDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\LoadApps.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\MainFrm.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaPrcApp.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaPrcAppDoc.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaPrcExViewer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaPrcTreeFiller.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaPrcTreeView.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\StaticAppSelDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\ViewsDialog.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\stdafx.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\ChildFrm.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\FindObjectDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\LoadApps.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\MainFrm.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaPrcApp.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaPrcAppDoc.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaPrcExViewer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaPrcTreeFiller.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaPrcTreeView.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\RegKey.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\Resource.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\stdafx.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\ViewsDialog.h" />
+    <ResourceCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaPrcApp.rc" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\Commands\PrcOrbit3dCmd.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\Commands\PrcOrbit3dCmd.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\Commands\PrcZoomCmd.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\Commands\PrcZoomCmd.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\Commands\PrcDollyCmd.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\Commands\PrcDollyCmd.h" />
+    <None Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\res\mainfram.bmp" />
+    <None Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\res\Toolbar.bmp" />
+    <None Include="..\..\..\..\..\..\Kernel\Logo\Icon-ODA.ico" />
+    <None Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\res\OdaPrcAppDoc.ico" />
+    <None Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\res\OdaPrcApp.rc2" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Extensions\ExServices\ExPrcCommandContext.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Extensions\ExServices\ExPrcCommandContext.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Extensions\ExServices\ExPrcServices.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Extensions\ExServices\ExPrcServices.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Extensions\ExServices\ExPrcHostAppServices.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Extensions\ExServices\ExPrcHostAppServices.h" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\UserIOConsole.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\UserIOConsole.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\ExPrcEditorObject.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\ExPrcEditorObject.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExServices\ExStringIO.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExServices\ExKWIndex.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExServices\OdFileBuf.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExServices\ExSystemServices.h" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExServices\RxSystemServicesImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaTrianParamsDlg.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\OdaTrianParamsDlg.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\ViewsDlg.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\ViewsDlg.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\DecompressDlg.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\DecompressDlg.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\CompressDlg.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\CompressDlg.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\ColorPickerDlg.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\ColorPickerDlg.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\Exctract3DStreamDialog.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\Exctract3DStreamDialog.h" />
+    <ClCompile Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\PasswordDlg.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Prc\Examples\win\OdaPrcApp\PasswordDlg.h" />
+    <ClCompile Include="..\..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Extensions\PrcDump\OdPrcDumpModule.vcxproj">
+      <Project>{3F1AC004-2BC3-36BE-8B5D-5EC4B9D6F939}</Project>
+      <Name>OdPrcDumpModule</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

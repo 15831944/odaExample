@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{035E6C45-908D-3092-ABC5-07A03F7C04BE}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <OutputPath>.</OutputPath>
+    <Name>OdReadExSwigPython_Py3</Name>
+    <CommandLineArguments></CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <StartupFile>..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdReadExSwigPython_Py3\OdReadExSwigPython_Py3.py</StartupFile>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
+    <WorkingDirectory>..\..\..\..\..\..\..\..\exe\vc16_amd64dll</WorkingDirectory>
+    <SearchPath>..\..\..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\..\..\exe\vc16_amd64dll</SearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdReadExSwigPython_Py3\DatabaseDumper_Py3.py" />
+    <Compile Include="..\..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\Python\Python3\OdReadExSwigPython_Py3\OdReadExSwigPython_Py3.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.9" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

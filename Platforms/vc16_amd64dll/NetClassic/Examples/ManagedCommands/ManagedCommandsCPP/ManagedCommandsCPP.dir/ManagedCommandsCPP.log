@@ -1,0 +1,9 @@
+﻿  ManagedCommandsCPP.cpp
+  AssemblyInfo.cpp
+  GeneralAssemblyInfo.cpp
+  .NETFramework,Version=v4.8.AssemblyAttributes.cpp
+..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\ManagedCommandsCPP\AssemblyInfo.cpp(32,29): warning C4947: 'System::Security::Permissions::SecurityAction::RequestMinimum': marked as obsolete
+..\..\..\..\..\..\NetClassic\Examples\ManagedCommands\ManagedCommandsCPP\AssemblyInfo.cpp(32,29): message : Message: 'Assembly level declarative security is obsolete and is no longer enforced by the CLR by default. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.'
+..\..\..\..\..\..\NetClassic\Examples\GeneralAssemblyInfo.cpp(61,29): warning C4947: 'System::Security::Permissions::SecurityAction::RequestMinimum': marked as obsolete
+..\..\..\..\..\..\NetClassic\Examples\GeneralAssemblyInfo.cpp(61,29): message : Message: 'Assembly level declarative security is obsolete and is no longer enforced by the CLR by default. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.'
+  ManagedCommandsCPP.vcxproj -> C:\B\2\_\_\exe\vc16_amd64dll\ManagedCommandsCPP_23.1_lic16.tx

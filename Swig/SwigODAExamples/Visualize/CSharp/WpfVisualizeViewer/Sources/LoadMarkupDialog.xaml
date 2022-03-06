@@ -1,0 +1,62 @@
+﻿<Window
+    x:Class="WpfVisualizeViewer.Dialogs.LoadMarkupDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfVisualizeViewer.Dialogs"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Load markup"
+    d:DesignHeight="300"
+    d:DesignWidth="300"
+    Icon="{StaticResource OdalogoImg}"
+    ResizeMode="NoResize"
+    SizeToContent="WidthAndHeight"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Grid Margin="15">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <ListView
+            Name="List"
+            Grid.Column="0"
+            MinWidth="180"
+            MinHeight="220">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name of markup entity" />
+                </GridView>
+            </ListView.View>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <EventSetter Event="PreviewMouseLeftButtonDown" Handler="OnSelectedItem" />
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+
+        <Grid Grid.Column="1" Margin="10,0,0,0">
+            <StackPanel VerticalAlignment="Top">
+                <Button
+                    Width="70"
+                    Margin="0,10,0,0"
+                    Click="ButtonLoad_OnClick"
+                    Content="Load" />
+                <Button
+                    Width="70"
+                    Margin="0,10,0,0"
+                    Click="ButtonDelete_OnClick"
+                    Content="Delete" />
+            </StackPanel>
+            <Button
+                Width="70"
+                Margin="0,0,0,10"
+                VerticalAlignment="Bottom"
+                Content="Exit"
+                IsCancel="True" />
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/MenuLayoutStyle"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/navigation_pan"
+        android:tag="0"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMargin"
+        android:src="@drawable/navigation_pan"
+        android:onClick="onNavigationClick" />
+
+    <ImageView
+        android:id="@+id/navigation_orbit"
+        android:tag="1"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMargin"
+        android:src="@drawable/navigation_orbit"
+        android:onClick="onNavigationClick"/>
+
+    <ImageView
+        android:id="@+id/navigation_zoom_window"
+        android:tag="2"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/menuMargin"
+        android:src="@drawable/navigation_zoom_window"
+        android:onClick="onNavigationClick"/>
+
+    <ImageView
+        android:id="@+id/navigation_zoom_extents"
+        android:tag="3"
+        android:layout_width="@dimen/topItemWidth"
+        android:layout_height="@dimen/topItemWidth"
+        android:layout_weight="1"
+        android:src="@drawable/navigation_zoom_extents"
+        android:onClick="onNavigationClick"/>
+
+</LinearLayout>

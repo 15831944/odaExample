@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/navigation_menu"
+android:orientation="horizontal" android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_margin="5dp"
+android:padding="5dp"
+android:background="@drawable/layout_bg"
+android:gravity="center_horizontal"
+android:layout_centerHorizontal="true">
+
+<ImageView
+    android:id="@+id/navigation_pan"
+    android:tag="@string/navigation_pan"
+    android:layout_width="60dp"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:src="@drawable/navigation_pan" />
+
+<ImageView
+    android:id="@+id/navigation_orbit"
+    android:tag="@string/navigation_orbit"
+    android:layout_width="60dp"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:src="@drawable/navigation_orbit" />
+
+<ImageView
+    android:id="@+id/navigation_zoom_window"
+    android:tag="@string/navigation_zoom_window"
+    android:layout_width="60dp"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:src="@drawable/navigation_zoom_window" />
+
+<ImageView
+    android:id="@+id/navigation_zoom_extents"
+    android:tag="@string/navigation_zoom_extents"
+    android:layout_width="60dp"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:src="@drawable/navigation_zoom_extents" />
+</LinearLayout>
